@@ -1,0 +1,52 @@
+0.91  01_sg_perhatian_t1     | Perhatian, truk pos terakhir berangkat 5 menit lagi. Tulis alamat, cepat!
+0.91  01_sg_perhatian_t2     | Perhatian, truk pos terakhir berangkat 5 menit lagi. Tulis alamat, cepat!
+1.00  02_id_jakarta_t1       | Gampang! Jakarta, beres!
+1.00  02_id_jakarta_t2       | Gampang! Jakarta, beres!
+1.00  03_ph_manila_t1        | Manila, done!
+1.00  03_ph_manila_t2        | Manila, done!
+0.83  04_vn_hanoi_t1         | Hah, Noi. Dua suku kata aja.
+0.83  04_vn_hanoi_t2         | Hah, Noi. Dua suku kata aja.
+1.00  05_my_kl_t1            | Kuala Lumpur, agak panjang, tapi muat lah.
+1.00  05_my_kl_t2            | Kuala Lumpur, agak panjang tapi muat lah.
+0.50  06_sg_next_t1          | Selanjutnya, Thailand.
+0.50  06_sg_next_t2          | Selanjutnya, Thailand.
+0.40  07_th_krung_t1         | Sebentar ya, krungtep mahanakon.
+1.00  07_th_krung_t2         | Sebentar ya, krung tep maha nakon.
+1.00  08_sg_bangkok_t1       | Bangkok kan? Tulis Bangkok aja.
+1.00  08_sg_bangkok_t2       | Bangkok kan? Tulis bangkok aja.
+0.90  09_th_panggilan_t1     | Bangkok itu nama panggilan, nama lengkapnya Amon Ratanakosin Mahintara Ayutthaya.
+0.90  09_th_panggilan_t2     | Bangkok itu nama panggilan, nama lengkapnya Amon Ratanakosin Mahintara Ayutthaya.
+1.00  10_id_skripsi_t1       | Dia nulis alamat apa nulis skripsi?
+1.00  10_id_skripsi_t2       | Dia nulis alamat apa nulis skripsi?
+1.00  11_my_baris_t1         | Udah dua baris Nomor rumahnya belum ada
+1.00  11_my_baris_t2         | Udah dua baris Nomor rumahnya belum ada
+0.36  12_th_mahadilok_t1     | Maha Bilogpop, Noparat Ratchatani, Buri Rom
+0.80  12_th_mahadilok_t2     | Mahadilok Pop, Noparak Ratchatani, Burirom
+1.00  13_sg_amplop_t1        | Amplopnya nggak muat! Ambil yang besar!
+0.83  13_sg_amplop_t2        | Amplopnya gak muat! Ambil yang besar!
+0.80  14_vn_truk_t1          | Woy, truknya udah manasin mesin.
+0.80  14_vn_truk_t2          | Woy, truknya udah manasin mesin.
+0.60  15_th_selesai_t1       | Udomraceniwet mahasatan, amon piman awatan satit, sakatatiyawitsanukam prasid. Selesai!
+0.61  15_th_selesai_t2       | Udom racaniwet mahasatan, amun piman awatan satit, sakatati ya witsanukam prasid. Selesai!
+0.89  16_ph_ngarang_t1       | Pasti ngarang biar keren
+0.89  16_ph_ngarang_t2       | Pasti ngarang biar keren
+0.15  17_sg_hitung_t1        | 1, 2, 3, 168 huruf?
+0.15  17_sg_hitung_t2        | 1, 2, 3, 168 huruf?
+1.00  18_th_rekor_t1         | Rekor dunia, nama tempat terpanjang, kata Guinness.
+1.00  18_th_rekor_t2         | Rekor dunia, nama tempat terpanjang, kata Guinness.
+1.00  19_id_arti_t1          | Terus artinya apa?
+1.00  19_id_arti_t2          | Terus artinya apa?
+1.00  20_th_malaikat_t1      | Kota para malaikat, kota agung, kota sembilan permata, pokoknya kota yang indah banget.
+1.00  20_th_malaikat_t2      | Kota para malaikat, kota agung, kota sembilan permata, pokoknya kota yang indah banget.
+1.00  21_id_hafal_t1         | Terus orang Thailand hafal semua.
+0.80  21_id_hafal_t2         | Terus orang Taiwan hafal semua.
+0.73  22_th_lagu_t1          | Ada lagunya lho, tahun 1989
+0.73  22_th_lagu_t2          | Ada lagunya lho, tahun 1989
+1.00  23_sg_ongkir_t1        | Oke, ongkos kirim dihitung per huruf.
+1.00  23_sg_ongkir_t2        | Oke, ongkos kirim dihitung per huruf.
+0.40  24_th_singkat_t1       | Krumtep aja deh Krumtep aja deh
+0.57  24_th_singkat_t2       | Krongtep aja deh
+0.80  25_id_nah_t1           | Nah gitu, orang sana juga manggilnya krungtep
+1.00  25_id_nah_t2           | Nah gitu Orang sana juga manggilnya krung tep
+0.84  26_nr_info_t1          | Nama seremonial Bangkok tercatat di Guinness sebagai nama tempat terpanjang di dunia, 168 huruf. Sehari -hari, warga Thailand menyebutnya Krungthep, kota para malaikat.
+0.84  26_nr_info_t2          | Nama seremonial Bangkok tercatat di Guinness sebagai nama tempat terpanjang di dunia, 168 huruf. Sehari -hari, warga Thailand menyebutnya Krungthep, kota para malaikat.

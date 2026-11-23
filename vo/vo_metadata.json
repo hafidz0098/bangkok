@@ -1,0 +1,1262 @@
+[
+ {
+  "id": "01",
+  "file": "vo/takes/01_sg_perhatian_t1.mp3",
+  "karakter": "SG",
+  "teks": "Perhatian! Truk pos terakhir berangkat lima menit lagi. Tulis alamat, cepat!",
+  "prompt_tts": "[brisk, strict, fast] Perhatian! Truk pos terakhir berangkat lima menit lagi. Tulis alamat, cepat!",
+  "voice_id": "QuLloIKxiP3i9uFXzfgD",
+  "voice_name": "Zulsyifah",
+  "model_id": "eleven_v4",
+  "flow_id": "npDs238LkcKR13h09n7c",
+  "durasi_aktual_s": 3.346,
+  "mulai_di_video_s": 1.7,
+  "kata": [
+   {
+    "w": "Perhatian!",
+    "s": 0.023,
+    "e": 0.42
+   },
+   {
+    "w": "Truk",
+    "s": 0.459,
+    "e": 0.78
+   },
+   {
+    "w": "pos",
+    "s": 0.804,
+    "e": 0.911
+   },
+   {
+    "w": "terakhir",
+    "s": 0.934,
+    "e": 1.24
+   },
+   {
+    "w": "berangkat",
+    "s": 1.236,
+    "e": 1.56
+   },
+   {
+    "w": "lima",
+    "s": 1.556,
+    "e": 1.82
+   },
+   {
+    "w": "menit",
+    "s": 1.817,
+    "e": 2.0
+   },
+   {
+    "w": "lagi.",
+    "s": 1.997,
+    "e": 2.12
+   },
+   {
+    "w": "Tulis",
+    "s": 2.258,
+    "e": 2.56
+   },
+   {
+    "w": "alamat,",
+    "s": 2.56,
+    "e": 2.78
+   },
+   {
+    "w": "cepat!",
+    "s": 2.856,
+    "e": 3.2
+   }
+  ]
+ },
+ {
+  "id": "02",
+  "file": "vo/takes/02_id_jakarta_t1.mp3",
+  "karakter": "ID",
+  "teks": "Gampang. Jakarta. Beres!",
+  "prompt_tts": "[confident, casual] Gampang. Jakarta. Beres!",
+  "voice_id": "R86jddkroI9bJwXFfjsr",
+  "voice_name": "Saos cocol",
+  "model_id": "eleven_v4",
+  "flow_id": "npDs238LkcKR13h09n7c",
+  "durasi_aktual_s": 2.446,
+  "mulai_di_video_s": 5.246,
+  "kata": [
+   {
+    "w": "Gampang.",
+    "s": 0.017,
+    "e": 0.62
+   },
+   {
+    "w": "Jakarta.",
+    "s": 0.615,
+    "e": 1.6
+   },
+   {
+    "w": "Beres!",
+    "s": 1.62,
+    "e": 2.2
+   }
+  ]
+ },
+ {
+  "id": "03",
+  "file": "vo/takes/03_ph_manila_t1.mp3",
+  "karakter": "PH",
+  "teks": "Manila. Done!",
+  "prompt_tts": "[cheerful, quick] Manila. Done!",
+  "voice_id": "ffTJE9l3Kt2ipEM32UOc",
+  "voice_name": "Aita",
+  "model_id": "eleven_v4",
+  "flow_id": "npDs238LkcKR13h09n7c",
+  "durasi_aktual_s": 1.14,
+  "mulai_di_video_s": 7.792,
+  "kata": [
+   {
+    "w": "Manila.",
+    "s": 0.035,
+    "e": 0.38
+   },
+   {
+    "w": "Done!",
+    "s": 0.435,
+    "e": 0.76
+   }
+  ]
+ },
+ {
+  "id": "04",
+  "file": "vo/takes/04_vn_hanoi_t1.mp3",
+  "karakter": "VN",
+  "teks": "Hà Nội. Dua suku kata aja.",
+  "prompt_tts": "[casual, smug] Ha Noi. Dua suku kata aja.",
+  "voice_id": "2lcxSPWqG78QhJnKPyMX",
+  "voice_name": "Genesius",
+  "model_id": "eleven_v4",
+  "flow_id": "npDs238LkcKR13h09n7c",
+  "durasi_aktual_s": 2.248,
+  "mulai_di_video_s": 9.052,
+  "kata": [
+   {
+    "w": "Hà",
+    "s": 0.029,
+    "e": 0.2
+   },
+   {
+    "w": "Nội.",
+    "s": 0.197,
+    "e": 0.7
+   },
+   {
+    "w": "Dua",
+    "s": 0.819,
+    "e": 1.14
+   },
+   {
+    "w": "suku",
+    "s": 1.138,
+    "e": 1.36
+   },
+   {
+    "w": "kata",
+    "s": 1.358,
+    "e": 1.6
+   },
+   {
+    "w": "aja.",
+    "s": 1.596,
+    "e": 1.86
+   }
+  ]
+ },
+ {
+  "id": "05",
+  "file": "vo/takes/05_my_kl_t1.mp3",
+  "karakter": "MY",
+  "teks": "Kuala Lumpur. Agak panjang, tapi muat lah.",
+  "prompt_tts": "[proud, teasing] Kuala Lumpur. Agak panjang, tapi muat lah.",
+  "voice_id": "qXOoUJU1h7AiwSe4ltRA",
+  "voice_name": "Zulfa",
+  "model_id": "eleven_v4",
+  "flow_id": "npDs238LkcKR13h09n7c",
+  "durasi_aktual_s": 3.786,
+  "mulai_di_video_s": 11.42,
+  "kata": [
+   {
+    "w": "Kuala",
+    "s": 0.041,
+    "e": 0.38
+   },
+   {
+    "w": "Lumpur.",
+    "s": 0.377,
+    "e": 1.2
+   },
+   {
+    "w": "Agak",
+    "s": 1.219,
+    "e": 1.68
+   },
+   {
+    "w": "panjang,",
+    "s": 1.678,
+    "e": 2.24
+   },
+   {
+    "w": "tapi",
+    "s": 2.235,
+    "e": 2.7
+   },
+   {
+    "w": "muat",
+    "s": 2.699,
+    "e": 3.22
+   },
+   {
+    "w": "lah.",
+    "s": 3.216,
+    "e": 3.32
+   }
+  ]
+ },
+ {
+  "id": "06",
+  "file": "vo/takes/06_sg_next_t1.mp3",
+  "karakter": "SG",
+  "teks": "Selanjutnya! Thailand!",
+  "prompt_tts": "[impatient] Next! Thailand!",
+  "voice_id": "QuLloIKxiP3i9uFXzfgD",
+  "voice_name": "Zulsyifah",
+  "model_id": "eleven_v4",
+  "flow_id": "npDs238LkcKR13h09n7c",
+  "durasi_aktual_s": 1.215,
+  "mulai_di_video_s": 16.456,
+  "kata": [
+   {
+    "w": "Selanjutnya!",
+    "s": 0.029,
+    "e": 0.54
+   },
+   {
+    "w": "Thailand!",
+    "s": 0.54,
+    "e": 0.76
+   }
+  ]
+ },
+ {
+  "id": "07",
+  "file": "vo/takes/07_th_krung_t2.mp3",
+  "karakter": "TH",
+  "teks": "Sebentar ya... Krung Thep Mahanakhon...",
+  "prompt_tts": "[calm, polite, slowly writing] Sebentar ya... Krung Tep Maha Nakon...",
+  "voice_id": "BSiuHWDgVlCBuGpext0k",
+  "voice_name": "Suara Pria Indonesia NPC",
+  "model_id": "eleven_v4",
+  "flow_id": "npDs238LkcKR13h09n7c",
+  "durasi_aktual_s": 2.347,
+  "mulai_di_video_s": 17.821,
+  "kata": [
+   {
+    "w": "Sebentar",
+    "s": 0.006,
+    "e": 0.42
+   },
+   {
+    "w": "ya...",
+    "s": 0.418,
+    "e": 0.78
+   },
+   {
+    "w": "Krung",
+    "s": 0.778,
+    "e": 1.28
+   },
+   {
+    "w": "Thep",
+    "s": 1.277,
+    "e": 1.6
+   },
+   {
+    "w": "Mahanakhon...",
+    "s": 1.596,
+    "e": 2.32
+   }
+  ]
+ },
+ {
+  "id": "08",
+  "file": "vo/takes/08_sg_bangkok_t1.mp3",
+  "karakter": "SG",
+  "teks": "Bangkok kan? Tulis Bangkok aja!",
+  "prompt_tts": "[cutting in, annoyed] Bangkok kan? Tulis Bangkok aja!",
+  "voice_id": "QuLloIKxiP3i9uFXzfgD",
+  "voice_name": "Zulsyifah",
+  "model_id": "eleven_v4",
+  "flow_id": "npDs238LkcKR13h09n7c",
+  "durasi_aktual_s": 2.063,
+  "mulai_di_video_s": 20.248,
+  "kata": [
+   {
+    "w": "Bangkok",
+    "s": 0.032,
+    "e": 0.38
+   },
+   {
+    "w": "kan?",
+    "s": 0.386,
+    "e": 0.66
+   },
+   {
+    "w": "Tulis",
+    "s": 0.778,
+    "e": 1.14
+   },
+   {
+    "w": "Bangkok",
+    "s": 1.138,
+    "e": 1.32
+   },
+   {
+    "w": "aja!",
+    "s": 1.318,
+    "e": 1.62
+   }
+  ]
+ },
+ {
+  "id": "09",
+  "file": "vo/takes/09_th_panggilan_t1.mp3",
+  "karakter": "TH",
+  "teks": "Bangkok itu nama panggilan. Nama lengkapnya... Amon Rattanakosin... Mahinthara Ayuthaya...",
+  "prompt_tts": "[gently correcting, unhurried] Bangkok itu nama panggilan. Nama lengkapnya... Amon Ratanakosin... Mahintara Ayutaya...",
+  "voice_id": "BSiuHWDgVlCBuGpext0k",
+  "voice_name": "Suara Pria Indonesia NPC",
+  "model_id": "eleven_v4",
+  "flow_id": "npDs238LkcKR13h09n7c",
+  "durasi_aktual_s": 5.481,
+  "mulai_di_video_s": 22.431,
+  "kata": [
+   {
+    "w": "Bangkok",
+    "s": 0.012,
+    "e": 0.24
+   },
+   {
+    "w": "itu",
+    "s": 0.238,
+    "e": 0.56
+   },
+   {
+    "w": "nama",
+    "s": 0.636,
+    "e": 0.94
+   },
+   {
+    "w": "panggilan.",
+    "s": 0.935,
+    "e": 1.46
+   },
+   {
+    "w": "Nama",
+    "s": 1.457,
+    "e": 1.8
+   },
+   {
+    "w": "lengkapnya...",
+    "s": 1.8,
+    "e": 2.56
+   },
+   {
+    "w": "Amon",
+    "s": 2.56,
+    "e": 3.14
+   },
+   {
+    "w": "Rattanakosin...",
+    "s": 3.135,
+    "e": 4.04
+   },
+   {
+    "w": "Mahinthara",
+    "s": 4.034,
+    "e": 4.76
+   },
+   {
+    "w": "Ayuthaya...",
+    "s": 4.754,
+    "e": 5.44
+   }
+  ]
+ },
+ {
+  "id": "10",
+  "file": "vo/takes/10_id_skripsi_t1.mp3",
+  "karakter": "ID",
+  "teks": "Dia nulis alamat apa nulis skripsi?",
+  "prompt_tts": "[whispering, joking] Dia nulis alamat apa nulis skripsi?",
+  "voice_id": "R86jddkroI9bJwXFfjsr",
+  "voice_name": "Saos cocol",
+  "model_id": "eleven_v4",
+  "flow_id": "npDs238LkcKR13h09n7c",
+  "durasi_aktual_s": 1.888,
+  "mulai_di_video_s": 28.112,
+  "kata": [
+   {
+    "w": "Dia",
+    "s": 0.046,
+    "e": 0.12
+   },
+   {
+    "w": "nulis",
+    "s": 0.176,
+    "e": 0.42
+   },
+   {
+    "w": "alamat",
+    "s": 0.418,
+    "e": 0.86
+   },
+   {
+    "w": "apa",
+    "s": 0.859,
+    "e": 1.09
+   },
+   {
+    "w": "nulis",
+    "s": 1.09,
+    "e": 1.32
+   },
+   {
+    "w": "skripsi?",
+    "s": 1.318,
+    "e": 1.86
+   }
+  ]
+ },
+ {
+  "id": "11",
+  "file": "vo/takes/11_my_baris_t1.mp3",
+  "karakter": "MY",
+  "teks": "Udah dua baris, nomor rumahnya belum ada.",
+  "prompt_tts": "[snickering] Udah dua baris, nomor rumahnya belum ada.",
+  "voice_id": "qXOoUJU1h7AiwSe4ltRA",
+  "voice_name": "Zulfa",
+  "model_id": "eleven_v4",
+  "flow_id": "npDs238LkcKR13h09n7c",
+  "durasi_aktual_s": 3.653,
+  "mulai_di_video_s": 30.12,
+  "kata": [
+   {
+    "w": "Udah",
+    "s": 0.459,
+    "e": 1.1
+   },
+   {
+    "w": "dua",
+    "s": 1.097,
+    "e": 1.34
+   },
+   {
+    "w": "baris,",
+    "s": 1.335,
+    "e": 2.02
+   },
+   {
+    "w": "nomor",
+    "s": 2.038,
+    "e": 2.44
+   },
+   {
+    "w": "rumahnya",
+    "s": 2.438,
+    "e": 2.78
+   },
+   {
+    "w": "belum",
+    "s": 2.775,
+    "e": 2.92
+   },
+   {
+    "w": "ada.",
+    "s": 2.92,
+    "e": 3.16
+   }
+  ]
+ },
+ {
+  "id": "12",
+  "file": "vo/takes/12_th_mahadilok_t2.mp3",
+  "karakter": "TH",
+  "teks": "...Mahadilok Phop, Noppharat Ratchathani, Burirom...",
+  "prompt_tts": "[rhythmic, focused] ...Mahadilok Pop, Noparat Ratchatani, Burirom...",
+  "voice_id": "BSiuHWDgVlCBuGpext0k",
+  "voice_name": "Suara Pria Indonesia NPC",
+  "model_id": "eleven_v4",
+  "flow_id": "npDs238LkcKR13h09n7c",
+  "durasi_aktual_s": 2.695,
+  "mulai_di_video_s": 34.973,
+  "kata": [
+   {
+    "w": "...Mahadilok",
+    "s": 0.017,
+    "e": 0.6
+   },
+   {
+    "w": "Phop,",
+    "s": 0.598,
+    "e": 0.82
+   },
+   {
+    "w": "Noppharat",
+    "s": 0.914,
+    "e": 1.36
+   },
+   {
+    "w": "Ratchathani,",
+    "s": 1.358,
+    "e": 2.08
+   },
+   {
+    "w": "Burirom...",
+    "s": 2.096,
+    "e": 2.62
+   }
+  ]
+ },
+ {
+  "id": "13",
+  "file": "vo/takes/13_sg_amplop_t1.mp3",
+  "karakter": "SG",
+  "teks": "Amplopnya nggak muat! Ambil yang besar!",
+  "prompt_tts": "[panicking] Amplopnya nggak muat! Ambil yang besar!",
+  "voice_id": "QuLloIKxiP3i9uFXzfgD",
+  "voice_name": "Zulsyifah",
+  "model_id": "eleven_v4",
+  "flow_id": "npDs238LkcKR13h09n7c",
+  "durasi_aktual_s": 1.987,
+  "mulai_di_video_s": 37.768,
+  "kata": [
+   {
+    "w": "Amplopnya",
+    "s": 0.041,
+    "e": 0.34
+   },
+   {
+    "w": "nggak",
+    "s": 0.337,
+    "e": 0.48
+   },
+   {
+    "w": "muat!",
+    "s": 0.476,
+    "e": 0.94
+   },
+   {
+    "w": "Ambil",
+    "s": 0.935,
+    "e": 1.24
+   },
+   {
+    "w": "yang",
+    "s": 1.236,
+    "e": 1.34
+   },
+   {
+    "w": "besar!",
+    "s": 1.366,
+    "e": 1.56
+   }
+  ]
+ },
+ {
+  "id": "14",
+  "file": "vo/takes/14_vn_truk_t1.mp3",
+  "karakter": "VN",
+  "teks": "Woi, truknya udah manasin mesin!",
+  "prompt_tts": "[annoyed, shouting] Woi, truknya udah manasin mesin!",
+  "voice_id": "2lcxSPWqG78QhJnKPyMX",
+  "voice_name": "Genesius",
+  "model_id": "eleven_v4",
+  "flow_id": "npDs238LkcKR13h09n7c",
+  "durasi_aktual_s": 1.865,
+  "mulai_di_video_s": 41.805,
+  "kata": [
+   {
+    "w": "Woi,",
+    "s": 0.041,
+    "e": 0.26
+   },
+   {
+    "w": "truknya",
+    "s": 0.296,
+    "e": 0.74
+   },
+   {
+    "w": "udah",
+    "s": 0.737,
+    "e": 0.906
+   },
+   {
+    "w": "manasin",
+    "s": 0.906,
+    "e": 1.16
+   },
+   {
+    "w": "mesin!",
+    "s": 1.155,
+    "e": 1.62
+   }
+  ]
+ },
+ {
+  "id": "15",
+  "file": "vo/takes/15_th_selesai_t2.mp3",
+  "karakter": "TH",
+  "teks": "...Udomratchaniwet Mahasathan, Amon Piman Awatan Sathit, Sakkathattiya Witsanukam Prasit. Selesai!",
+  "prompt_tts": "[unbothered, then satisfied] ...Udom Ratchaniwet Mahasatan, Amon Piman Awatan Satit, Sakatatiya Witsanukam Prasit. Selesai!",
+  "voice_id": "BSiuHWDgVlCBuGpext0k",
+  "voice_name": "Suara Pria Indonesia NPC",
+  "model_id": "eleven_v4",
+  "flow_id": "npDs238LkcKR13h09n7c",
+  "durasi_aktual_s": 5.418,
+  "mulai_di_video_s": 44.82,
+  "kata": [
+   {
+    "w": "...Udomratchaniwet",
+    "s": 0.015,
+    "e": 0.9
+   },
+   {
+    "w": "Mahasathan,",
+    "s": 0.9,
+    "e": 1.4
+   },
+   {
+    "w": "Amon",
+    "s": 1.498,
+    "e": 1.84
+   },
+   {
+    "w": "Piman",
+    "s": 1.834,
+    "e": 2.1
+   },
+   {
+    "w": "Awatan",
+    "s": 2.096,
+    "e": 2.5
+   },
+   {
+    "w": "Sathit,",
+    "s": 2.505,
+    "e": 3.02
+   },
+   {
+    "w": "Sakkathattiya",
+    "s": 3.103,
+    "e": 3.72
+   },
+   {
+    "w": "Witsanukam",
+    "s": 3.715,
+    "e": 4.36
+   },
+   {
+    "w": "Prasit.",
+    "s": 4.36,
+    "e": 4.78
+   },
+   {
+    "w": "Selesai!",
+    "s": 4.882,
+    "e": 5.22
+   }
+  ]
+ },
+ {
+  "id": "16",
+  "file": "vo/takes/16_ph_ngarang_t1.mp3",
+  "karakter": "PH",
+  "teks": "Halah, pasti ngarang biar keren!",
+  "prompt_tts": "[suspicious, laughing] Halah, pasti ngarang biar keren!",
+  "voice_id": "ffTJE9l3Kt2ipEM32UOc",
+  "voice_name": "Aita",
+  "model_id": "eleven_v4",
+  "flow_id": "npDs238LkcKR13h09n7c",
+  "durasi_aktual_s": 2.834,
+  "mulai_di_video_s": 50.538,
+  "kata": [
+   {
+    "w": "Halah,",
+    "s": 0.012,
+    "e": 0.6
+   },
+   {
+    "w": "pasti",
+    "s": 0.598,
+    "e": 1.2
+   },
+   {
+    "w": "ngarang",
+    "s": 1.196,
+    "e": 1.94
+   },
+   {
+    "w": "biar",
+    "s": 1.939,
+    "e": 2.18
+   },
+   {
+    "w": "keren!",
+    "s": 2.177,
+    "e": 2.54
+   }
+  ]
+ },
+ {
+  "id": "17",
+  "file": "vo/takes/17_sg_hitung_t1.mp3",
+  "karakter": "SG",
+  "teks": "Satu, dua, tiga... 168 huruf?!",
+  "prompt_tts": "[counting fast, then stunned] Satu, dua, tiga... seratus enam puluh delapan huruf?!",
+  "voice_id": "QuLloIKxiP3i9uFXzfgD",
+  "voice_name": "Zulsyifah",
+  "model_id": "eleven_v4",
+  "flow_id": "npDs238LkcKR13h09n7c",
+  "durasi_aktual_s": 3.345,
+  "mulai_di_video_s": 53.522,
+  "kata": [
+   {
+    "w": "Satu,",
+    "s": 0.029,
+    "e": 0.48
+   },
+   {
+    "w": "dua,",
+    "s": 0.476,
+    "e": 0.8
+   },
+   {
+    "w": "tiga...",
+    "s": 0.935,
+    "e": 1.36
+   },
+   {
+    "w": "168",
+    "s": 1.358,
+    "e": 2.48
+   },
+   {
+    "w": "huruf?!",
+    "s": 2.479,
+    "e": 3.28
+   }
+  ]
+ },
+ {
+  "id": "18",
+  "file": "vo/takes/18_th_rekor_t1.mp3",
+  "karakter": "TH",
+  "teks": "Rekor dunia. Nama tempat terpanjang, kata Guinness.",
+  "prompt_tts": "[proud, smiling] Rekor dunia. Nama tempat terpanjang, kata Guinness.",
+  "voice_id": "BSiuHWDgVlCBuGpext0k",
+  "voice_name": "Suara Pria Indonesia NPC",
+  "model_id": "eleven_v4",
+  "flow_id": "npDs238LkcKR13h09n7c",
+  "durasi_aktual_s": 3.484,
+  "mulai_di_video_s": 57.017,
+  "kata": [
+   {
+    "w": "Rekor",
+    "s": 0.012,
+    "e": 0.46
+   },
+   {
+    "w": "dunia.",
+    "s": 0.459,
+    "e": 1.04
+   },
+   {
+    "w": "Nama",
+    "s": 1.039,
+    "e": 1.64
+   },
+   {
+    "w": "tempat",
+    "s": 1.637,
+    "e": 1.88
+   },
+   {
+    "w": "terpanjang,",
+    "s": 1.875,
+    "e": 2.58
+   },
+   {
+    "w": "kata",
+    "s": 2.577,
+    "e": 2.9
+   },
+   {
+    "w": "Guinness.",
+    "s": 2.897,
+    "e": 3.26
+   }
+  ]
+ },
+ {
+  "id": "19",
+  "file": "vo/takes/19_id_arti_t1.mp3",
+  "karakter": "ID",
+  "teks": "Terus artinya apa?!",
+  "prompt_tts": "[amazed] Terus artinya apa?!",
+  "voice_id": "R86jddkroI9bJwXFfjsr",
+  "voice_name": "Saos cocol",
+  "model_id": "eleven_v4",
+  "flow_id": "npDs238LkcKR13h09n7c",
+  "durasi_aktual_s": 1.592,
+  "mulai_di_video_s": 60.701,
+  "kata": [
+   {
+    "w": "Terus",
+    "s": 0.046,
+    "e": 0.34
+   },
+   {
+    "w": "artinya",
+    "s": 0.337,
+    "e": 0.86
+   },
+   {
+    "w": "apa?!",
+    "s": 0.859,
+    "e": 1.4
+   }
+  ]
+ },
+ {
+  "id": "20",
+  "file": "vo/takes/20_th_malaikat_t1.mp3",
+  "karakter": "TH",
+  "teks": "Kota para malaikat, kota agung, kota sembilan permata... pokoknya kota yang indah banget.",
+  "prompt_tts": "[warm, dreamy] Kota para malaikat, kota agung, kota sembilan permata... pokoknya kota yang indah banget.",
+  "voice_id": "BSiuHWDgVlCBuGpext0k",
+  "voice_name": "Suara Pria Indonesia NPC",
+  "model_id": "eleven_v4",
+  "flow_id": "npDs238LkcKR13h09n7c",
+  "durasi_aktual_s": 5.104,
+  "mulai_di_video_s": 62.413,
+  "kata": [
+   {
+    "w": "Kota",
+    "s": 0.009,
+    "e": 0.24
+   },
+   {
+    "w": "para",
+    "s": 0.238,
+    "e": 0.4
+   },
+   {
+    "w": "malaikat,",
+    "s": 0.395,
+    "e": 0.94
+   },
+   {
+    "w": "kota",
+    "s": 0.958,
+    "e": 1.24
+   },
+   {
+    "w": "agung,",
+    "s": 1.236,
+    "e": 1.76
+   },
+   {
+    "w": "kota",
+    "s": 1.776,
+    "e": 1.938
+   },
+   {
+    "w": "sembilan",
+    "s": 1.938,
+    "e": 2.18
+   },
+   {
+    "w": "permata...",
+    "s": 2.177,
+    "e": 2.88
+   },
+   {
+    "w": "pokoknya",
+    "s": 2.879,
+    "e": 3.5
+   },
+   {
+    "w": "kota",
+    "s": 3.495,
+    "e": 3.9
+   },
+   {
+    "w": "yang",
+    "s": 3.901,
+    "e": 4.06
+   },
+   {
+    "w": "indah",
+    "s": 4.058,
+    "e": 4.76
+   },
+   {
+    "w": "banget.",
+    "s": 4.754,
+    "e": 4.94
+   }
+  ]
+ },
+ {
+  "id": "21",
+  "file": "vo/takes/21_id_hafal_t1.mp3",
+  "karakter": "ID",
+  "teks": "Terus orang Thailand hafal semua?",
+  "prompt_tts": "[curious] Terus orang Thailand hafal semua?",
+  "voice_id": "R86jddkroI9bJwXFfjsr",
+  "voice_name": "Saos cocol",
+  "model_id": "eleven_v4",
+  "flow_id": "npDs238LkcKR13h09n7c",
+  "durasi_aktual_s": 1.952,
+  "mulai_di_video_s": 67.767,
+  "kata": [
+   {
+    "w": "Terus",
+    "s": 0.044,
+    "e": 0.32
+   },
+   {
+    "w": "orang",
+    "s": 0.319,
+    "e": 0.64
+   },
+   {
+    "w": "Thailand",
+    "s": 0.639,
+    "e": 0.98
+   },
+   {
+    "w": "hafal",
+    "s": 0.975,
+    "e": 1.38
+   },
+   {
+    "w": "semua?",
+    "s": 1.376,
+    "e": 1.52
+   }
+  ]
+ },
+ {
+  "id": "22",
+  "file": "vo/takes/22_th_lagu_t1.mp3",
+  "karakter": "TH",
+  "teks": "Ada lagunya, lho. Tahun 1989.",
+  "prompt_tts": "[chuckling] Ada lagunya, lho. Tahun delapan sembilan.",
+  "voice_id": "BSiuHWDgVlCBuGpext0k",
+  "voice_name": "Suara Pria Indonesia NPC",
+  "model_id": "eleven_v4",
+  "flow_id": "npDs238LkcKR13h09n7c",
+  "durasi_aktual_s": 2.602,
+  "mulai_di_video_s": 69.839,
+  "kata": [
+   {
+    "w": "Ada",
+    "s": 0.035,
+    "e": 0.38
+   },
+   {
+    "w": "lagunya,",
+    "s": 0.395,
+    "e": 0.94
+   },
+   {
+    "w": "lho.",
+    "s": 0.998,
+    "e": 1.2
+   },
+   {
+    "w": "Tahun",
+    "s": 1.196,
+    "e": 1.62
+   },
+   {
+    "w": "1989.",
+    "s": 1.62,
+    "e": 2.602
+   }
+  ]
+ },
+ {
+  "id": "23",
+  "file": "vo/takes/23_sg_ongkir_t1.mp3",
+  "karakter": "SG",
+  "teks": "Oke. Ongkos kirim dihitung per huruf.",
+  "prompt_tts": "[deadpan] Oke. Ongkos kirim dihitung per huruf.",
+  "voice_id": "QuLloIKxiP3i9uFXzfgD",
+  "voice_name": "Zulsyifah",
+  "model_id": "eleven_v4",
+  "flow_id": "npDs238LkcKR13h09n7c",
+  "durasi_aktual_s": 2.23,
+  "mulai_di_video_s": 72.741,
+  "kata": [
+   {
+    "w": "Oke.",
+    "s": 0.041,
+    "e": 0.18
+   },
+   {
+    "w": "Ongkos",
+    "s": 0.296,
+    "e": 0.78
+   },
+   {
+    "w": "kirim",
+    "s": 0.778,
+    "e": 1.22
+   },
+   {
+    "w": "dihitung",
+    "s": 1.219,
+    "e": 1.68
+   },
+   {
+    "w": "per",
+    "s": 1.678,
+    "e": 1.8
+   },
+   {
+    "w": "huruf.",
+    "s": 1.808,
+    "e": 2.2
+   }
+  ]
+ },
+ {
+  "id": "24",
+  "file": "vo/takes/24_th_singkat_t2.mp3",
+  "karakter": "TH",
+  "teks": "...Krung Thep aja deh.",
+  "prompt_tts": "[shocked, then quickly giving up] ...Krung Tep aja deh.",
+  "voice_id": "BSiuHWDgVlCBuGpext0k",
+  "voice_name": "Suara Pria Indonesia NPC",
+  "model_id": "eleven_v4",
+  "flow_id": "npDs238LkcKR13h09n7c",
+  "durasi_aktual_s": 1.139,
+  "mulai_di_video_s": 75.071,
+  "kata": [
+   {
+    "w": "...Krung",
+    "s": 0.017,
+    "e": 0.46
+   },
+   {
+    "w": "Thep",
+    "s": 0.459,
+    "e": 0.62
+   },
+   {
+    "w": "aja",
+    "s": 0.615,
+    "e": 0.792
+   },
+   {
+    "w": "deh.",
+    "s": 0.792,
+    "e": 0.88
+   }
+  ]
+ },
+ {
+  "id": "25",
+  "file": "vo/takes/25_id_nah_t2.mp3",
+  "karakter": "ID",
+  "teks": "Nah gitu! Orang sana juga manggilnya Krung Thep!",
+  "prompt_tts": "[laughing] Nah gitu! Orang sana juga manggilnya Krung Tep!",
+  "voice_id": "R86jddkroI9bJwXFfjsr",
+  "voice_name": "Saos cocol",
+  "model_id": "eleven_v4",
+  "flow_id": "npDs238LkcKR13h09n7c",
+  "durasi_aktual_s": 3.74,
+  "mulai_di_video_s": 76.33,
+  "kata": [
+   {
+    "w": "Nah",
+    "s": 0.017,
+    "e": 0.76
+   },
+   {
+    "w": "gitu!",
+    "s": 0.755,
+    "e": 1.3
+   },
+   {
+    "w": "Orang",
+    "s": 1.596,
+    "e": 2.14
+   },
+   {
+    "w": "sana",
+    "s": 2.136,
+    "e": 2.298
+   },
+   {
+    "w": "juga",
+    "s": 2.298,
+    "e": 2.46
+   },
+   {
+    "w": "manggilnya",
+    "s": 2.456,
+    "e": 2.96
+   },
+   {
+    "w": "Krung",
+    "s": 2.955,
+    "e": 3.38
+   },
+   {
+    "w": "Thep!",
+    "s": 3.379,
+    "e": 3.6
+   }
+  ]
+ },
+ {
+  "id": "26",
+  "file": "vo/takes/26_nr_info_t1.mp3",
+  "karakter": "NR",
+  "teks": "Nama seremonial Bangkok tercatat di Guinness sebagai nama tempat terpanjang di dunia, 168 huruf. Sehari-hari, warga Thailand menyebutnya Krung Thep, Kota Para Malaikat.",
+  "prompt_tts": "[warm, informative] Nama seremonial Bangkok tercatat di Guinness sebagai nama tempat terpanjang di dunia, seratus enam puluh delapan huruf. Sehari-hari, warga Thailand menyebutnya Krung Tep, Kota Para Malaikat.",
+  "voice_id": "ZowYWFat3iypr7PwKMPb",
+  "voice_name": "Vivan",
+  "model_id": "eleven_v4",
+  "flow_id": "npDs238LkcKR13h09n7c",
+  "durasi_aktual_s": 10.41,
+  "mulai_di_video_s": 84.37,
+  "kata": [
+   {
+    "w": "Nama",
+    "s": 0.041,
+    "e": 0.24
+   },
+   {
+    "w": "seremonial",
+    "s": 0.238,
+    "e": 0.72
+   },
+   {
+    "w": "Bangkok",
+    "s": 0.72,
+    "e": 0.96
+   },
+   {
+    "w": "tercatat",
+    "s": 0.958,
+    "e": 1.72
+   },
+   {
+    "w": "di",
+    "s": 1.718,
+    "e": 1.8
+   },
+   {
+    "w": "Guinness",
+    "s": 1.848,
+    "e": 2.22
+   },
+   {
+    "w": "sebagai",
+    "s": 2.218,
+    "e": 2.5
+   },
+   {
+    "w": "nama",
+    "s": 2.496,
+    "e": 3.0
+   },
+   {
+    "w": "tempat",
+    "s": 2.995,
+    "e": 3.3
+   },
+   {
+    "w": "terpanjang",
+    "s": 3.297,
+    "e": 3.96
+   },
+   {
+    "w": "di",
+    "s": 3.959,
+    "e": 4.1
+   },
+   {
+    "w": "dunia,",
+    "s": 4.098,
+    "e": 4.44
+   },
+   {
+    "w": "168",
+    "s": 4.435,
+    "e": 5.62
+   },
+   {
+    "w": "huruf.",
+    "s": 5.619,
+    "e": 6.24
+   },
+   {
+    "w": "Sehari-hari,",
+    "s": 6.394,
+    "e": 6.66
+   },
+   {
+    "w": "warga",
+    "s": 6.978,
+    "e": 7.44
+   },
+   {
+    "w": "Thailand",
+    "s": 7.436,
+    "e": 7.64
+   },
+   {
+    "w": "menyebutnya",
+    "s": 7.639,
+    "e": 8.3
+   },
+   {
+    "w": "Krung",
+    "s": 8.295,
+    "e": 8.74
+   },
+   {
+    "w": "Thep,",
+    "s": 8.737,
+    "e": 9.02
+   },
+   {
+    "w": "Kota",
+    "s": 9.125,
+    "e": 9.4
+   },
+   {
+    "w": "Para",
+    "s": 9.398,
+    "e": 9.7
+   },
+   {
+    "w": "Malaikat.",
+    "s": 9.694,
+    "e": 10.2
+   }
+  ]
+ }
+]

@@ -1,0 +1,110 @@
+{
+ "01_sg_perhatian": {
+  "take": "01_sg_perhatian_t1",
+  "score": 0.91
+ },
+ "02_id_jakarta": {
+  "take": "02_id_jakarta_t1",
+  "score": 1.0
+ },
+ "03_ph_manila": {
+  "take": "03_ph_manila_t1",
+  "score": 1.0
+ },
+ "04_vn_hanoi": {
+  "take": "04_vn_hanoi_t1",
+  "score": 0.83
+ },
+ "05_my_kl": {
+  "take": "05_my_kl_t1",
+  "score": 1.0
+ },
+ "06_sg_next": {
+  "take": "06_sg_next_t1",
+  "score": 0.5,
+  "note": "TTS mengucapkan \"Selanjutnya\" (bukan \"Next\") di kedua take; subtitle disesuaikan"
+ },
+ "07_th_krung": {
+  "take": "07_th_krung_t2",
+  "score": 1.0
+ },
+ "08_sg_bangkok": {
+  "take": "08_sg_bangkok_t1",
+  "score": 1.0
+ },
+ "09_th_panggilan": {
+  "take": "09_th_panggilan_t1",
+  "score": 0.9
+ },
+ "10_id_skripsi": {
+  "take": "10_id_skripsi_t1",
+  "score": 1.0
+ },
+ "11_my_baris": {
+  "take": "11_my_baris_t1",
+  "score": 1.0
+ },
+ "12_th_mahadilok": {
+  "take": "12_th_mahadilok_t2",
+  "score": 0.8,
+  "note": "t1 terdengar \"Maha Bilogpop\""
+ },
+ "13_sg_amplop": {
+  "take": "13_sg_amplop_t1",
+  "score": 1.0
+ },
+ "14_vn_truk": {
+  "take": "14_vn_truk_t1",
+  "score": 0.8
+ },
+ "15_th_selesai": {
+  "take": "15_th_selesai_t2",
+  "score": 0.61
+ },
+ "16_ph_ngarang": {
+  "take": "16_ph_ngarang_t1",
+  "score": 0.89
+ },
+ "17_sg_hitung": {
+  "take": "17_sg_hitung_t1",
+  "score": 0.15
+ },
+ "18_th_rekor": {
+  "take": "18_th_rekor_t1",
+  "score": 1.0
+ },
+ "19_id_arti": {
+  "take": "19_id_arti_t1",
+  "score": 1.0
+ },
+ "20_th_malaikat": {
+  "take": "20_th_malaikat_t1",
+  "score": 1.0
+ },
+ "21_id_hafal": {
+  "take": "21_id_hafal_t1",
+  "score": 1.0,
+  "note": "t2 terdengar \"Taiwan\""
+ },
+ "22_th_lagu": {
+  "take": "22_th_lagu_t1",
+  "score": 0.73
+ },
+ "23_sg_ongkir": {
+  "take": "23_sg_ongkir_t1",
+  "score": 1.0
+ },
+ "24_th_singkat": {
+  "take": "24_th_singkat_t2",
+  "score": 0.57,
+  "note": "t1 mengulang kalimat dua kali"
+ },
+ "25_id_nah": {
+  "take": "25_id_nah_t2",
+  "score": 1.0
+ },
+ "26_nr_info": {
+  "take": "26_nr_info_t1",
+  "score": 0.84
+ }
+}

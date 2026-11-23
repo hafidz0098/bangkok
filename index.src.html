@@ -1,0 +1,739 @@
+<!doctype html>
+<html lang="id">
+<!-- Made with the Bang Motion skill by Bang Tutorial (https://youtube.com/bangtutorial) - MIT -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nama Ibu Kota Terpanjang</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Baloo+2:wght@600;700;800&display=block" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=block" rel="stylesheet">
+<style>
+html,body{margin:0;width:100%;height:100%;background:#0b0e1a;overflow:hidden}
+#frame{position:fixed;left:0;top:0;overflow:hidden;background:#0a0e1f}
+#stage{position:absolute;left:0;top:0;width:1080px;height:1920px;overflow:hidden;transform-origin:0 0;background:#0a0e1f}
+#stage>svg{position:absolute;inset:0;display:block}
+#endc{position:absolute;inset:0;opacity:0;background:linear-gradient(180deg,#5A1E18,#C8463A);box-shadow:inset 0 0 0 28px #FFC928;font-family:'Baloo 2',sans-serif;color:#fff}
+#endc h1{position:absolute;left:0;right:0;top:400px;margin:0;text-align:center;font:400 70px/1.05 'Lilita One',sans-serif}
+#endc h1 span{color:#FFC94A}
+#endc .bar{position:absolute;left:390px;width:300px;top:565px;height:10px;border-radius:5px;background:#FFC94A}
+#endc .col{position:absolute;top:605px;left:80px;width:920px;display:flex;flex-direction:column;gap:10px}
+#endc .v{font:400 58px/1 'Lilita One';color:#FFE14D;white-space:nowrap}
+#endc .row.id .v{color:#2a1a00}
+#endc .row{display:flex;align-items:center;gap:14px;height:90px;padding:0 26px 0 14px;border-radius:28px;background:linear-gradient(180deg,rgba(255,255,255,.12),rgba(255,255,255,.05));border:2px solid rgba(255,255,255,.16);box-sizing:border-box}
+#endc .row.id{background:linear-gradient(105deg,#FFE58A,#FFC928 55%,#F2A900);border-color:#FFF4C2;color:#2a1a00}
+#endc .flag{flex:none;width:76px;height:76px;filter:drop-shadow(0 4px 6px rgba(0,0,0,.35))}
+#endc .tx{flex:1;min-width:0}
+#endc .w{font:400 40px/1 'Lilita One';letter-spacing:.5px;white-space:nowrap}
+#endc .n{font-weight:700;font-size:30px;line-height:1.1;margin-top:8px;opacity:.88;white-space:nowrap;font-family:'Baloo 2',sans-serif}
+#endc .row{background:transparent!important;border:3px dashed rgba(255,255,255,.45)!important}
+#endc .row.id{background:#FFE14D!important;border:3px solid #FFF6C2!important}
+#endc .foot{position:absolute;left:60px;right:60px;top:1318px;text-align:center;font-size:27px;line-height:1.3;color:#D8EAE6;font-weight:600}
+#endc .wm{position:absolute;left:0;right:0;top:1440px;text-align:center;font:400 32px 'Lilita One';color:rgba(255,255,255,.6)}
+#fade{position:absolute;inset:0;background:#05070f;opacity:0}
+#dbg{position:fixed;left:50%;bottom:12px;transform:translateX(-50%);display:none;gap:10px;align-items:center;box-sizing:border-box;width:min(560px,calc(100vw - 16px));padding:8px 12px;border-radius:14px;background:rgba(14,16,22,.9);color:#cfd5e3;font:13px system-ui;z-index:50}
+#dbg input{flex:1;min-width:0}#dbg button{flex:none}#dbg span{font-variant-numeric:tabular-nums;min-width:7ch}
+#endc{background:radial-gradient(ellipse at 50% 30%,#8E2A22,#3A1210 75%)!important;box-shadow:inset 0 0 0 16px #FFE14D,inset 0 0 0 26px #3A1210,inset 0 0 0 30px #FFE14D!important;overflow:hidden}#endc h1{top:300px;font-size:84px}#endc h1 span{color:#FFE14D}#endc .bar{top:500px;background:#FFE14D}#endc .col{top:560px;gap:18px}#endc .row{height:128px;background:#FFFDF6!important;border:none!important;color:#3A1210;box-shadow:0 8px 0 rgba(0,0,0,.35);overflow:visible}#endc .row.id{background:#FFE14D!important}#endc .flag{width:96px;height:96px}#endc .w{font-size:46px}#endc .track{position:relative;height:34px;margin-top:10px}#endc .fill{position:absolute;left:0;top:0;height:34px;border-radius:17px;background:#C8463A;width:0}#endc .row.id .fill{background:#8E2A22}#endc .num{position:absolute;left:0;top:-4px;font:400 40px/1 Lilita One,sans-serif;color:#3A1210;padding-left:8px;transform:translateX(var(--x,0))}#endc .foot{top:1340px;font-size:26px;color:#F6D9C8}
+</style>
+</head>
+<body>
+<div id="frame"><div id="stage">
+  <svg id="scene" width="1080" height="1920" viewBox="0 0 1080 1920"></svg>
+  <svg id="hud" width="1080" height="1920" viewBox="0 0 1080 1920"></svg>
+  <div id="endc"></div>
+  <svg id="teaser" width="1080" height="1920" viewBox="0 0 1080 1920"></svg>
+  <div id="fade"></div>
+  <svg id="wm" width="1080" height="1920" viewBox="0 0 1080 1920"></svg>
+</div></div>
+<div id="dbg"><button id="dPlay">Pause</button><input id="dScrub" type="range" min="0" max="1000" value="0"><span id="dClock">0.00s</span></div>
+<audio id="vo" src="audio/mix.m4a" preload="auto"></audio>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script>
+const DATA = /*__DATA__*/null;
+const CFG = { watermark: 'Youtube : @semenitilmu' };
+const $ = (s, r = document) => r.querySelector(s);
+const W = 1080, H = 1920, NS = 'http://www.w3.org/2000/svg';
+const CUE = DATA.cues, LINES = DATA.lines, DUR = CUE.end;
+const LN_ = Object.fromEntries(LINES.map(l => [l.id, l]));
+let FW = 0, FH = 0;
+const DBG = new URLSearchParams(location.search).has('debug');
+function fit() { const vv = window.visualViewport, de = document.documentElement;
+  const w = Math.min(de.clientWidth || innerWidth, vv ? vv.width : 1e9), h = Math.min(de.clientHeight || innerHeight, vv ? vv.height : 1e9);
+  if (!w || !h || (w === FW && h === FH)) return; FW = w; FH = h;
+  const bar = DBG ? 64 : 0, s0 = Math.min(w / W, (h - bar) / H), fw = Math.round(W * s0), fh = Math.round(H * s0), s = Math.max(fw / W, fh / H), fr = $('#frame').style;
+  fr.width = fw + 'px'; fr.height = fh + 'px'; fr.left = Math.round((vv ? vv.offsetLeft : 0) + (w - fw) / 2) + 'px'; fr.top = Math.round((vv ? vv.offsetTop : 0) + (h - bar - fh) / 2) + 'px';
+  $('#stage').style.transform = `scale(${s})`; }
+addEventListener('resize', fit); if (window.visualViewport) { visualViewport.addEventListener('resize', fit); visualViewport.addEventListener('scroll', fit); } if (window.ResizeObserver) new ResizeObserver(fit).observe(document.documentElement); fit();
+
+/* ---------- penyusun bentuk ---------- */
+function N(tag, a = {}, p) { const n = document.createElementNS(NS, tag); for (const k in a) n.setAttribute(k, a[k]); if (p) p.appendChild(n); return n; }
+const G = (p, a = {}) => N('g', a, p);
+const R = (p, x, y, w, h, f, rx = 0, a = {}) => N('rect', { x, y, width: w, height: h, rx, fill: f, ...a }, p);
+const CI = (p, cx, cy, r, f, a = {}) => N('circle', { cx, cy, r, fill: f, ...a }, p);
+const EL = (p, cx, cy, rx, ry, f, a = {}) => N('ellipse', { cx, cy, rx, ry, fill: f, ...a }, p);
+const PA = (p, d, f, a = {}) => N('path', { d, fill: f || 'none', ...a }, p);
+const TX = (p, x, y, t, a = {}) => { const n = N('text', { x, y, 'text-anchor': 'middle', ...a }, p); n.textContent = t; return n; };
+const INK = '#141414', BALOO = "'Baloo 2'";
+function rng(seed) { let s = seed % 2147483647; if (s <= 0) s += 2147483646; return () => (s = s * 16807 % 2147483647, (s - 1) / 2147483646); }
+function star(cx, cy, Ro, Ri, n = 5, rot = -90) { let d = ''; for (let i = 0; i < n * 2; i++) { const a = (rot + i * 180 / n) * Math.PI / 180, r = i % 2 ? Ri : Ro; d += (i ? 'L' : 'M') + (cx + r * Math.cos(a)).toFixed(2) + ' ' + (cy + r * Math.sin(a)).toFixed(2); } return d + 'Z'; }
+let UID = 0; const uid = p => p + (UID++);
+
+/* ---------- BENDERA (sama dengan video sebelumnya) ---------- */
+function flag(id, g, x0, y0, w, h) {
+  const band = (fr, to, c) => R(g, x0 - 2, y0 + h * fr, w + 4, h * (to - fr) + .5, c);
+  const cx = x0 + w / 2, cy = y0 + h / 2;
+  switch (id) {
+    case 'NL': band(0, 1 / 3, '#AE1C28'); band(1 / 3, 2 / 3, '#FFFFFF'); band(2 / 3, 1, '#21468B'); break;
+    case 'MX': { R(g, x0 - 2, y0 - 2, w / 3 + 1, h + 4, '#006847'); R(g, x0 + w / 3, y0 - 2, w / 3 + 1, h + 4, '#FFFFFF'); R(g, x0 + w * 2 / 3, y0 - 2, w / 3 + 2, h + 4, '#CE1126'); EL(g, cx, cy, h * .12, h * .14, '#8C5A2B', { stroke: '#4A2E12', 'stroke-width': Math.max(.5, h * .01) }); PA(g, `M${cx - h * .16} ${cy + h * .14} Q${cx} ${cy + h * .24} ${cx + h * .16} ${cy + h * .14}`, null, { stroke: '#2E7D32', 'stroke-width': Math.max(.8, h * .03) }); break; }
+    case 'ID': band(0, .5, '#E70011'); band(.5, 1, '#FFFFFF'); break;
+    case 'CH': { band(0, 1, '#D52B1E'); R(g, cx - h * .09, cy - h * .3, h * .18, h * .6, '#FFFFFF'); R(g, cx - h * .3, cy - h * .09, h * .6, h * .18, '#FFFFFF'); break; }
+    case 'BO': band(0, 1 / 3, '#D52B1E'); band(1 / 3, 2 / 3, '#F9E300'); band(2 / 3, 1, '#007934'); break;
+    case 'IN': { band(0, 1 / 3, '#FF9933'); band(1 / 3, 2 / 3, '#FFFFFF'); band(2 / 3, 1, '#138808'); CI(g, cx, cy, h * .13, 'none', { stroke: '#000080', 'stroke-width': Math.max(1, h * .018) }); for (let i = 0; i < 12; i++) { const a = i * Math.PI / 6; PA(g, `M${cx} ${cy}L${cx + Math.cos(a) * h * .13} ${cy + Math.sin(a) * h * .13}`, null, { stroke: '#000080', 'stroke-width': Math.max(.6, h * .007) }); } break; }
+    case 'NG': { band(0, 1, '#008751'); R(g, x0 + w / 3, y0 - 2, w / 3, h + 4, '#FFFFFF'); break; }
+    case 'ZA': { band(0, .5, '#DE3831'); band(.5, 1, '#002395'); const y_ = `M${x0 - 2} ${y0}L${x0 + w * .42} ${cy}L${x0 + w + 2} ${cy}M${x0 - 2} ${y0 + h}L${x0 + w * .42} ${cy}`; PA(g, y_, null, { stroke: '#FFFFFF', 'stroke-width': h * .26 }); PA(g, y_, null, { stroke: '#007A4D', 'stroke-width': h * .16 }); PA(g, `M${x0 - 2} ${y0 + h * .17}L${x0 + w * .27} ${cy}L${x0 - 2} ${y0 + h * .83}Z`, '#000000', { stroke: '#FFB612', 'stroke-width': h * .035 }); break; }
+    case 'PG': { band(0, 1, '#CE1126'); PA(g, `M${x0 - 2} ${y0 - 2}L${x0 + w + 2} ${y0 + h + 2}L${x0 - 2} ${y0 + h + 2}Z`, '#000000'); [[.2, .62], [.32, .78], [.14, .8], [.26, .9], [.1, .66]].forEach(([a, b]) => PA(g, star(x0 + w * a, y0 + h * b, h * .04, h * .017), '#FFFFFF')); PA(g, star(x0 + w * .72, y0 + h * .28, h * .15, h * .05, 7), '#FCD116'); break; }
+    case 'DE': band(0, 1 / 3, '#000000'); band(1 / 3, 2 / 3, '#DD0000'); band(2 / 3, 1, '#FFCE00'); break;
+    case 'HU': band(0, 1 / 3, '#CD2A3E'); band(1 / 3, 2 / 3, '#FFFFFF'); band(2 / 3, 1, '#436F4D'); break;
+    case 'US': { for (let i = 0; i < 13; i++) band(i / 13, (i + 1) / 13, i % 2 ? '#FFFFFF' : '#B22234'); R(g, x0 - 2, y0 - 2, w * .46, h * 7 / 13 + 2, '#3C3B6E'); for (let r_ = 0; r_ < 4; r_++) for (let k = 0; k < 5; k++) PA(g, star(x0 + w * (.05 + k * .08), y0 + h * (.07 + r_ * .12), h * .027, h * .011), '#FFFFFF'); break; }
+    case 'VE': { band(0, 1 / 3, '#FFCC00'); band(1 / 3, 2 / 3, '#00247D'); band(2 / 3, 1, '#CF142B'); for (let i = 0; i < 8; i++) { const a = (200 + i * 140 / 7) * Math.PI / 180; PA(g, star(cx + Math.cos(a) * h * .24, cy + h * .14 + Math.sin(a) * h * .24, h * .03, h * .012), '#FFFFFF'); } break; }
+    case 'ZW': { [['#006400'], ['#FFD200'], ['#D40000'], ['#000000'], ['#D40000'], ['#FFD200'], ['#006400']].forEach(([c_], i) => band(i / 7, (i + 1) / 7, c_)); PA(g, `M${x0 - 2} ${y0 - 2}L${x0 + w * .46} ${cy}L${x0 - 2} ${y0 + h + 2}Z`, '#FFFFFF', { stroke: INK, 'stroke-width': Math.max(1, h * .01) }); PA(g, star(x0 + w * .14, cy, h * .13, h * .055), '#D40000'); break; }
+    case 'JP': band(0, 1, '#FFFFFF'); CI(g, cx, cy, h * .3, '#BC002D'); break;
+    case 'CA': { band(0, 1, '#FFFFFF'); R(g, x0 - 2, y0 - 2, w * .25 + 2, h + 4, '#D80621'); R(g, x0 + w * .75, y0 - 2, w * .25 + 2, h + 4, '#D80621'); const s_ = h * .25, P_ = [[0, -1], [.18, -.65], [.36, -.75], [.28, -.3], [.55, -.55], [.6, -.38], [.95, -.45], [.82, -.1], [.95, -.02], [.52, .32], [.6, .5], [.06, .43], [.08, .85], [-.08, .85], [-.06, .43], [-.6, .5], [-.52, .32], [-.95, -.02], [-.82, -.1], [-.95, -.45], [-.6, -.38], [-.55, -.55], [-.28, -.3], [-.36, -.75], [-.18, -.65]];
+      PA(g, P_.map(([a, b], i) => (i ? 'L' : 'M') + (cx + a * s_).toFixed(1) + ' ' + (cy + b * s_).toFixed(1)).join('') + 'Z', '#D80621'); break; }
+    case 'FI': case 'NO': case 'SE': { const c0 = { FI: '#FFFFFF', NO: '#BA0C2F', SE: '#006AA7' }[id], c1 = { FI: '#003580', NO: '#FFFFFF', SE: '#FECC02' }[id]; band(0, 1, c0); const vx = x0 + w * .36; R(g, vx - w * .1, y0 - 2, w * .2, h + 4, c1); R(g, x0 - 2, cy - h * .1, w + 4, h * .2, c1);
+      if (id === 'NO') { R(g, vx - w * .05, y0 - 2, w * .1, h + 4, '#00205B'); R(g, x0 - 2, cy - h * .05, w + 4, h * .1, '#00205B'); } break; }
+    case 'MM': band(0, 1 / 3, '#FECB00'); band(1 / 3, 2 / 3, '#34B233'); band(2 / 3, 1, '#EA2839'); PA(g, star(cx, cy + h * .04, h * .36, h * .145), '#FFFFFF'); break;
+    case 'TH': band(0, 1 / 6, '#A51931'); band(1 / 6, 2 / 6, '#F4F5F8'); band(2 / 6, 4 / 6, '#2D2A4A'); band(4 / 6, 5 / 6, '#F4F5F8'); band(5 / 6, 1, '#A51931'); break;
+    case 'VN': band(0, 1, '#DA251D'); PA(g, star(cx, cy + h * .03, h * .3, h * .12), '#FFFF00'); break;
+    case 'MY': { for (let i = 0; i < 14; i++) band(i / 14, (i + 1) / 14, i % 2 ? '#FFFFFF' : '#CC0001');
+      R(g, x0 - 2, y0 - 2, w * .52, h * 8 / 14 + 2, '#010066'); const ccx = x0 + w * .2, ccy = y0 + h * .28, cr = h * .17; CI(g, ccx, ccy, cr, '#FFCC00'); CI(g, ccx + cr * .3, ccy, cr * .82, '#010066');
+      PA(g, star(ccx + cr * 1.15, ccy, cr * .72, cr * .32, 14), '#FFCC00'); break; }
+    case 'PH': { band(0, .5, '#0038A8'); band(.5, 1, '#CE1126'); const tw = h * .62; PA(g, `M${x0 - 2} ${y0 - 2}L${x0 + tw} ${cy}L${x0 - 2} ${y0 + h + 2}Z`, '#FFFFFF');
+      const sx = x0 + tw * .36, sr = h * .08; for (let i = 0; i < 8; i++) { const a = i * Math.PI / 4; PA(g, `M${sx + Math.cos(a - .2) * sr * 1.1} ${cy + Math.sin(a - .2) * sr * 1.1}L${sx + Math.cos(a) * sr * 2.1} ${cy + Math.sin(a) * sr * 2.1}L${sx + Math.cos(a + .2) * sr * 1.1} ${cy + Math.sin(a + .2) * sr * 1.1}Z`, '#FCD116'); }
+      CI(g, sx, cy, sr, '#FCD116'); [[x0 + h * .07, y0 + h * .1], [x0 + h * .07, y0 + h * .9], [x0 + tw * .82, cy]].forEach(([a, b]) => PA(g, star(a, b, h * .04, h * .017), '#FCD116')); break; }
+    case 'LA': band(0, .25, '#CE1126'); band(.25, .75, '#002868'); band(.75, 1, '#CE1126'); CI(g, cx, cy, h * .2, '#FFFFFF'); break;
+    case 'KH': { band(0, .25, '#032EA1'); band(.25, .75, '#E00025'); band(.75, 1, '#032EA1');
+      const s = h * .3, b = cy + s * .5, aw = { fill: '#FFFFFF', stroke: INK, 'stroke-width': Math.max(1, h * .006), 'stroke-linejoin': 'round' };
+      PA(g, `M${cx - s * .95} ${b}L${cx + s * .95} ${b}L${cx + s * .85} ${b - s * .14}L${cx - s * .85} ${b - s * .14}Z`, null, aw);
+      [[-.62, .52], [-.31, .7], [0, 1], [.31, .7], [.62, .52]].forEach(([o, hh]) => { const x = cx + o * s, tw = s * .13, top = b - s * .14 - s * hh;
+        PA(g, `M${x - tw} ${b - s * .14}L${x - tw} ${top + s * .3}Q${x - tw * .6} ${top + s * .1} ${x} ${top}Q${x + tw * .6} ${top + s * .1} ${x + tw} ${top + s * .3}L${x + tw} ${b - s * .14}Z`, null, aw); });
+      R(g, cx - s * .8, b - s * .32, s * 1.6, s * .18, '#FFFFFF', 0, { stroke: INK, 'stroke-width': Math.max(1, h * .006) }); break; }
+    case 'TL': band(0, 1, '#DC241F'); PA(g, `M${x0 - 2} ${y0 - 2}L${x0 + w * .52} ${cy}L${x0 - 2} ${y0 + h + 2}Z`, '#FFC726'); PA(g, `M${x0 - 2} ${y0 - 2}L${x0 + w * .34} ${cy}L${x0 - 2} ${y0 + h + 2}Z`, '#000000');
+      PA(g, star(x0 + w * .11, cy, h * .1, h * .042, 5, -60), '#FFFFFF'); break;
+    case 'BN': { band(0, 1, '#F7E017'); const d = (o, t, c) => PA(g, `M${x0 - 2} ${y0 + h * o}L${x0 - 2} ${y0 + h * (o + t)}L${x0 + w + 2} ${y0 + h * (o + t + .62)}L${x0 + w + 2} ${y0 + h * (o + .62)}Z`, c);
+      d(.12, .17, '#FFFFFF'); d(.29, .1, '#000000'); const s = h * .17, red = '#CF1126';
+      PA(g, `M${cx - s * 1.1} ${cy + s * .2}Q${cx} ${cy + s * 1.6} ${cx + s * 1.1} ${cy + s * .2}Q${cx} ${cy + s * 1.05} ${cx - s * 1.1} ${cy + s * .2}Z`, red); R(g, cx - s * .07, cy - s * .9, s * .14, s * 1.6, red);
+      PA(g, `M${cx - s * .55} ${cy - s * .75}Q${cx} ${cy - s * 1.25} ${cx + s * .55} ${cy - s * .75}Z`, red);
+      PA(g, `M${cx - s * .25} ${cy - s * .2}Q${cx - s * .9} ${cy - s * .55} ${cx - s * 1.05} ${cy + s * .05}Q${cx - s * .6} ${cy - s * .05} ${cx - s * .25} ${cy + s * .1}Z`, red);
+      PA(g, `M${cx + s * .25} ${cy - s * .2}Q${cx + s * .9} ${cy - s * .55} ${cx + s * 1.05} ${cy + s * .05}Q${cx + s * .6} ${cy - s * .05} ${cx + s * .25} ${cy + s * .1}Z`, red); break; }
+    case 'SM': { band(0, .5, '#FFFFFF'); band(.5, 1, '#5EB6E4'); const sy = cy + h * .22; PA(g, `M${cx - h * .1} ${sy - h * .1}H${cx + h * .1}V${sy + h * .04}Q${cx + h * .1} ${sy + h * .13} ${cx} ${sy + h * .16}Q${cx - h * .1} ${sy + h * .13} ${cx - h * .1} ${sy + h * .04}Z`, '#5EB6E4', { stroke: '#C8A030', 'stroke-width': Math.max(1, h * .022) }); [-.05, 0, .05].forEach(o => R(g, cx + o * h - h * .016, sy - h * .05, h * .032, h * .1, '#FFFFFF')); break; }
+    case 'EG': { band(0, 1 / 3, '#CE1126'); band(1 / 3, 2 / 3, '#FFFFFF'); band(2 / 3, 1, '#000000'); PA(g, `M${cx} ${cy - h * .13}L${cx + h * .1} ${cy - h * .04}L${cx + h * .06} ${cy + h * .13}L${cx - h * .06} ${cy + h * .13}L${cx - h * .1} ${cy - h * .04}Z`, '#C09300', { stroke: '#8A6A00', 'stroke-width': Math.max(.6, h * .008) }); break; }
+    case 'SS': { band(0, .29, '#000000'); band(.29, .36, '#FFFFFF'); band(.36, .64, '#DA121A'); band(.64, .71, '#FFFFFF'); band(.71, 1, '#078930'); PA(g, `M${x0 - 2} ${y0 - 2}L${x0 + w * .42} ${cy}L${x0 - 2} ${y0 + h + 2}Z`, '#0F47AF'); PA(g, star(x0 + w * .13, cy, h * .15, h * .06, 5, -90), '#FCDD09'); break; }
+    case 'IT': { band(0, 1, '#FFFFFF'); R(g, x0 - 2, y0 - 2, w / 3 + 2, h + 4, '#009246'); R(g, x0 + w * 2 / 3, y0 - 2, w / 3 + 2, h + 4, '#CE2B37'); break; }
+    case 'KR': { band(0, 1, '#FFFFFF'); const r_ = h * .2, tg = G(g, { transform: `translate(${cx},${cy}) rotate(-33)` }); PA(tg, `M${-r_} 0A${r_} ${r_} 0 0 1 ${r_} 0Z`, '#CD2E3A'); PA(tg, `M${-r_} 0A${r_} ${r_} 0 0 0 ${r_} 0Z`, '#0047A0'); CI(tg, -r_ / 2, 0, r_ / 2, '#CD2E3A'); CI(tg, r_ / 2, 0, r_ / 2, '#0047A0');
+      [[-1, -1, 57], [1, -1, -57], [-1, 1, -57], [1, 1, 57]].forEach(([a, b, rot]) => { const q = G(g, { transform: `translate(${cx + a * w * .34},${cy + b * h * .31}) rotate(${rot})` }); [-1, 0, 1].forEach(k => R(q, -h * .08, k * h * .05 - h * .017, h * .16, h * .034, '#141414')); }); break; }
+    case 'GB': { band(0, 1, '#012169'); const X = [[x0 - 2, y0 - 2, x0 + w + 2, y0 + h + 2], [x0 + w + 2, y0 - 2, x0 - 2, y0 + h + 2]]; X.forEach(([a, b, c_, d]) => PA(g, `M${a} ${b}L${c_} ${d}`, null, { stroke: '#FFFFFF', 'stroke-width': h * .16 })); X.forEach(([a, b, c_, d]) => PA(g, `M${a} ${b}L${c_} ${d}`, null, { stroke: '#C8102E', 'stroke-width': h * .06 })); R(g, cx - h * .14, y0 - 2, h * .28, h + 4, '#FFFFFF'); R(g, x0 - 2, cy - h * .14, w + 4, h * .28, '#FFFFFF'); R(g, cx - h * .085, y0 - 2, h * .17, h + 4, '#C8102E'); R(g, x0 - 2, cy - h * .085, w + 4, h * .17, '#C8102E'); break; }
+    case 'OM': { band(0, 1 / 3, '#FFFFFF'); band(1 / 3, 2 / 3, '#DB161B'); band(2 / 3, 1, '#008000'); R(g, x0 - 2, y0 - 2, w * .27 + 2, h + 4, '#DB161B'); const ex = x0 + w * .15, ey = y0 + h * .24, er = h * .06; PA(g, `M${ex - er} ${ey - er}L${ex + er} ${ey + er}M${ex + er} ${ey - er}L${ex - er} ${ey + er}`, null, { stroke: '#FFFFFF', 'stroke-width': Math.max(1, h * .014) }); R(g, ex - h * .012, ey - er * 1.2, h * .024, er * 2.4, '#FFFFFF'); break; }
+    case 'BH': { band(0, 1, '#CE1126'); let d = `M${x0 - 2} ${y0 - 2}H${x0 + w * .3}`; for (let i = 0; i < 5; i++) d += `L${x0 + w * .46} ${y0 + h * (i + .5) / 5}L${x0 + w * .3} ${y0 + h * (i + 1) / 5}`; PA(g, d + `L${x0 - 2} ${y0 + h + 2}Z`, '#FFFFFF'); break; }
+    case 'KW': { band(0, 1 / 3, '#007A3D'); band(1 / 3, 2 / 3, '#FFFFFF'); band(2 / 3, 1, '#CE1126'); PA(g, `M${x0 - 2} ${y0 - 2}L${x0 + w * .27} ${y0 + h / 3}V${y0 + h * 2 / 3}L${x0 - 2} ${y0 + h + 2}Z`, '#000000'); break; }
+    case 'SC': { band(0, 1, '#005EB8'); [[x0 - 2, y0 - 2, x0 + w + 2, y0 + h + 2], [x0 + w + 2, y0 - 2, x0 - 2, y0 + h + 2]].forEach(([a, b, c_, d]) => PA(g, `M${a} ${b}L${c_} ${d}`, null, { stroke: '#FFFFFF', 'stroke-width': h * .19 })); break; }
+    case 'AU': { band(0, 1, '#00247D'); flag('GB', g, x0, y0, w * .5, h * .5); PA(g, star(x0 + w * .25, y0 + h * .75, h * .13, h * .06, 7), '#FFFFFF'); [[.75, .16], [.62, .46], [.88, .38], [.75, .84], [.82, .56]].forEach(([a, b], i) => PA(g, star(x0 + w * a, y0 + h * b, h * (i === 4 ? .035 : .06), h * (i === 4 ? .016 : .026), i === 4 ? 5 : 7), '#FFFFFF')); break; }
+    case 'BT': { band(0, 1, '#FF4E12'); PA(g, `M${x0 - 2} ${y0 - 2}H${x0 + w + 2}L${x0 - 2} ${y0 + h + 2}Z`, '#FFD520'); PA(g, `M${x0 + w * .16} ${y0 + h * .82}Q${x0 + w * .34} ${y0 + h * .48} ${x0 + w * .46} ${y0 + h * .56}T${x0 + w * .66} ${y0 + h * .3}T${x0 + w * .86} ${y0 + h * .16}`, null, { stroke: '#FFFFFF', 'stroke-width': h * .085, 'stroke-linecap': 'round' }); break; }
+    case 'NP': { band(0, 1, '#DC143C'); PA(g, `M${x0 + w * .18} ${y0 + h * .02}L${x0 + w * .86} ${y0 + h * .48}H${x0 + w * .42}L${x0 + w * .86} ${y0 + h * .98}H${x0 + w * .18}Z`, null, { stroke: '#003893', 'stroke-width': h * .06, 'stroke-linejoin': 'round' }); PA(g, star(x0 + w * .32, y0 + h * .3, h * .07, h * .035, 8), '#FFFFFF'); PA(g, star(x0 + w * .34, y0 + h * .76, h * .09, h * .05, 12), '#FFFFFF'); break; }
+    case 'CN': { band(0, 1, '#DE2910'); PA(g, star(x0 + w * .28, y0 + h * .3, h * .17, h * .068), '#FFDE00'); [[.48, .13], [.56, .25], [.56, .41], [.48, .53]].forEach(([a, b]) => PA(g, star(x0 + w * a, y0 + h * b, h * .055, h * .022), '#FFDE00')); break; }
+    case 'EC': { band(0, .5, '#FFDD00'); band(.5, .75, '#034EA2'); band(.75, 1, '#ED1C24'); EL(g, cx, cy, h * .11, h * .13, '#7BB8E8', { stroke: '#5A3A1A', 'stroke-width': Math.max(1, h * .018) }); PA(g, `M${cx - h * .09} ${cy + h * .08}L${cx} ${cy - h * .06}L${cx + h * .09} ${cy + h * .08}Z`, '#6E8F6A'); break; }
+    case 'PK': { band(0, 1, '#01411C'); R(g, x0 - 2, y0 - 2, w * .25 + 2, h + 4, '#FFFFFF'); const mx = x0 + w * .62, my = cy; CI(g, mx, my, h * .3, '#FFFFFF'); CI(g, mx + h * .09, my - h * .07, h * .26, '#01411C'); PA(g, star(mx + h * .16, my - h * .14, h * .08, h * .032), '#FFFFFF'); break; }
+    case 'RU': band(0, 1 / 3, '#FFFFFF'); band(1 / 3, 2 / 3, '#0039A6'); band(2 / 3, 1, '#D52B1E'); break;
+    case 'FR': { band(0, 1, '#FFFFFF'); R(g, x0 - 2, y0 - 2, w / 3 + 2, h + 4, '#0055A4'); R(g, x0 + w * 2 / 3, y0 - 2, w / 3 + 2, h + 4, '#EF4135'); break; }
+    case 'BR': { band(0, 1, '#009C3B'); PA(g, `M${cx} ${y0 + h * .1}L${x0 + w * .92} ${cy}L${cx} ${y0 + h * .9}L${x0 + w * .08} ${cy}Z`, '#FFDF00'); CI(g, cx, cy, h * .24, '#002776');
+      PA(g, `M${cx - h * .235} ${cy - h * .03}Q${cx} ${cy - h * .11} ${cx + h * .235} ${cy + h * .06}`, null, { stroke: '#FFFFFF', 'stroke-width': h * .05 }); break; }
+    case 'AR': { band(0, 1 / 3, '#74ACDF'); band(1 / 3, 2 / 3, '#FFFFFF'); band(2 / 3, 1, '#74ACDF'); PA(g, star(cx, cy, h * .13, h * .085, 16), '#F6B40E', { stroke: '#843511', 'stroke-width': Math.max(.6, h * .008) }); CI(g, cx, cy, h * .075, '#F6B40E', { stroke: '#843511', 'stroke-width': Math.max(.6, h * .008) }); break; }
+    case 'ES': { band(0, .25, '#AA151B'); band(.25, .75, '#F1BF00'); band(.75, 1, '#AA151B'); const sx = x0 + w * .13; PA(g, `M${sx - h * .09} ${cy - h * .14}H${sx + h * .09}V${cy + h * .04}Q${sx + h * .09} ${cy + h * .15} ${sx} ${cy + h * .17}Q${sx - h * .09} ${cy + h * .15} ${sx - h * .09} ${cy + h * .04}Z`, '#AA151B', { stroke: '#8A6A00', 'stroke-width': Math.max(.8, h * .012) });
+      R(g, sx - h * .03, cy - h * .2, h * .06, h * .06, '#C8A030'); break; }
+    case 'KZ': { band(0, 1, '#00AFCA'); const sy = cy - h * .07; PA(g, star(cx, sy, h * .25, h * .17, 32), '#FEC50C'); CI(g, cx, sy, h * .14, '#FEC50C', { stroke: '#00AFCA', 'stroke-width': Math.max(.6, h * .012) });
+      PA(g, `M${cx - h * .32} ${cy + h * .14}Q${cx - h * .15} ${cy + h * .03} ${cx} ${cy + h * .12}Q${cx + h * .15} ${cy + h * .03} ${cx + h * .32} ${cy + h * .14}Q${cx + h * .15} ${cy + h * .24} ${cx} ${cy + h * .19}Q${cx - h * .15} ${cy + h * .24} ${cx - h * .32} ${cy + h * .14}Z`, '#FEC50C');
+      for (let k = 0; k < 7; k++) { const oy = y0 + h * (.08 + k * .14), ox = x0 + w * .085, d = h * .045; PA(g, `M${ox} ${oy - d}L${ox + d} ${oy}L${ox} ${oy + d}L${ox - d} ${oy}Z`, '#FEC50C'); } break; }
+    case 'LK': { band(0, 1, '#FFBE29'); R(g, x0 + w * .05, y0 + h * .07, w * .1, h * .86, '#005F56'); R(g, x0 + w * .15, y0 + h * .07, w * .1, h * .86, '#FF7F00');
+      R(g, x0 + w * .29, y0 + h * .07, w * .66, h * .86, '#8D153A'); const lx = x0 + w * .62, s_ = h * .9, gd = '#FFBE29';
+      PA(g, `M${lx - s_ * .2} ${cy + s_ * .28}V${cy + s_ * .02}Q${lx - s_ * .22} ${cy - s_ * .16} ${lx - s_ * .06} ${cy - s_ * .2}Q${lx + s_ * .1} ${cy - s_ * .26} ${lx + s_ * .14} ${cy - s_ * .08}L${lx + s_ * .22} ${cy + s_ * .28}H${lx + s_ * .1}L${lx + s_ * .04} ${cy + s_ * .12}H${lx - s_ * .08}L${lx - s_ * .1} ${cy + s_ * .28}Z`, gd);
+      PA(g, `M${lx + s_ * .1} ${cy - s_ * .04}L${lx + s_ * .26} ${cy - s_ * .3}`, null, { stroke: gd, 'stroke-width': h * .035, 'stroke-linecap': 'round' });
+      [[.33, .13], [.91, .13], [.33, .87], [.91, .87]].forEach(([a, b]) => EL(g, x0 + w * a, y0 + h * b, h * .035, h * .05, gd)); break; }
+    case 'SG': { band(0, .5, '#EF3340'); band(.5, 1, '#FFFFFF'); const ccx = x0 + w * .3, ccy = y0 + h * .27, cr = h * .14; CI(g, ccx, ccy, cr, '#FFFFFF'); CI(g, ccx + cr * .32, ccy, cr * .88, '#EF3340');
+      for (let i = 0; i < 5; i++) { const a = (-90 + i * 72) * Math.PI / 180; PA(g, star(ccx + cr * .55 + Math.cos(a) * cr * .5, ccy + Math.sin(a) * cr * .5, cr * .2, cr * .08), '#FFFFFF'); } break; }
+  }
+}
+const FLAGCOL = { ID: ['#E70011', '#FFFFFF'], MM: ['#FECB00', '#34B233'], TH: ['#2D2A4A', '#A51931'], VN: ['#DA251D', '#FFFF00'], MY: ['#010066', '#CC0001'], PH: ['#0038A8', '#CE1126'],
+  LA: ['#002868', '#CE1126'], KH: ['#032EA1', '#E00025'], TL: ['#DC241F', '#FFC726'], BN: ['#F7E017', '#CF1126'], SG: ['#EF3340', '#FFFFFF'] };
+FLAGCOL.IT = ['#009246', '#CE2B37']; FLAGCOL.KR = ['#0047A0', '#CD2E3A']; FLAGCOL.GB = ['#012169', '#C8102E']; FLAGCOL.OM = ['#DB161B', '#008000']; FLAGCOL.BH = ['#CE1126', '#FFFFFF']; FLAGCOL.KW = ['#007A3D', '#CE1126']; FLAGCOL.SC = ['#005EB8', '#FFFFFF']; FLAGCOL.AU = ['#00247D', '#FFFFFF']; FLAGCOL.BT = ['#FF4E12', '#FFD520']; FLAGCOL.NP = ['#DC143C', '#003893']; FLAGCOL.CN = ['#DE2910', '#FFDE00']; FLAGCOL.EC = ['#034EA2', '#FFDD00']; FLAGCOL.PK = ['#01411C', '#FFFFFF']; FLAGCOL.RU = ['#0039A6', '#D52B1E']; FLAGCOL.FR = ['#0055A4', '#EF4135']; FLAGCOL.BR = ['#009C3B', '#FFDF00']; FLAGCOL.AR = ['#74ACDF', '#F6B40E']; FLAGCOL.ES = ['#AA151B', '#F1BF00']; FLAGCOL.KZ = ['#00AFCA', '#FEC50C']; FLAGCOL.LK = ['#8D153A', '#FFBE29']; FLAGCOL.SM = ['#5EB6E4', '#FFFFFF']; FLAGCOL.EG = ['#CE1126', '#C09300']; FLAGCOL.SS = ['#0F47AF', '#FCDD09']; FLAGCOL.CH = ['#D52B1E', '#FFFFFF']; FLAGCOL.ZA = ['#007A4D', '#FFB612']; FLAGCOL.IN = ['#FF9933', '#138808']; FLAGCOL.BO = ['#D52B1E', '#F9E300']; FLAGCOL.NG = ['#008751', '#FFFFFF']; FLAGCOL.PG = ['#CE1126', '#FCD116']; FLAGCOL.DE = ['#DD0000', '#FFCE00']; FLAGCOL.HU = ['#436F4D', '#CD2A3E']; FLAGCOL.US = ['#3C3B6E', '#B22234']; FLAGCOL.VE = ['#00247D', '#FFCC00']; FLAGCOL.ZW = ['#006400', '#FFD200']; FLAGCOL.JP = ['#BC002D', '#FFFFFF']; FLAGCOL.CA = ['#D80621', '#FFFFFF']; FLAGCOL.FI = ['#003580', '#FFFFFF']; FLAGCOL.NO = ['#BA0C2F', '#00205B']; FLAGCOL.SE = ['#006AA7', '#FECC02']; FLAGCOL.NL = ['#AE1C28', '#21468B']; FLAGCOL.MX = ['#006847', '#CE1126'];
+
+/* ---------- SCENE: dinding (parallax), meja & karakter, latar depan ---------- */
+const S = $('#scene'), defs = N('defs', {}, S);
+function grad(id, stops, x2 = 0, y2 = 1, type = 'linearGradient', extra = {}) { const gr = N(type, { id, ...(type === 'linearGradient' ? { x1: 0, y1: 0, x2, y2 } : extra) }, defs);
+  stops.forEach(([o, c, op = 1]) => N('stop', { offset: o, 'stop-color': c, 'stop-opacity': op }, gr)); return gr; }
+grad('wall', [[0, '#E9B97A'], [.6, '#F4D29A'], [1, '#EFC489']]);
+grad('night', [[0, '#141d45'], [1, '#3f5aa8']]);
+grad('cloth', [[0, '#2F7D5B'], [1, '#17523A']]);
+grad('sea', [[0, '#1F86C6'], [1, '#0B4A7D']]);
+grad('floor', [[0, '#9C6B43'], [1, '#6E4528']]);
+grad('spot', [[0, '#000', 0], [.55, '#000', .0], [1, '#000', .78]], 0, 1, 'radialGradient', { cx: .5, cy: .5, r: .62 });
+grad('aura', [[0, '#FFE9A0', .9], [.5, '#FFD24A', .35], [1, '#FFD24A', 0]], 0, 1, 'radialGradient', { cx: .5, cy: .5, r: .5 });
+const shF = N('filter', { id: 'subsh', x: '-25%', y: '-45%', width: '150%', height: '190%' }, defs); N('feGaussianBlur', { in: 'SourceAlpha', stdDeviation: 14, result: 'b' }, shF); N('feFlood', { 'flood-color': '#0A0A14', 'flood-opacity': .55, result: 'c' }, shF); N('feComposite', { in: 'c', in2: 'b', operator: 'in', result: 'glow' }, shF); N('feDropShadow', { in: 'SourceGraphic', dx: 0, dy: 8, stdDeviation: 4, 'flood-color': '#000', 'flood-opacity': .45, result: 'd' }, shF); { const m = N('feMerge', {}, shF); N('feMergeNode', { in: 'glow' }, m); N('feMergeNode', { in: 'd' }, m); }
+N('feGaussianBlur', { stdDeviation: 10 }, N('filter', { id: 'soft', x: '-40%', y: '-40%', width: '180%', height: '180%' }, defs));
+N('feGaussianBlur', { stdDeviation: 4 }, N('filter', { id: 'dofF', x: '-30%', y: '-30%', width: '160%', height: '160%' }, defs));   // lampion dekat lensa: out of focus
+grad('vig', [[0, '#000', 0], [.78, '#000', 0], [1, '#0a1a2a', .22]], 0, 1, 'radialGradient', { cx: .5, cy: .5, r: .78 });
+grad('tbg', [[0, '#6a2c10'], [.55, '#2a1209'], [1, '#0e0603']], 0, 1, 'radialGradient', { cx: .5, cy: .62, r: .75 });
+
+R(S, 0, 0, W, H, '#2a160c');
+const LAYERS = [];
+function layer(f, fz) { const g = G(S); const L = { g, f, fz }; LAYERS.push(L); return L; }
+const WALL = layer(.82, .85); R(S, 0, 0, W, H, '#EEF4F8', 0, { opacity: .1 });   // kabut: dinding sedikit mundur
+const MAIN = layer(1, 1), FG = layer(1.25, 1.18); FG.g.setAttribute('filter', 'url(#dofF)');
+const dimRect = R(S, 0, 0, W, H, '#140a1e', 0, { opacity: 0 });
+const spotRect = R(S, -200, -200, W + 400, H + 400, 'url(#spot)', 0, { opacity: 0 });
+const LIGHT = layer(1, 1);                               // cahaya hangat yang tidak ikut redup
+R(S, 0, 0, W, H, 'url(#vig)');
+const CAM = { x: 80, z: .62, gs: 1330, shake: 0 };
+const MOOD = { dim: 0, spot: 0 };
+const LIVE = []; const live = fn => LIVE.push(fn);
+const BASE = -215;                                     // alas karakter (berdiri di balik meja)
+
+/* ---- KANTOR POS SORE HARI: dinding krem-oranye + lis merah, papan "KANTOR POS", jam dinding besar (16.55 → 17.00), papan "TRUK POS TERAKHIR 17.00", rak paket di balik loket,
+   poster prangko, jendela jalan dengan truk pos merah (WALL); lantai ubin, loket kaca + meja petugas, meja tulis panjang + rak amplop, pintu kaca kanan, kotak pos merah (MAIN);
+   kardus buram dekat lensa (FG); sinar matahari sore (LIGHT) ---- */
+const CAST = ['MY', 'VN', 'PH', 'ID', 'TH', 'SG'];   // urutan dibuat = urutan lapisan
+const SEAT = { SG: -640, TH: -350, ID: -120, PH: 100, VN: 310, MY: 520 };
+const HOME = { doorX: 880, winX: 1520 };
+grad('wallP', [[0, '#FBEBD0'], [.7, '#F6DDB4'], [1, '#EFCE9C']]);
+grad('wood', [[0, '#A8703E'], [1, '#6E4424']]);
+grad('woodL', [[0, '#C98E55'], [1, '#93602F']], 1, 0);
+grad('skyS', [[0, '#8FC9F0'], [.6, '#F6D9A8'], [1, '#F2B27A']]);
+grad('glass', [[0, '#DDF1FA', .55], [1, '#B8DDEE', .35]], 1, 1);
+grad('sunO', [[0, '#FFE2A8', .9], [1, '#FFB45A', 0]]);
+{ const g = WALL.g, o = { stroke: INK, 'stroke-width': 7, 'stroke-linejoin': 'round' };
+  R(g, -3800, -3400, 8400, 3500, 'url(#wallP)');
+  R(g, -3800, -560, 8400, 560, '#C8463A', 0); R(g, -3800, -582, 8400, 34, 'url(#woodL)', 0, o);   // lambris merah pos
+  for (let x = -3600; x < 4400; x += 240) R(g, x, -520, 190, 440, '#D65A4C', 10, { stroke: '#A8382E', 'stroke-width': 5 });
+  R(g, -3800, -1720, 8400, 40, '#C8463A', 0); R(g, -3800, -1680, 8400, 14, '#FFFFFF', 0, { opacity: .8 });   // lis atas
+  // papan nama "KANTOR POS" di atas loket
+  const sg = G(g, { transform: 'translate(-520,-1500)' }); R(sg, -420, -110, 840, 220, '#C8463A', 18, o); R(sg, -395, -85, 790, 170, 'none', 12, { stroke: '#FFFFFF', 'stroke-width': 6 });
+  const env = G(sg, { transform: 'translate(-300,0)' }); R(env, -70, -48, 140, 96, '#FFFFFF', 8, { stroke: INK, 'stroke-width': 5 }); PA(env, 'M-70 -48 L0 8 L70 -48', null, { stroke: INK, 'stroke-width': 5 });
+  TX(sg, 60, 36, 'KANTOR POS', { 'font-family': 'Lilita One', 'font-size': 104, fill: '#FFFFFF', stroke: INK, 'stroke-width': 9, 'paint-order': 'stroke' });
+  // rak paket di balik loket
+  const rk = G(g, { transform: 'translate(-1250,-600)' }); [0, 1, 2].forEach(k => R(rk, -330, -260 - k * 260, 660, 22, 'url(#woodL)', 4, o));
+  const rr = rng(8); for (let k = 0; k < 3; k++) for (let i = 0; i < 4; i++) { const w = 90 + rr() * 60, h = 70 + rr() * 80, x = -300 + i * 160; R(rk, x, -260 - k * 260 - h, w, h, ['#C9A26A', '#E3C08A', '#B88A52'][(i + k) % 3], 6, { stroke: INK, 'stroke-width': 5 }); PA(rk, `M${x + w / 2} ${-260 - k * 260 - h} V${-260 - k * 260}`, null, { stroke: '#8A6A3A', 'stroke-width': 6 }); }
+  // jam dinding besar + papan jadwal truk
+  const ck = G(g, { transform: 'translate(150,-1250)' }); HOME.clock = ck; CI(ck, 0, 0, 190, '#FFFFFF', { stroke: INK, 'stroke-width': 10 }); CI(ck, 0, 0, 190, 'none', { stroke: '#C8463A', 'stroke-width': 22 });
+  for (let k = 0; k < 60; k++) { const a = k / 60 * Math.PI * 2, r0 = k % 5 ? 160 : 145; PA(ck, `M${Math.sin(a) * r0} ${-Math.cos(a) * r0} L${Math.sin(a) * 170} ${-Math.cos(a) * 170}`, null, { stroke: INK, 'stroke-width': k % 5 ? 3 : 8 }); }
+  [12, 3, 6, 9].forEach(n => { const a = n / 12 * Math.PI * 2; TX(ck, Math.sin(a) * 118, -Math.cos(a) * 118 + 18, String(n), { 'font-family': 'Lilita One', 'font-size': 52, fill: INK }); });
+  HOME.hourH = PA(ck, 'M0 0 V-90', null, { stroke: INK, 'stroke-width': 16, 'stroke-linecap': 'round' }); HOME.minH = PA(ck, 'M0 0 V-140', null, { stroke: '#C8463A', 'stroke-width': 10, 'stroke-linecap': 'round' }); HOME.secH = PA(ck, 'M0 30 V-160', null, { stroke: '#E8A33A', 'stroke-width': 4, 'stroke-linecap': 'round' }); CI(ck, 0, 0, 16, INK);
+  const bd = G(g, { transform: 'translate(150,-930)' }); R(bd, -250, -70, 500, 140, '#24343C', 14, o); TX(bd, 0, -14, 'TRUK POS TERAKHIR', { 'font-family': 'Lilita One', 'font-size': 40, fill: '#FFE14D' });
+  HOME.sched = TX(bd, 0, 46, '17.00', { 'font-family': 'Lilita One', 'font-size': 52, fill: '#FFFFFF' });
+  // poster prangko
+  [[-1900, '#4FB0E0', 'KIRIM SURAT'], [620, '#7CC46A', 'SALAM DARI ASEAN']].forEach(([x, c_, t_], k) => { const p = G(g, { transform: `translate(${x},-1150) rotate(${k ? 3 : -3})` });
+    R(p, -170, -210, 340, 420, '#FFFFFF', 4, o); R(p, -140, -180, 280, 300, c_, 4, { stroke: INK, 'stroke-width': 4 });
+    CI(p, 0, -40, 80, '#FFE14D', { stroke: INK, 'stroke-width': 5 }); TX(p, 0, 175, t_, { 'font-family': 'Lilita One', 'font-size': t_.length > 12 ? 30 : 38, fill: INK });
+    for (let i = 0; i < 10; i++) { CI(p, -170 + i * 37.7, -210, 9, '#F6DDB4'); CI(p, -170 + i * 37.7, 210, 9, '#F6DDB4'); } });
+  // jendela jalan + truk pos (bisa jalan)
+  const wn = G(g, { transform: `translate(${HOME.winX},-1050)` }), wc = uid('win'); R(N('clipPath', { id: wc }, defs), -330, -330, 660, 560, '#000');
+  const view = G(wn, { 'clip-path': `url(#${wc})` }); R(view, -340, -340, 680, 580, 'url(#skyS)'); R(view, -340, 120, 680, 120, '#8A8F98'); R(view, -340, 110, 680, 14, '#C9CDD2');
+  [[-250, 40], [-60, -10], [180, 20]].forEach(([x, y]) => { R(view, x - 60, y - 190, 120, 300, '#E9B88A', 4, { stroke: '#B8865A', 'stroke-width': 4 }); for (let j = 0; j < 3; j++) R(view, x - 40, y - 170 + j * 80, 80, 50, '#FFF2C8', 3); });
+  HOME.vstrip = [PA(view, '', null, { stroke: INK, 'stroke-width': 40, 'stroke-linejoin': 'round' }), PA(view, '', null, { stroke: '#FFFDF6', 'stroke-width': 30, 'stroke-linejoin': 'round' }), PA(view, '', null, { stroke: '#1F3B78', 'stroke-width': 5, 'stroke-dasharray': '18 10' })];
+  HOME.truck = G(view, { transform: 'translate(40,150)' }); const tk = HOME.truck;
+  R(tk, -250, -170, 330, 180, '#D63A2E', 14, o); R(tk, 80, -120, 130, 130, '#D63A2E', 14, o); R(tk, 105, -105, 85, 55, '#BFE3F5', 6, { stroke: INK, 'stroke-width': 5 });
+  TX(tk, -85, -60, 'POS', { 'font-family': 'Lilita One', 'font-size': 84, fill: '#FFFFFF', stroke: INK, 'stroke-width': 7, 'paint-order': 'stroke' }); R(tk, -230, -30, 290, 14, '#FFFFFF');
+  [-170, 130].forEach(x => { CI(tk, x, 12, 40, '#2A2A2A', o); CI(tk, x, 12, 16, '#C9CDD2'); });
+  HOME.puffs = [0, 1, 2].map(k => CI(view, -310, 140, 18, '#E6E6E6', { opacity: 0, stroke: '#9A9A9A', 'stroke-width': 3 }));
+  R(wn, -330, -330, 660, 560, 'none', 8, { stroke: '#F4F0E6', 'stroke-width': 24 }); R(wn, -330, -330, 660, 560, 'none', 8, o); PA(wn, 'M0 -330 V230', null, { stroke: '#F4F0E6', 'stroke-width': 16 });
+  R(wn, -370, 230, 740, 34, 'url(#woodL)', 6, o);
+}
+/* ---- MAIN: lantai, pintu kaca kanan, kotak pos ---- */
+MAIN.back = G(MAIN.g);
+{ const g = MAIN.back, o = { stroke: INK, 'stroke-width': 7, 'stroke-linejoin': 'round' };
+  R(g, -3800, -300, 8400, 2700, '#D9CBB0');
+  const ys = [-300, -255, -195, -115, -5, 140, 330, 590, 940, 1400], xs = []; for (let x = -3800; x <= 4600; x += 240) xs.push(x);
+  const X = (x, y) => x * (1 + .6 * (y + 300) / 1700);
+  for (let j = 0; j < ys.length - 1; j++) for (let i = 0; i < xs.length - 1; i++) { const y0 = ys[j], y1 = ys[j + 1], a = xs[i], b = xs[i + 1];
+    PA(g, `M${X(a, y0)} ${y0} L${X(b, y0)} ${y0} L${X(b, y1)} ${y1} L${X(a, y1)} ${y1}Z`, (i + j) % 2 ? '#E6D9BE' : '#CDBB98', { stroke: '#B5A07A', 'stroke-width': 3 }); }
+  EL(g, 700, 30, 2000, 240, '#FFE2A8', { opacity: .2, filter: 'url(#soft)' });
+  // pintu kaca (tempat kertas Thailand keluar)
+  const dg = G(g, { transform: `translate(${HOME.doorX},-230)` }); HOME.dg = dg; R(dg, -230, -880, 460, 880, '#5A3A20', 6, o); HOME.out = R(dg, -205, -855, 410, 855, '#BFE3F5', 0); R(dg, -205, -200, 410, 200, '#9AA0A8', 0); R(dg, -205, -212, 410, 14, '#D6D9DE', 0);
+  HOME.door = G(dg, { transform: 'translate(-205,0)' }); R(HOME.door, 0, -855, 410, 855, 'url(#glass)', 4, o); R(HOME.door, 30, -460, 350, 40, '#C9CDD2', 6, { stroke: INK, 'stroke-width': 5 });
+  TX(HOME.door, 205, -620, 'BUKA', { 'font-family': 'Lilita One', 'font-size': 64, fill: '#2E9B5A', stroke: '#FFFFFF', 'stroke-width': 6, 'paint-order': 'stroke' });
+  // kotak pos merah di samping pintu
+  const mb = G(g, { transform: `translate(${HOME.doorX - 380},-210)` }); R(mb, -70, -300, 140, 300, '#D63A2E', 16, o); PA(mb, 'M-70 -260 Q0 -340 70 -260', '#D63A2E', o); R(mb, -46, -230, 92, 16, INK, 6);
+  TX(mb, 0, -140, 'POS', { 'font-family': 'Lilita One', 'font-size': 46, fill: '#FFFFFF' }); R(mb, -60, -10, 120, 14, '#8A2018', 4);
+  // panggung kecil petugas (Singapura berdiri sedikit lebih tinggi di balik loket)
+  R(g, SEAT.SG - 190, -250, 380, 40, '#8A5A32', 6, o);
+}
+MAIN.chars = G(MAIN.g); MAIN.table = G(MAIN.g); MAIN.dish = G(MAIN.g); MAIN.fx = G(MAIN.g);
+/* loket kaca (depan Singapura) + meja tulis panjang (depan pelanggan) */
+{ const g = MAIN.table, o = { stroke: INK, 'stroke-width': 7, 'stroke-linejoin': 'round' };
+  const lk = G(g, { transform: `translate(${SEAT.SG},0)` }), T0 = -300;
+  R(lk, -200, T0, 400, 30, 'url(#woodL)', 6, o); R(lk, -188, T0 + 30, 376, -205 - T0 - 30, '#C8463A', 4, o); R(lk, -150, T0 + 50, 300, 30, '#FFFFFF', 4, { stroke: INK, 'stroke-width': 4 });
+  TX(lk, 0, T0 + 75, 'LOKET 1', { 'font-family': 'Lilita One', 'font-size': 26, fill: '#C8463A' });
+  R(lk, -200, T0 - 330, 24, 330, '#8A8F98', 4, { stroke: INK, 'stroke-width': 4 }); R(lk, -200, T0 - 350, 400, 26, '#8A8F98', 4, { stroke: INK, 'stroke-width': 4 });   // rangka kaca loket (kaca tipis)
+  PA(lk, `M-176 ${T0 - 324} H176 V${T0 - 74} H145 A145 145 0 0 0 -145 ${T0 - 74} H-176Z`, 'url(#glass)', { opacity: .3 }); PA(lk, `M-150 ${T0 - 300} L-90 ${T0 - 200}`, null, { stroke: '#FFFFFF', 'stroke-width': 8, opacity: .6 });
+  const sc = G(lk, { transform: `translate(-140,${T0})` }); R(sc, -40, -16, 80, 16, '#8A8F98', 4, { stroke: INK, 'stroke-width': 4 }); R(sc, -30, -26, 60, 10, '#C9CDD2', 3, { stroke: INK, 'stroke-width': 3 });   // timbangan
+  const md = G(g), x0 = SEAT.TH - 170, x1 = SEAT.MY + 190, T1 = -270; HOME.desk = { x0, x1, top: T1 };
+  R(md, x0, T1, x1 - x0, 28, 'url(#woodL)', 6, o); R(md, x0 + 14, T1 + 28, x1 - x0 - 28, 60, 'url(#wood)', 4, o);
+  [x0 + 40, (x0 + x1) / 2, x1 - 40].forEach(x => PA(md, `M${x} ${T1 + 88} L${x} -200`, null, { stroke: '#5A3A20', 'stroke-width': 14, 'stroke-linecap': 'round' }));
+  const pp = x => G(md, { transform: `translate(${x},${T1 + 3})` }), so = { stroke: INK, 'stroke-width': 4 };
+  { const p = pp(-235); [0, 1, 2].forEach(k => R(p, -36 + k * 4, -14 - k * 13, 72, 14, ['#FFFDF6', '#F4E6C4', '#FFFDF6'][k], 3, so)); R(p, 10, -40, 14, 10, '#E85D4A', 2, { stroke: INK, 'stroke-width': 2 }); }
+  { const p = pp(-10); R(p, -40, -16, 80, 16, '#2A2A3A', 4, so); R(p, -32, -14, 64, 6, '#C8463A', 2); R(p, 14, -50, 14, 30, '#8A5A32', 4, so); CI(p, 21, -54, 10, '#8A5A32', so); }
+  { const p = pp(205); [[-12, '#C8463A', -14], [0, '#1F3B78', 0], [12, '#2E9B5A', 12]].forEach(([x, c_, r_]) => PA(p, `M${x} -40 L${x + r_ * .5} -82`, null, { stroke: c_, 'stroke-width': 7, 'stroke-linecap': 'round' })); R(p, -22, -50, 44, 50, '#2E9BD6', 6, so); }
+  { const p = pp(415); R(p, -40, -54, 80, 54, '#C9A26A', 5, so); PA(p, 'M0 -54 V0', null, { stroke: '#8A6A3A', 'stroke-width': 7 }); R(p, -30, -40, 22, 16, '#FFFFFF', 2, { stroke: INK, 'stroke-width': 2 }); }
+  { const p = pp(640); R(p, -15, -56, 30, 56, '#FFFFFF', 6, so); R(p, -8, -70, 16, 16, '#F2A03A', 4, so); TX(p, 0, -22, 'LEM', { 'font-family': 'Lilita One', 'font-size': 14, fill: '#C8463A' }); }
+}
+/* ---- FG: kardus paket buram dekat lensa ---- */
+{ const g = FG.g, o = { stroke: INK, 'stroke-width': 8, 'stroke-linejoin': 'round' };
+  [[-1350, 260, 300, 220], [-1060, 330, 220, 170], [1250, 280, 320, 230], [1540, 340, 240, 180]].forEach(([x, y, w, h]) => { R(g, x - w / 2, y - h, w, h, '#C9A26A', 8, o); PA(g, `M${x} ${y - h} V${y}`, null, { stroke: '#8A6A3A', 'stroke-width': 10 }); R(g, x - w * .3, y - h * .7, w * .6, h * .25, '#FFFFFF', 4, { stroke: INK, 'stroke-width': 4 }); });
+  const rb = rng(23); for (let i = 0; i < 10; i++) CI(g, (i % 2 ? -1 : 1) * (2300 + rb() * 700), -1500 - rb() * 400, 60 + rb() * 60, ['#FFD970', '#FF9A6A'][i % 2], { opacity: .3 }); }
+/* ---- LIGHT: sinar matahari sore dari jendela ---- */
+HOME.sun = G(LIGHT.g, { opacity: .9 }); PA(HOME.sun, `M${HOME.winX - 330} -1380 L${HOME.winX + 330} -1380 L${HOME.winX - 900} -120 L${HOME.winX - 1900} -120Z`, '#FFD9A0', { opacity: .14 });
+HOME.motes = []; { const rm = rng(31); for (let i = 0; i < 24; i++) HOME.motes.push({ x: -300 + rm() * 2200, y: -1400 + rm() * 1100, ph: rm() * 6, el: CI(HOME.sun, 0, 0, 4 + rm() * 5, '#FFF6DE', { opacity: .6 }) }); }
+
+/* ---------- RIG COUNTRYBALL (aset dasar sama dengan video sebelumnya) ---------- */
+const CHARS = {}, ORDER = [];
+const EXPR = { open: { top: -1.4, bot: 1.4, tilt: 0, s: 1, ps: 1 }, smug: { top: -.2, bot: 1.4, tilt: -.18, s: 1, ps: 1 }, angry: { top: -.55, bot: 1.4, tilt: .6, s: 1, ps: 1 },
+  happy: { top: -1.4, bot: .42, tilt: 0, s: 1.06, ps: 1.05 }, sleepy: { top: .25, bot: 1.4, tilt: 0, s: 1, ps: 1 }, shock: { top: -1.4, bot: 1.4, tilt: 0, s: 1.38, ps: .55 },
+  scared: { top: -1.4, bot: 1.4, tilt: -.55, s: 1.22, ps: .62 }, proud: { top: -.55, bot: 1.4, tilt: -.25, s: 1, ps: 1 }, closed: { top: 1.25, bot: 1.4, tilt: 0, s: 1, ps: 1 },
+  dreamy: { top: -.45, bot: 1.4, tilt: -.5, s: 1.05, ps: .9 }, bliss: { top: 1.25, bot: 1.4, tilt: -.35, s: 1.05, ps: 1 }, myst: { top: -.15, bot: .9, tilt: .25, s: 1, ps: 1 } };
+const BW = 1.12;   // setengah lebar blob relatif r
+function blobD(r, lean = 0, bulge = 0, dy = 0) { const H = r * 2, w = r * BW + bulge, y = v => (v + dy).toFixed(1), tx = lean;
+  return `M${tx} ${y(-H)}C${tx + w * .68} ${y(-H)} ${w} ${y(-H * .76)} ${w} ${y(-H * .42)}C${w} ${y(-H * .1)} ${w * .64} ${y(0)} 0 ${y(0)}C${-w * .64} ${y(0)} ${-w} ${y(-H * .1)} ${-w} ${y(-H * .42)}C${-w} ${y(-H * .76)} ${tx - w * .68} ${y(-H)} ${tx} ${y(-H)}Z`; }
+function blobShade(r, dy = 0) { const H = r * 2, w = r * BW;   // bayangan sabit di bagian atas (cahaya tertahan di tepi)
+  return `M${-w * 1.2} ${-H - 10 + dy}H${w * 1.2}V${H * .2 + dy}H${-w * 1.2}Z M${-w * 1.3} ${-H * .4 + dy}C${-w * 1.3} ${-H * 1.02 + dy} ${w * 1.3} ${-H * 1.02 + dy} ${w * 1.3} ${-H * .4 + dy}C${w * 1.3} ${H * .3 + dy} ${-w * 1.3} ${H * .3 + dy} ${-w * 1.3} ${-H * .4 + dy}Z`; }
+function makeChar(id, x, r, opt = {}) {
+  const tri = id === 'SG', Hh = tri ? r * 2.3 : r * 2, c = { id, r, H: Hh, x, y: 0, rot: 0, sx: 1, sy: 1, sc: 1, face: opt.face ?? 0, idx: ORDER.length, E: { ...EXPR.open, px: 0, py: 0 }, vis: 1, sil: 0 };
+  c.shad = EL(MAIN.back, 0, 0, r * 1.02, r * (tri ? 1.1 : .98), '#2a1206', { opacity: 0, filter: 'url(#soft)' });
+  const place = G(MAIN.chars), armsB = G(place), body = G(place);
+  const bodyD = tri ? `M0 ${-Hh} L${r * 1.12} 0 L${-r * 1.12} 0Z` : blobD(r);
+  const cp = N('clipPath', { id: 'cp' + id }, defs); c.clipP = PA(cp, bodyD);
+  const fg = G(body, { 'clip-path': `url(#cp${id})` });
+  flag(id, fg, -r * (BW + .08), -Hh, r * (BW + .08) * 2, Hh);
+  PA(fg, blobShade(r), '#000', { opacity: .13, 'fill-rule': 'evenodd' });
+  c.silR = PA(fg, blobD(r, 0, r * .1), '#1a0c06', { opacity: 0 });   // siluet saat masuk dari pintu
+  c.outline = PA(body, bodyD, null, { stroke: INK, 'stroke-width': Math.max(7, r * .06), 'stroke-linejoin': 'round' });
+  const eyesG = G(body), ER = tri ? r * .26 : r * .24, ey = tri ? -Hh * .5 : -r * .98, eyes = [];
+  [-1, 1].forEach(sgn => { const outer = G(eyesG), cid = uid('ec'), oid = uid('eo');
+    const cpe = N('clipPath', { id: cid }, defs), poly = N('polygon', {}, cpe); EL(N('clipPath', { id: oid }, defs), 0, 0, ER * 1.09, ER * 1.21, '#000');
+    const inner = G(outer, { 'clip-path': `url(#${cid})` }); EL(inner, 0, 0, ER, ER * 1.12, '#FFFFFF', { stroke: INK, 'stroke-width': Math.max(4, ER * .17) });
+    const pupil = CI(inner, 0, 0, ER * .36, INK); const lidG = G(outer, { 'clip-path': `url(#${oid})` }); const lid = PA(lidG, '', null, { stroke: INK, 'stroke-width': Math.max(5, ER * .2), 'stroke-linecap': 'round' });
+    eyes.push({ outer, poly, pupil, lid, sgn }); });
+  c.eyes = eyes; c.eyesG = eyesG; c.ER = ER; c.ey = ey; c.ex = r * .36;
+  c.place = place; c.body = body; c.acc = G(body);
+  // mata berbinar (bintang) untuk reaksi enak
+  c.sparkEyes = G(eyesG, { opacity: 0 }); [-1, 1].forEach(s => PA(c.sparkEyes, star(s * c.ex, 0, ER * 1.05, ER * .42, 4, 0), '#FFE14D', { stroke: INK, 'stroke-width': 4, 'stroke-linejoin': 'round' }));
+  c.spark = { o: 0 };
+  const armsF = G(place), col = FLAGCOL[id][0] === '#FFFFFF' ? FLAGCOL[id][1] : FLAGCOL[id][0];
+  c.arm = [-1, 1].map(sgn => ({ sgn, ...REST, o: 1, els: [armsB, armsF].map(host => { const g = G(host);
+    return { g, o: PA(g, '', null, { stroke: INK, 'stroke-width': r * .2, 'stroke-linecap': 'round' }), i: PA(g, '', null, { stroke: col, 'stroke-width': r * .1, 'stroke-linecap': 'round' }),
+      h: CI(g, 0, 0, r * .13, col, { stroke: INK, 'stroke-width': Math.max(4, r * .05) }) }; }) }));
+  CHARS[id] = c; ORDER.push(c); return c; }
+const REST = { a: -35, len: .75 };            // lengan diam: tangan bertumpu di tepi meja
+let SGARM = { o: 0 };
+function renderArms(c) {   // a = sudut (derajat) keluar dari bahu, >90 berarti menyilang ke depan tubuh
+  c.arm.forEach(A => { const tri = c.id === 'SG', r = c.r, sx0 = A.sgn * (tri ? r * .5 : r * 1.02), sy0 = tri ? -c.H * .4 : -r * .86, ar = A.a * Math.PI / 180, L = A.len * r;
+    const hx = sx0 + A.sgn * Math.cos(ar) * L, hy = sy0 - Math.sin(ar) * L, d = `M${sx0} ${sy0}Q${(sx0 + hx) / 2} ${(sy0 + hy) / 2 + L * .22} ${hx} ${hy}`;
+    const front = Math.cos(ar) < -.15 ? 1 : 0, op = A.o * (tri && A.sgn < 0 ? 1 - SGARM.o : 1);
+    A.els.forEach((e, k) => { const on = k === front ? op : 0; e.g.setAttribute('opacity', on); if (!on) return; e.o.setAttribute('d', d); e.i.setAttribute('d', d); e.h.setAttribute('cx', hx); e.h.setAttribute('cy', hy); }); }); }
+function setEyes(c, t) {
+  const E = c.E, ER = c.ER; let top = E.top;
+  const cyc = 3.1 + c.idx * .37, u = ((t + c.idx * 1.7) % cyc);
+  if (u < .14 && !c.noBlink) top = top + (1.25 - top) * Math.sin(Math.PI * u / .14);
+  const dx = (c.face + E.px * .6) * c.r * .14 + Math.sin(t * .7 + c.idx) * c.r * .012;
+  c.eyesG.setAttribute('transform', `translate(${dx},${c.ey})`);
+  c.eyes.forEach(e => { const s = E.s, xo = e.sgn * c.ex; e.outer.setAttribute('transform', `translate(${xo},0) scale(${s})`); e.outer.setAttribute('opacity', 1 - c.spark.o);
+    const yT = x => (top - (e.sgn > 0 ? (c.brow || 0) : 0) + E.tilt * .5 * (x / ER) * (-e.sgn)) * ER, L = -2.2 * ER, Rr = 2.2 * ER;
+    e.poly.setAttribute('points', `${L},${yT(L)} ${Rr},${yT(Rr)} ${Rr},${E.bot * ER} ${L},${E.bot * ER}`);
+    let d = `M${L} ${yT(L)}L${Rr} ${yT(Rr)}`; if (E.bot < 1.15) d += `M${L} ${E.bot * ER}L${Rr} ${E.bot * ER}`; e.lid.setAttribute('d', d);
+    e.pupil.setAttribute('cx', (E.px * .5) * ER); e.pupil.setAttribute('cy', (E.py * .45) * ER); e.pupil.setAttribute('r', ER * .36 * E.ps); });
+  c.sparkEyes.setAttribute('opacity', c.spark.o); c.sparkEyes.setAttribute('transform', `rotate(${t * 60})`); }
+/* bicara tanpa mulut: tubuh berdenyut di tiap kata VO aktual */
+const SPEAK = {}; LINES.forEach(l => (SPEAK[l.who] = SPEAK[l.who] || []).push(l.id));
+const LOUD = { '01': 1.3, '06': 1.2, '13': 1.6, '14': 1.4, '17': 1.4, '10': .6, '11': .7, '07': .7, '09': .7, '12': .7, '15': .8, '20': .7, '23': .7 };
+function talkPulse(c, t) { let p = 0; for (const lid of (SPEAK[c.id] || [])) { const l = LN_[lid]; if (t < l.start || t > l.end) continue;
+  for (const w of l.words) { const s = l.start + w.s, e = l.start + w.e; if (t >= s && t <= e + .05) p = Math.max(p, Math.sin(Math.PI * Math.min(1, (t - s) / (e - s + .05)))) * (LOUD[lid] || 1); } } return p; }
+function renderChar(c, t) {
+  const br = Math.sin(t * 2.3 + c.idx * 1.3) * .012, tp = talkPulse(c, t);
+  const sx = c.sx * c.sc * (1 - br * .5 - tp * .025), sy = c.sy * c.sc * (1 + br + tp * .045);
+  c.place.setAttribute('transform', `translate(${c.x},${BASE + (c.y0 || 0) + c.y}) rotate(${c.rot},0,${-c.H / 2}) scale(${sx},${sy})`);
+  c.place.setAttribute('opacity', c.vis); c.silR.setAttribute('opacity', c.sil);
+  const lean = Math.sin(t * 1.4 + c.idx * 2) * c.r * .035 + c.face * c.r * .05, bulge = Math.sin(t * 2.3 + c.idx * 1.3) * c.r * .012 + tp * c.r * .025, d_ = blobD(c.r, lean, bulge); c.clipP.setAttribute('d', d_); c.outline.setAttribute('d', d_);
+  setEyes(c, t); renderArms(c); if (c.renderAcc) c.renderAcc(t);
+  c.shad.setAttribute('cx', c.x + c.r * .32); c.shad.setAttribute('cy', BASE + (c.y0 || 0) + c.y * .55 - c.H / 2 - c.r * .14); c.shad.setAttribute('opacity', .26 * c.vis * (1 - c.sil)); }
+
+/* ---------- mesin animasi ---------- */
+const tl = gsap.timeline({ paused: true });
+const ft = (o, a, b, t, d = .4, ease = 'power2.out') => tl.fromTo(o, a, { ...b, duration: d, ease, immediateRender: false }, t);
+const expr = (c, name, t, d = .14, extra = {}) => tl.to(c.E, { ...EXPR[name], ...extra, duration: d, ease: 'power2.out' }, t);
+const look = (c, px, py, t, d = .2) => tl.to(c.E, { px, py, duration: d, ease: 'power2.out' }, t);
+const faceTo = (c, f, t, d = .25) => tl.to(c, { face: f, duration: d, ease: 'power2.out' }, t);
+const squash = (c, t, a = .22, d = .5) => { tl.to(c, { sx: 1 + a, sy: 1 - a, duration: .07, ease: 'power2.out' }, t); tl.to(c, { sx: 1, sy: 1, duration: d, ease: 'elastic.out(1.2,.35)' }, t + .07); };
+const stretch = (c, t, a = .18, d = .12) => tl.to(c, { sx: 1 - a * .6, sy: 1 + a, duration: d, ease: 'power2.out' }, t);
+const hop = (c, t, h = 60, d = .34) => { tl.to(c, { y: -h, duration: d / 2, ease: 'power2.out' }, t); tl.to(c, { y: 0, duration: d / 2, ease: 'power2.in' }, t + d / 2); squash(c, t + d, .16, .45); };
+const camTo = (t, d, v, ease = 'sine.inOut') => tl.to(CAM, { ...v, duration: d, ease }, t);
+const shake = (t, a, d = .5) => tl.fromTo(CAM, { shake: a }, { shake: 0, duration: d, ease: 'power2.out', immediateRender: false }, t);
+const FX = MAIN.fx;
+const arm = (c, side, v, t, d = .18, ease = 'power2.out') => (side === 2 ? [0, 1] : [side]).forEach(i => tl.to(c.arm[i], { ...v, duration: d, ease }, t));
+const wave = (c, side, t, n = 3, lo = 70, hi = 125, d = .14) => { arm(c, side, { a: lo, len: .95 }, t, .1); (side === 2 ? [0, 1] : [side]).forEach((i, k) => tl.to(c.arm[i], { a: hi, duration: d, yoyo: true, repeat: n * 2 - 1, ease: 'sine.inOut' }, t + .1 + k * d)); };
+const HEART = 'M0 12 C-26 -8 -22 -30 -6 -30 C2 -30 0 -22 0 -20 C0 -22 -2 -30 6 -30 C22 -30 26 -8 0 12Z';
+function floaters(d, col, x, y, t, n = 5, rise = 230, sz = 1, dur = 1.2) { const rr = rng(Math.floor(Math.abs(x) * 7 + t * 31));
+  for (let i = 0; i < n; i++) { const p = PA(FX, d, col, { stroke: INK, 'stroke-width': 4, opacity: 0 }), dx = (rr() - .5) * 220;
+    tl.fromTo(p, { x: x + dx * .25, y, scale: .3 * sz, opacity: 1, svgOrigin: '0 0' }, { x: x + dx, y: y - rise * (.7 + rr() * .5), scale: sz * (.8 + rr() * .5), opacity: 0, duration: dur, ease: 'power1.out', immediateRender: false }, t + i * .12); } }
+function flame(x, y, t, s = 1) { const g = G(FX, { transform: `translate(${x},${y})` }), i = G(g, { opacity: 0 });
+  PA(i, 'M0 -130 C44 -76 78 -40 64 4 C56 44 -56 44 -64 4 C-76 -40 -34 -64 -12 -104 C-6 -74 12 -64 0 -130Z', '#FF5A14', { stroke: INK, 'stroke-width': 6, 'stroke-linejoin': 'round' });
+  PA(i, 'M0 -74 C24 -42 38 -20 32 6 C28 28 -28 28 -32 6 C-36 -20 -14 -38 0 -74Z', '#FFD23A');
+  tl.fromTo(i, { scale: .2 * s, opacity: 1, y: 20, svgOrigin: '0 0' }, { scale: 1.1 * s, y: -30, duration: .22, ease: 'back.out(2.5)', immediateRender: false }, t);
+  tl.to(i, { keyframes: { scaleX: [1.1 * s, .9 * s, 1.15 * s, 1 * s] }, duration: .45, ease: 'none' }, t + .22); tl.to(i, { scale: .3 * s, opacity: 0, y: -140, duration: .35, ease: 'power2.in' }, t + .7); }
+function tears(o, t, d) { const n = Math.floor(d / .1), y0 = BASE + (o.y0 || 0) + o.ey + o.ER * .6;
+  for (let i = 0; i < n; i++) [-1, 1].forEach(sg => { const p = EL(FX, 0, 0, 9, 13, '#7FD3FF', { stroke: INK, 'stroke-width': 3, opacity: 0 }), x0 = o.x + sg * o.ex * 1.15, t0 = t + i * .1;
+    tl.set(p, { opacity: 1 }, t0); tl.fromTo(p, { x: x0 }, { x: x0 + sg * (80 + (i % 3) * 30), duration: .5, ease: 'power1.out', immediateRender: false }, t0);
+    tl.fromTo(p, { y: y0 }, { keyframes: { y: [y0, y0 - 46, y0 + 110] }, duration: .5, ease: 'none', immediateRender: false }, t0); tl.set(p, { opacity: 0 }, t0 + .5); }); }
+function dust(x, y, t, n = 7, spread = 160, size = 40, col = '#F3E8D2') { const rr = rng(Math.floor(x * 13 + t * 97));
+  for (let i = 0; i < n; i++) { const p = CI(FX, x, y, 1, col, { stroke: INK, 'stroke-width': 4, opacity: 0 }), a = Math.PI * (1 + i / (n - 1)) + (rr() - .5) * .6, dd = spread * (.6 + rr() * .5);
+    tl.fromTo(p, { attr: { cx: x, cy: y, r: size * .25 }, opacity: 1 }, { attr: { cx: x + Math.cos(a) * dd, cy: y + Math.sin(a) * dd * .45 - 20 - rr() * 40, r: size * (.7 + rr() * .5) }, opacity: 0, duration: .55 + rr() * .3, ease: 'power2.out', immediateRender: false }, t); } }
+function burst(x, y, t, s = 1, col = '#FFE14D', host = FX) { const b = G(host, { transform: `translate(${x},${y})` }), inner = G(b); PA(inner, star(0, 0, 150, 66, 14, -90), col, { stroke: INK, 'stroke-width': 7, 'stroke-linejoin': 'round' }); PA(inner, star(0, 0, 76, 34, 14, -78), '#FFFFFF', { opacity: .85 });
+  inner.style.opacity = 0; tl.fromTo(inner, { scale: .1 * s, opacity: 1, rotation: -20 }, { scale: 1.1 * s, rotation: 8, duration: .16, ease: 'back.out(3)', immediateRender: false }, t); tl.to(inner, { scale: .3 * s, opacity: 0, duration: .3, ease: 'power2.in' }, t + .45); return b; }
+const HUD = $('#hud'), HUD_DEFS = N('defs', {}, HUD);
+const FLASH = R(HUD, 0, 0, W, H, '#FFFFFF', 0, { opacity: 0 });
+const flash = (t, o = .8, d = .18) => tl.fromTo(FLASH, { opacity: o }, { opacity: 0, duration: d, ease: 'power2.out', immediateRender: false }, t);
+const RADIAL = G(HUD, { opacity: 0 }); for (let i = 0; i < 30; i++) { const a = i / 30 * Math.PI * 2; PA(RADIAL, `M${540 + Math.cos(a) * 380} ${980 + Math.sin(a) * 380} L${540 + Math.cos(a - .03) * 1500} ${980 + Math.sin(a - .03) * 1500} L${540 + Math.cos(a + .03) * 1500} ${980 + Math.sin(a + .03) * 1500}Z`, '#FFF6CF', { opacity: .75 }); }
+
+/* ================= KARAKTER & PROPERTI ================= */
+const RAD = { SG: 100, TH: 104, ID: 112, PH: 100, VN: 100, MY: 102 };
+const RATIO = { SG: 2 / 3, TH: 2 / 3, ID: 2 / 3, PH: 1 / 2, VN: 2 / 3, MY: 1 / 2 };   // tinggi / lebar
+const FULL = 'Krung Thep Mahanakhon Amon Rattanakosin Mahinthara Ayuthaya Mahadilok Phop Noppharat Ratchathani Burirom Udomratchaniwet Mahasathan Amon Piman Awatan Sathit Sakkathattiya Witsanukam Prasit';
+let renderWorld = () => {}; let TL_T = 0;
+function ballHead(p, id, x, y, s, dir = 0, defsHost = defs) { const b = G(p, { transform: `translate(${x},${y}) scale(${s})` }), cid = uid('hd'), bd = blobD(82, 0, 0, 82); PA(N('clipPath', { id: cid }, defsHost), bd); const fi = G(b, { 'clip-path': `url(#${cid})` }); flag(id, fi, -100, -82, 200, 164); PA(fi, blobShade(82, 82), '#000', { opacity: .13, 'fill-rule': 'evenodd' }); PA(b, bd, null, { stroke: INK, 'stroke-width': 8, 'stroke-linejoin': 'round' }); [-1, 1].forEach(sg => { EL(b, sg * 30, -14, 20, 23, '#FFFFFF', { stroke: INK, 'stroke-width': 5 }); CI(b, sg * 30 + dir * 6, -18, 7, INK); }); return b; }
+function flatFlag(p, id, x, y, h, dh) { const w = h / RATIO[id], g = G(p, { transform: `translate(${x},${y})` }), cid = uid('ff'); R(N('clipPath', { id: cid }, dh), -w / 2, -h / 2, w, h, '#000'); flag(id, G(g, { 'clip-path': `url(#${cid})` }), -w / 2, -h / 2, w, h); R(g, -w / 2, -h / 2, w, h, 'none', 0, { stroke: INK, 'stroke-width': Math.max(3, h * .03) }); return g; }
+/* aksesoris (r = jari-jari, oy = alas; puncak bola di oy - 2r) */
+const ACC = {
+  ID: (a, r, oy = 0) => { PA(a, `M${-r * .66} ${oy - r * 1.84} L${-r * .56} ${oy - r * 2.26} Q0 ${oy - r * 2.38} ${r * .56} ${oy - r * 2.26} L${r * .66} ${oy - r * 1.84} Q0 ${oy - r * 1.74} ${-r * .66} ${oy - r * 1.84}Z`, '#1C1C1C', { stroke: INK, 'stroke-width': 5, 'stroke-linejoin': 'round' });
+    PA(a, `M${-r * .5} ${oy - r * 2.18} Q0 ${oy - r * 2.28} ${r * .5} ${oy - r * 2.18}`, null, { stroke: '#4A4A4A', 'stroke-width': 5 }); },
+  MY: (a, r, oy = 0) => PA(a, `M${-r * .62} ${oy - r * 1.7} L${-r * .56} ${oy - r * 2.2} Q0 ${oy - r * 2.3} ${r * .56} ${oy - r * 2.2} L${r * .62} ${oy - r * 1.7} Q0 ${oy - r * 1.6} ${-r * .62} ${oy - r * 1.7}Z`, '#1C1C24', { stroke: INK, 'stroke-width': 4 }),
+  PH: (a, r, oy = 0) => { PA(a, `M${-r * 1.3} ${oy - r * 1.78} Q0 ${oy - r * 1.9} ${r * 1.3} ${oy - r * 1.78} L0 ${oy - r * 2.5}Z`, '#D9A55A', { stroke: INK, 'stroke-width': 5, 'stroke-linejoin': 'round' });
+    for (let k = -3; k <= 3; k++) PA(a, `M0 ${oy - r * 2.48} L${k * r * .36} ${oy - r * 1.84}`, null, { stroke: '#A8783A', 'stroke-width': 3 }); },
+  VN: (a, r, oy = 0) => { PA(a, `M${-r * 1.25} ${oy - r * 1.66} L0 ${oy - r * 2.55} L${r * 1.25} ${oy - r * 1.66} Q0 ${oy - r * 1.5} ${-r * 1.25} ${oy - r * 1.66}Z`, '#F2D58A', { stroke: INK, 'stroke-width': 5, 'stroke-linejoin': 'round' });
+    [-.6, -.2, .2, .6].forEach(k => PA(a, `M${r * k * 1.25} ${oy - r * 1.62} L0 ${oy - r * 2.5}`, null, { stroke: '#C9A55A', 'stroke-width': 2.5 })); },
+  TH: (a, r, oy = 0) => { const f = G(a, { transform: `translate(${r * .72},${oy - r * 1.62}) rotate(18)` });   // anggrek ungu
+    [0, 72, 144, 216, 288].forEach(an => { const c = Math.cos(an * Math.PI / 180) * r * .2, s = Math.sin(an * Math.PI / 180) * r * .2; EL(f, c, s, r * .2, r * .13, an === 72 ? '#F5D6F0' : '#C25BB8', { stroke: INK, 'stroke-width': 3, transform: `rotate(${an} ${c} ${s})` }); });
+    CI(f, 0, 0, r * .09, '#FFE07A', { stroke: INK, 'stroke-width': 2.5 }); },
+  SG: (a, r, oy = 0) => { const y = oy - r * 1.95; PA(a, `M${-r * .42} ${y + r * .12} Q${-r * .44} ${y - r * .32} 0 ${y - r * .34} Q${r * .44} ${y - r * .32} ${r * .42} ${y + r * .12}Z`, '#1F3B78', { stroke: INK, 'stroke-width': 4 });   // topi petugas pos
+    PA(a, `M${-r * .4} ${y + r * .12} Q${r * .2} ${y + r * .26} ${r * .62} ${y + r * .14}`, null, { stroke: '#101C3C', 'stroke-width': r * .1, 'stroke-linecap': 'round' }); CI(a, 0, y - r * .12, r * .08, '#E8C468', { stroke: INK, 'stroke-width': 3 }); },
+};
+function glasses(g, ex, ey, er) { [-1, 1].forEach(s => R(g, s * ex - er * 1.25, ey - er, er * 2.5, er * 2, 'none', er * .5, { stroke: '#2A2A3A', 'stroke-width': Math.max(4, er * .18) })); PA(g, `M${-ex + er * 1.25} ${ey} L${ex - er * 1.25} ${ey}`, null, { stroke: '#2A2A3A', 'stroke-width': Math.max(4, er * .18) }); }
+const MULTI = "'Baloo 2'";
+function cutTimes() { const w = (k, pre) => { const l = LN_[k], i = l.words.findIndex(x => x.w.toLowerCase().replace(/[^a-z]/g, '').startsWith(pre)); if (i < 0) throw new Error('cut ' + k + pre); return l.start + l.words[i].s; };
+  return { SG: [w('09', 'rattanakosin') + .35, w('09', 'ayuthaya') - .1], ID: [w('12', 'noppharat') - .05, LN_['12'].end - .35], QUEUE: [w('15', 'amon') - .05, w('15', 'witsanukam') - .1] }; }
+
+function build() {
+  CAST.forEach(id => makeChar(id, SEAT[id], RAD[id], { face: 0 }).y0 = 0); CHARS.SG.y0 = -40;   // y0 wajib angka (bila undefined GSAP menganimasikannya sebagai string)
+  const C = CHARS, c = CUE, S_ = k => LN_[k].start, E_ = k => LN_[k].end,
+    WF = (k, pre, n = 0) => { const L_ = LN_[k], p_ = pre.toLowerCase().replace(/[^a-z0-9]/g, ''), ix = L_.words.map((w, i) => [w.w.toLowerCase().replace(/[^a-z0-9]/g, ''), i]).filter(([w]) => w.startsWith(p_)).map(([, i]) => i); if (!ix.length) throw new Error('WF ' + k + ' ' + pre); return L_.start + L_.words[ix[Math.min(n, ix.length - 1)]].s; };
+  const handAt = (c_, i) => { const A = c_.arm[i], r = c_.r, tri = c_.id === 'SG', sx0 = A.sgn * (tri ? r * .5 : r * 1.02), sy0 = tri ? -c_.H * .4 : -r * .86, ar = A.a * Math.PI / 180, L = A.len * r; let x = c_.x + sx0 + A.sgn * Math.cos(ar) * L, y = BASE + (c_.y0 || 0) + c_.y + sy0 - Math.sin(ar) * L;
+    if (c_.rot) { const cx = c_.x, cy = BASE + (c_.y0 || 0) + c_.y - c_.H / 2, a = c_.rot * Math.PI / 180, dx = x - cx, dy = y - cy; x = cx + dx * Math.cos(a) - dy * Math.sin(a); y = cy + dx * Math.sin(a) + dy * Math.cos(a); } return [x, y]; };
+  const prop = (id, side, draw) => { const P = { o: 0, rot: 0, dx: 0, dy: 0, s: 1 }, g = G(MAIN.fx); draw(g); live(() => { const [x, y] = handAt(C[id], side); g.setAttribute('transform', `translate(${x + P.dx},${y + P.dy}) rotate(${P.rot + C[id].rot}) scale(${P.s})`); g.setAttribute('opacity', P.o * C[id].vis); }); return P; };
+  const pow = (x, y, t, txt, col = '#FFE14D', sc = 1, host = MAIN.fx, fs = 58, d = .7) => { const g = G(host, { transform: `translate(${x},${y})` }), i = G(g); PA(i, star(0, 0, 120, 74, 12, -90), col, { stroke: INK, 'stroke-width': 7, 'stroke-linejoin': 'round' });
+    TX(i, 0, 22, txt, { 'font-family': 'Lilita One', 'font-size': fs, fill: '#FFFFFF', stroke: INK, 'stroke-width': 10, 'paint-order': 'stroke' }); i.style.opacity = 0;
+    tl.fromTo(i, { scale: .2 * sc, opacity: 1, rotation: -15, svgOrigin: '0 0' }, { scale: sc, rotation: 6, duration: .14, ease: 'back.out(3)', immediateRender: false }, t); tl.to(i, { opacity: 0, scale: .6 * sc, duration: .2 }, t + d); };
+  const popIn = (el, t, from = .3) => { el.style.opacity = 0; tl.fromTo(el, { opacity: 0, scale: from, svgOrigin: '0 0' }, { opacity: 1, scale: 1, duration: .22, ease: 'back.out(2.4)', immediateRender: false }, t); };
+  const qmark = (x, y, t, d = .8, txt = '?', s = 1) => { const g = G(MAIN.fx, { transform: `translate(${x},${y})` }), i = G(g); TX(i, 0, 0, txt, { 'font-family': 'Lilita One', 'font-size': 110 * s, fill: '#FFFFFF', stroke: INK, 'stroke-width': 12, 'paint-order': 'stroke' }); popIn(i, t, .2); tl.to(i, { rotation: 10, duration: .15, yoyo: true, repeat: 3, svgOrigin: '0 0' }, t + .2); tl.to(i, { opacity: 0, duration: .15 }, t + d); };
+  /* aksesoris */
+  CAST.forEach(id => ACC[id](G(C[id].acc), RAD[id])); glasses(C.SG.eyesG, C.SG.ex + 6, 0, C.SG.ER * 1.2);
+  /* amplop pelanggan (tangan kanan) + pulpen Thailand + cap pos Singapura */
+  const envDraw = txt => g => { const e = G(g, { transform: 'rotate(-8)' }); R(e, -70, -46, 140, 92, '#FFFDF6', 6, { stroke: INK, 'stroke-width': 5 }); PA(e, 'M-70 -46 L0 4 L70 -46', null, { stroke: '#B8A888', 'stroke-width': 4 });
+    R(e, 34, -38, 26, 30, '#E85D4A', 3, { stroke: INK, 'stroke-width': 3 }); const t_ = TX(e, -6, 30, txt, { 'font-family': BALOO, 'font-weight': 800, 'font-size': 22, fill: '#1F3B78' }); if (t_.getComputedTextLength() > 120) t_.setAttribute('font-size', 22 * 120 / t_.getComputedTextLength()); };
+  const ENV = { ID: prop('ID', 1, envDraw('JAKARTA')), PH: prop('PH', 1, envDraw('MANILA')), VN: prop('VN', 1, envDraw('HÀ NỘI')), MY: prop('MY', 1, envDraw('KUALA LUMPUR')) };
+  const thEnv = prop('TH', 1, envDraw('KRUNG THEP'));
+  const pen = prop('TH', 0, g => { const p = G(g, { transform: 'rotate(150)' }); R(p, -6, -10, 12, 72, '#1F3B78', 5, { stroke: INK, 'stroke-width': 4 }); PA(p, 'M-6 62 L0 78 L6 62Z', '#E8C468', { stroke: INK, 'stroke-width': 3 }); });
+  const stamp = prop('SG', 1, g => { const s = G(g, { transform: 'rotate(180)' }); R(s, -10, -60, 20, 50, '#8A5A32', 6, { stroke: INK, 'stroke-width': 4 }); CI(s, 0, -66, 16, '#8A5A32', { stroke: INK, 'stroke-width': 4 }); R(s, -30, -12, 60, 22, '#C8463A', 4, { stroke: INK, 'stroke-width': 4 }); });
+  tl.set([pen, stamp], { o: 1 }, 0); tl.set(thEnv, { o: 0 }, 0);
+  /* kertas alamat Thailand yang memanjang sampai keluar pintu */
+  const SP = { a: 0, b: 0 }, sd = `M${SEAT.TH + 40} -286 Q${SEAT.TH + 75} -268 ${SEAT.TH + 72} -215 L${SEAT.TH + 70} -60 Q${SEAT.TH + 72} 70 ${SEAT.TH + 200} 70 L${HOME.doorX - 160} 70 Q${HOME.doorX - 40} 70 ${HOME.doorX - 30} -60 L${HOME.doorX - 20} -232 L${HOME.doorX - 10} -330`;
+  const strip = G(MAIN.table), spO = PA(strip, sd, null, { stroke: INK, 'stroke-width': 84, 'stroke-linecap': 'butt', 'stroke-linejoin': 'round' }), spI = PA(strip, sd, null, { stroke: '#FFFDF6', 'stroke-width': 70, 'stroke-linejoin': 'round' });
+  const mid = uid('spm'), msk = N('mask', { id: mid, maskUnits: 'userSpaceOnUse', x: -3000, y: -3000, width: 6000, height: 6000 }, defs), spM = PA(msk, sd, null, { stroke: '#FFFFFF', 'stroke-width': 84, 'stroke-linejoin': 'round' });
+  const pid = uid('spp'); PA(defs, sd, null, { id: pid }); const ttx = N('text', { 'font-family': BALOO, 'font-weight': 800, 'font-size': 44, fill: '#1F3B78', dy: 15, mask: `url(#${mid})` }, strip), tp = N('textPath', { href: `#${pid}`, startOffset: 14 }, ttx); tp.textContent = FULL + ' · ' + FULL;
+  const SL = spI.getTotalLength();
+  live(() => { const a = SP.a * SL, b = Math.max(a, SP.b * SL), da = `${b - a} ${SL * 3}`, off = -a; [spO, spI, spM].forEach(p => { p.setAttribute('stroke-dasharray', da); p.setAttribute('stroke-dashoffset', off); }); strip.setAttribute('opacity', SP.b > .001 ? 1 : 0); });
+  /* jam dinding + truk */
+  const CLK = { m: 54 }, TRK = { x: 0, sh: 0, puff: 0 };
+  live(t => { HOME.minH.setAttribute('transform', `rotate(${CLK.m * 6})`); HOME.hourH.setAttribute('transform', `rotate(${(4 + CLK.m / 60) * 30})`); HOME.secH.setAttribute('transform', `rotate(${(Math.floor(t) + Math.min(1, (t % 1) / .08)) * 6})`);
+    { const ex = -212 + TRK.x, vd = `M-345 212 Q-270 212 ${ex - 10} 110 L${ex + 30} 70`, vo = SP.b > .88 && SP.a < .4 ? 1 : 0; HOME.vstrip.forEach(p => { p.setAttribute('d', vd); p.setAttribute('opacity', vo); }); }
+    HOME.truck.setAttribute('transform', `translate(${40 + TRK.x},${150 + Math.sin(t * 40) * TRK.sh})`);
+    HOME.puffs.forEach((p, k) => { const u = ((t * .8 + k / 3) % 1); p.setAttribute('cx', -310 + TRK.x - u * 120); p.setAttribute('cy', 140 - u * 60); p.setAttribute('r', 14 + u * 30); p.setAttribute('opacity', TRK.puff * (1 - u) * .9); });
+    HOME.motes.forEach(m => { m.el.setAttribute('cx', m.x + Math.sin(t * .4 + m.ph) * 60); m.el.setAttribute('cy', m.y + Math.sin(t * .3 + m.ph * 2) * 40); m.el.setAttribute('opacity', .3 + .4 * Math.sin(t * .8 + m.ph) ** 2); }); });
+  const tick = (m, t) => tl.to(CLK, { m, duration: .18, ease: 'back.out(3)' }, t);
+  /* HUD: pil + insert polaroid */
+  const pill = (t, d, txt, y = 330, fs = 44, fl = null) => { const g = G(HUD, { transform: `translate(540,${y})` }), i = G(g); const tx = TX(i, 0, fs * .35, txt, { 'font-family': MULTI, 'font-weight': 800, 'font-size': fs, fill: '#FFF6C8' });
+    let w = tx.getComputedTextLength() + 80 + (fl ? fs * 1.9 : 0); if (w > 1000) { tx.setAttribute('font-size', fs * (1000 - 80 - (fl ? fs * 1.9 : 0)) / tx.getComputedTextLength()); w = 1000; }
+    if (fl) { tx.setAttribute('x', fs * .95); flatFlag(i, fl, -w / 2 + 40 + fs * .7, 0, fs * 1.0, HUD_DEFS); }
+    i.insertBefore(R(i, -w / 2, -fs, w, fs * 2, '#8E2A22', fs, { stroke: '#FFE14D', 'stroke-width': 6 }), i.firstChild);
+    i.style.opacity = 0; tl.fromTo(i, { scale: .3, opacity: 0, svgOrigin: '0 0' }, { scale: 1, opacity: 1, duration: .2, ease: 'back.out(2.4)', immediateRender: false }, t); tl.to(i, { opacity: 0, duration: .2 }, t + d); };
+  const insert = (t0, t1, draw, cap = '') => { const g = G(HUD), sc = R(g, 0, 0, W, H, '#140A06', 0, { opacity: 0 }), pos = G(g, { transform: 'translate(540,835) scale(.92)' }), ii = G(pos);
+    const cid = uid('pol'); R(N('clipPath', { id: cid }, HUD_DEFS), -445, -575, 890, 1000, '#000');
+    R(ii, -470, -590, 960, 1290, '#000', 12, { opacity: .35, transform: 'translate(18,22)' }); R(ii, -480, -610, 960, 1290, '#FFFDF6', 12, { stroke: '#D8CFB8', 'stroke-width': 4 });
+    draw(G(G(ii, { 'clip-path': `url(#${cid})` }), { transform: 'translate(0,-75) scale(.7)' }));
+    R(ii, -445, -575, 890, 1000, 'none', 0, { stroke: '#D8CFB8', 'stroke-width': 4 });
+    const ct_ = TX(ii, 0, 560, cap, { 'font-family': BALOO, 'font-weight': 800, 'font-size': 62, fill: '#1E2340', transform: 'rotate(-1.5)' }); if (ct_.getComputedTextLength() > 860) ct_.setAttribute('font-size', 62 * 860 / ct_.getComputedTextLength());
+    [[-380, -600, -28], [380, -600, 28]].forEach(([x, y, r]) => R(ii, x - 90, y - 26, 180, 52, '#FFE9A0', 6, { opacity: .8, transform: `rotate(${r} ${x} ${y})` }));
+    ii.style.opacity = 0;
+    tl.fromTo(sc, { opacity: 0 }, { opacity: .55, duration: .25, immediateRender: false }, t0); tl.to(sc, { opacity: 0, duration: .15 }, t1);
+    tl.fromTo(ii, { y: 380, rotation: -14, opacity: 0, svgOrigin: '0 0' }, { y: 0, rotation: -2.5, opacity: 1, duration: .35, ease: 'back.out(1.6)', immediateRender: false }, t0);
+    tl.fromTo(ii, { scale: 1 }, { scale: 1.04, duration: t1 - t0 - .35, ease: 'none', immediateRender: false, svgOrigin: '0 0' }, t0 + .35);
+    tl.to(ii, { opacity: 0, y: -60, duration: .18 }, t1); return ii; };
+  const FSH = CAST.map(id => [C[id], EL(MAIN.back, 0, 0, 10, 10, '#5A4A32', { opacity: 0 })]);
+  live(() => FSH.forEach(([c_, e]) => { const lift = Math.min(1, Math.max(0, -c_.y / 160)), k = 1 - lift * .5; e.setAttribute('cx', c_.x); e.setAttribute('cy', BASE - 4); e.setAttribute('rx', c_.r * 1.05 * k); e.setAttribute('ry', c_.r * .2 * k); e.setAttribute('opacity', .35 * c_.vis * k); }));
+
+  /* ================= KOREOGRAFI (semua dari VO aktual) ================= */
+  const cu = (id, z = 2.0) => ({ x: SEAT[id], z, gs: 1640 });
+  const SHOT = {}; CAST.forEach(id => SHOT[id] = cu(id));
+  Object.assign(SHOT, { SG: { x: SEAT.SG, z: 1.9, gs: 1700 }, WIDE: { x: -50, z: .8, gs: 1540 }, COUNTER: { x: (SEAT.SG + SEAT.TH) / 2, z: 1.4, gs: 1610 }, QUEUE: { x: 205, z: 1.25, gs: 1620 },
+    DOOR: { x: HOME.doorX - 250, z: .95, gs: 1450 }, WINDOW: { x: 1850, z: 1.15, gs: 2000 } });
+  const BEATS = [['01', 'WIDE', 'angry'], ['02', 'ID', 'smug'], ['03', 'PH', 'happy'], ['04', 'VN', 'smug'], ['05', 'MY', 'proud'], ['06', 'SG', 'open'], ['07', 'TH', 'closed'], ['08', 'COUNTER', 'angry'],
+    ['09', 'TH', 'proud'], ['10', 'QUEUE', 'smug'], ['11', 'QUEUE', 'happy'], ['12', 'TH', 'dreamy'], ['13', 'SG', 'scared'], ['15', 'TH', 'closed'], ['16', 'PH', 'smug'], ['17', 'SG', 'open'],
+    ['18', 'TH', 'proud'], ['19', 'ID', 'shock'], ['20', 'TH', 'dreamy'], ['21', 'ID', 'open'], ['22', 'TH', 'happy'], ['23', 'SG', 'smug'], ['24', 'TH', 'shock'], ['25', 'ID', 'happy']];
+  CAST.forEach(id => { expr(C[id], 'open', 0, .01); faceTo(C[id], id === 'SG' ? .6 : -.6, 0, .01); });
+  LINES.forEach(l => { if (!C[l.who]) return; CAST.forEach(id => { if (id === l.who) return; const d = Math.sign(SEAT[l.who] - SEAT[id]) * .7; faceTo(C[id], d, l.start - .1, .3); look(C[id], d, -.1, l.start - .1, .3); }); });
+  BEATS.forEach(([k, shot, ex]) => { const who = LN_[k].who, s = S_(k), d_ = E_(k) - s - .25; camTo(s - .2, .24, SHOT[shot], 'power3.inOut'); expr(C[who], ex, s - .12);
+    if (d_ > .5) tl.to(CAM, { z: SHOT[shot].z * 1.05, duration: d_, ease: 'none' }, s + .05); });
+  // A. jam 16.55: semua buru-buru
+  const wallShot = (wx, wy, Z, Y = 860) => { const zf = 1 + (Z - 1) * .85; return { x: wx / .82, z: Z, gs: 960 + (Y - 960 - wy * zf) * Z / zf }; }, CLS = wallShot(150, -1250, 2.4);
+  const tLab = (t, txt) => { const g = G(HUD, { transform: 'translate(540,330)' }), i = G(g); TX(i, 0, 42, txt, { 'font-family': 'Lilita One', 'font-size': 120, fill: '#FFE14D', stroke: INK, 'stroke-width': 16, 'stroke-linejoin': 'round', 'paint-order': 'stroke' }); popIn(i, t, .4); tl.to(i, { opacity: 0, duration: .12 }, t + .5); };
+  const clockCut = (t0, m) => { camTo(t0, .01, CLS, 'none'); camTo(t0 + .02, .8, wallShot(150, -1250, 2.6), 'none'); tick(m, t0 + .3); tLab(t0 + .3, m < 60 ? '16.' + m : '17.00'); };
+  const cutaway = (a, b, shot) => { camTo(a, .01, SHOT[shot], 'none'); camTo(b, .01, SHOT.TH, 'none'); };
+  camTo(0, .01, CLS, 'none'); camTo(.02, c.open - .02, wallShot(150, -1250, 2.6), 'none'); tick(55, .5); tLab(.5, '16.55'); camTo(c.open, .45, SHOT.WIDE, 'power3.inOut');
+  [[c.clk56, 56], [c.clk57, 57], [c.clk58, 58], [c.clk59, 59], [c.clk60, 60]].forEach(([t, m]) => clockCut(t, m));
+  LINES.filter(l => l.who === 'SG').forEach(l => { tl.to(C.SG, { sc: 1.07, duration: .2, ease: 'power2.out' }, l.start - .1); tl.to(C.SG, { sc: 1, duration: .3 }, l.end + .05); });   // Singapura mencondongkan badan ke lubang loket
+  // reaksi penonton saat Thailand menulis panjang
+  { const T_ = cutTimes();
+    { const [a, b] = T_.SG; cutaway(a, b, 'SG'); expr(C.SG, 'sleepy', a, .15); arm(C.SG, 0, { a: 205, len: .62 }, a, .2); tl.to(C.SG, { rot: -5, duration: .3 }, a + .1); tl.to(C.SG, { rot: 0, duration: .2 }, b); arm(C.SG, 0, REST, b, .15); expr(C.SG, 'angry', b, .1); }
+    { const [a, b] = T_.ID; cutaway(a, b, 'ID'); expr(C.ID, 'sleepy', a, .2); arm(C.ID, 2, { a: 75, len: 1.15 }, a + .1, .35, 'sine.out'); tl.to(C.ID, { sy: 1.12, sx: .93, duration: .45, ease: 'sine.out' }, a + .1);
+      tl.to(C.ID, { sy: 1, sx: 1, duration: .3 }, b - .3); arm(C.ID, 2, REST, b - .3, .25); qmark(SEAT.ID, -560, a + .3, b - a - .4, 'HOAAAM', .5); expr(C.ID, 'open', b, .1); }
+    { const [a, b] = T_.QUEUE; cutaway(a, b, 'QUEUE'); look(C.VN, -.8, -1, a, .2); expr(C.VN, 'scared', a + .1, .1); look(C.VN, -.7, -.1, b, .2);
+      arm(C.MY, 0, { a: -10, len: .85 }, a, .12); tl.to(C.MY.arm[0], { a: -30, duration: .1, yoyo: true, repeat: 13, ease: 'power1.in' }, a + .12); arm(C.MY, 0, REST, b, .15); expr(C.MY, 'angry', a, .1);
+      expr(C.PH, 'scared', a + .15, .1); floaters('M0 -16 Q11 0 0 10 Q-11 0 0 -16Z', '#7FC8FF', SEAT.PH + 90, BASE - 190, a + .3, 4, 90, 1, .9); expr(C.ID, 'sleepy', a, .15);
+      ['VN', 'MY', 'PH', 'ID'].forEach(id => expr(C[id], 'open', b, .1)); } }
+  { const t = S_('01'); arm(C.SG, 0, { a: 70, len: 1.2 }, t, .15, 'back.out(2)'); tl.to(C.SG.arm[0], { a: 100, duration: .14, yoyo: true, repeat: 3 }, t + .2); arm(C.SG, 0, REST, E_('01'), .2);
+    ['TH', 'ID', 'PH', 'VN', 'MY'].forEach((id, k) => { expr(C[id], 'shock', WF('01', 'lima') + k * .05, .06); hop(C[id], WF('01', 'cepat') + k * .05, 24, .24); }); }
+  // amplop kilat: diangkat saat baris, dilempar ke loket, dicap
+  [['02', 'ID', c.st_id], ['03', 'PH', c.st_ph], ['04', 'VN', c.st_vn], ['05', 'MY', c.st_my]].forEach(([k, id, ts]) => { const P = ENV[id], r = RAD[id];
+    tl.set(P, { o: 0, dx: 0, dy: 0, rot: 0, s: .8 }, 0); tl.set(P, { o: 1 }, S_(k) - .05); arm(C[id], 1, { a: 235, len: .75 }, S_(k) - .05, .15, 'back.out(2)');
+    tl.to(P, { dx: SEAT.SG + 90 - (SEAT[id] + r * .6), dy: -255 + r * .25, rot: -340, duration: .32, ease: 'power2.in' }, ts - .3); tl.to(P, { o: 0, duration: .05 }, ts + .02); arm(C[id], 1, REST, ts, .2);
+    tl.to(C.SG.arm[1], { a: 80, len: 1.0, duration: .1 }, ts - .2); tl.to(C.SG.arm[1], { a: -10, duration: .08, ease: 'power3.in' }, ts - .08); tl.to(C.SG.arm[1], { a: REST.a, len: REST.len, duration: .15 }, ts + .1); });
+  pill(WF('04', 'Hà') - .05, E_('04') - WF('04', 'Hà') + .15, 'Hà Nội · 2 suku kata', 330, 44, 'VN');
+  // B. Thailand menulis
+  { const t = S_('07'); tl.set(pen, { o: 1 }, t); arm(C.TH, 0, { a: -30, len: .55 }, t - .1, .2); for (let k = 0; k < 10; k++) tl.to(C.TH.arm[0], { a: k % 2 ? -24 : -38, duration: .12 }, t + .2 + k * .14); look(C.TH, -.3, .8, t, .2);
+    tl.to(SP, { b: .08, duration: E_('07') - c.write, ease: 'none' }, c.write); }
+  { const t = S_('08'); tl.to(C.SG, { x: SEAT.SG + 15, rot: 6, duration: .2, ease: 'power2.out' }, t); arm(C.TH, 0, { a: -55, len: .5 }, t - .05, .15); tl.to(C.SG, { x: SEAT.SG, rot: 0, duration: .3 }, E_('08')); arm(C.SG, 1, { a: 20, len: 1.4 }, t, .15, 'back.out(2)'); arm(C.SG, 1, REST, E_('08'), .2); }
+  { const t = S_('09'); look(C.TH, 1, 0, t, .15); expr(C.TH, 'smug', t, .1); look(C.TH, -.3, .8, WF('09', 'Amon') - .1, .2); expr(C.TH, 'closed', WF('09', 'Amon') - .1, .1);
+    for (let k = 0; k < 18; k++) tl.to(C.TH.arm[0], { a: k % 2 ? -24 : -38, duration: .12 }, WF('09', 'Amon') + k * .14); tl.to(SP, { b: .25, duration: E_('09') - WF('09', 'Amon'), ease: 'none' }, WF('09', 'Amon')); }
+  { const t = S_('10'); tl.to(C.ID, { rot: 10, x: SEAT.ID + 30, duration: .2 }, t); tl.to(C.ID, { rot: 0, x: SEAT.ID, duration: .25 }, E_('10')); arm(C.ID, 0, { a: 160, len: .7 }, t, .15); arm(C.ID, 0, REST, E_('10'), .2);
+    expr(C.MY, 'happy', S_('11'), .1); tl.to(C.MY, { rot: -4, duration: .1, yoyo: true, repeat: 7 }, S_('11') + .1); expr(C.PH, 'happy', S_('11') + .2, .1); }
+  tl.to(SP, { b: .32, duration: E_('11') - S_('10'), ease: 'none' }, S_('10'));   // Thailand terus menulis di luar layar
+  { const t = S_('12'); for (let k = 0; k < 16; k++) tl.to(C.TH.arm[0], { a: k % 2 ? -24 : -38, duration: .12 }, t + k * .15); tl.to(SP, { b: .45, duration: E_('12') - t, ease: 'none' }, t); }
+  { const t = S_('13'); hop(C.SG, t, 40, .3); arm(C.SG, 2, { a: 120, len: 1.1 }, t, .12); tl.to(C.SG.arm[0], { a: 150, duration: .1, yoyo: true, repeat: 5 }, t + .15); arm(C.SG, 2, REST, E_('13') + .1, .2);
+    floaters('M0 -16 Q11 0 0 10 Q-11 0 0 -16Z', '#7FC8FF', SEAT.SG + 110, BASE - 300, t + .2, 3, 100, 1, .8); }
+  { const t = c.big; camTo(t - .1, .35, SHOT.WIDE, 'power2.inOut'); tl.to(SP, { b: .62, duration: .45, ease: 'power2.out' }, t); ['ID', 'PH', 'VN', 'MY'].forEach((id, k) => { expr(C[id], 'shock', t + .2 + k * .05, .06); hop(C[id], t + .25 + k * .05, 26, .24); }); }
+  { const t = c.door; camTo(t - .05, .3, SHOT.DOOR, 'power2.inOut'); tl.to(HOME.door, { scaleX: .2, transformOrigin: '0% 50%', duration: .25, ease: 'power2.out' }, t); tl.to(SP, { b: .9, duration: .5, ease: 'power1.inOut' }, t + .1); }
+  { const t = S_('14'); camTo(t - .15, .3, SHOT.WINDOW, 'power2.inOut'); tl.to(TRK, { puff: 1, sh: 3, duration: .3 }, t - .3); }
+  { const t = S_('15'); camTo(t - .15, .01, SHOT.TH, 'none'); for (let k = 0; k < 30; k++) tl.to(C.TH.arm[0], { a: k % 2 ? -24 : -38, duration: .1 }, t + k * .14); tl.to(SP, { b: 1, duration: WF('15', 'Selesai') - t, ease: 'none' }, t);
+    const td = WF('15', 'Selesai'); arm(C.TH, 0, { a: 100, len: 1.2 }, td - .05, .15, 'back.out(2)'); hop(C.TH, td, 40, .3); expr(C.TH, 'happy', td - .05, .1); camTo(td + .1, .4, SHOT.WIDE, 'power2.out');
+    ['SG', 'ID', 'PH', 'VN', 'MY'].forEach((id, k) => expr(C[id], 'shock', td + .1 + k * .04, .06)); }
+  arm(C.TH, 0, REST, S_('16'), .2);
+  // C. ngarang? → hitung huruf → rekor dunia
+  { const t = S_('16'); arm(C.PH, 2, { a: 205, len: .8 }, t, .15); arm(C.PH, 2, REST, E_('16') + .2, .2); }
+  { const t = S_('17'), t1 = WF('17', '168'); const cnt = { n: 0 }, g = G(HUD, { transform: 'translate(540,420)' }), i = G(g);
+    R(i, -230, -130, 460, 260, '#24343C', 30, { stroke: '#FFE14D', 'stroke-width': 8 }); R(i, -200, -100, 400, 140, '#BFE8C8', 14, { stroke: INK, 'stroke-width': 5 });
+    const nt = TX(i, 170, 10, '0', { 'font-family': 'Lilita One', 'font-size': 120, fill: '#1E2A1E', 'text-anchor': 'end' }); TX(i, 0, 100, 'HURUF', { 'font-family': 'Lilita One', 'font-size': 52, fill: '#FFE14D' });
+    popIn(i, t + .05, .4); tl.to(cnt, { n: 168, duration: t1 - t - .1, ease: 'power2.in' }, t + .1); live(() => { nt.textContent = String(Math.round(cnt.n)); });
+    tl.to(i, { scale: 1.25, duration: .12, yoyo: true, repeat: 1, svgOrigin: '0 0' }, t1); tl.to(i, { opacity: 0, duration: .2 }, E_('17') + .35); shake(t1, 10, .4); flash(t1, .4, .2);
+    arm(C.SG, 1, { a: 40, len: 1.0 }, t, .1); for (let k = 0; k < 10; k++) tl.to(C.SG.arm[1], { a: k % 2 ? 30 : 50, duration: .1 }, t + .1 + k * .12); arm(C.SG, 1, REST, t1, .2); expr(C.SG, 'shock', t1 - .05, .06);
+    ['ID', 'PH', 'VN', 'MY'].forEach((id, k) => { expr(C[id], 'shock', t1 + k * .04, .05); hop(C[id], t1 + k * .04, 40, .3); }); }
+  insert(c.record - .05, E_('18') + .25, ii => { const o = { stroke: INK, 'stroke-width': 7, 'stroke-linejoin': 'round' };
+    R(ii, -600, -1000, 1200, 2000, '#F4E6C4'); R(ii, -540, -940, 1080, 1880, 'none', 20, { stroke: '#B8902E', 'stroke-width': 14 }); R(ii, -510, -910, 1020, 1820, 'none', 14, { stroke: '#B8902E', 'stroke-width': 4 });
+    TX(ii, 0, -720, 'REKOR DUNIA', { 'font-family': 'Lilita One', 'font-size': 140, fill: '#8E2A22', stroke: '#FFFFFF', 'stroke-width': 8, 'paint-order': 'stroke' });
+    TX(ii, 0, -580, 'NAMA TEMPAT TERPANJANG', { 'font-family': 'Lilita One', 'font-size': 76, fill: '#1F3B78' });
+    const nm = G(ii, { transform: 'translate(0,-380)' }); const words = FULL.split(' '); let line = '', lines = []; words.forEach(w => { if ((line + ' ' + w).length > 26) { lines.push(line); line = w; } else line = (line ? line + ' ' : '') + w; }); lines.push(line);
+    lines.forEach((l_, k) => TX(nm, 0, k * 62, l_, { 'font-family': BALOO, 'font-weight': 800, 'font-size': 48, fill: '#3A2A1E' }));
+    const st = G(G(ii, { transform: 'translate(260,480) rotate(-12)' })); CI(st, 0, 0, 170, '#E8C468', o); CI(st, 0, 0, 140, 'none', { stroke: '#B8902E', 'stroke-width': 8 }); TX(st, 0, 20, '168', { 'font-family': 'Lilita One', 'font-size': 120, fill: '#8E2A22' }); TX(st, 0, 85, 'HURUF', { 'font-family': 'Lilita One', 'font-size': 44, fill: '#8E2A22' });
+    tl.fromTo(st, { opacity: 0, scale: 2.4, svgOrigin: '0 0' }, { opacity: 1, scale: 1, duration: .16, ease: 'power3.in', immediateRender: false }, WF('18', 'Nama') - .05); st.style.opacity = 0;
+    flatFlag(ii, 'TH', -300, 470, 150, HUD_DEFS); }, 'tercatat di Guinness World Records');
+  { const t = S_('19'); hop(C.ID, t, 30, .26); }
+  insert(WF('20', 'Kota') - .1, E_('20') + .2, ii => { const o = { stroke: INK, 'stroke-width': 7, 'stroke-linejoin': 'round' };
+    R(ii, -600, -1000, 1200, 2000, '#FFF6E6'); TX(ii, 0, -600, 'ARTINYA?', { 'font-family': 'Lilita One', 'font-size': 130, fill: '#8E2A22', stroke: '#FFFFFF', 'stroke-width': 8, 'paint-order': 'stroke' });
+    [['Krung Thep', 'Kota Para Malaikat', '#C25BB8', 'para'], ['Mahanakhon', 'Kota Agung', '#2E9BD6', 'agung'], ['Noppharat', 'Sembilan Permata', '#2E9B5A', 'sembilan']].forEach(([a, b, col, pre], k) => {
+      const g_ = G(G(ii, { transform: `translate(0,${-330 + k * 320})` })); R(g_, -520, -130, 1040, 260, '#FFFFFF', 30, o); R(g_, -520, -130, 26, 260, col, 0);
+      TX(g_, -470, -20, a, { 'font-family': 'Lilita One', 'font-size': 88, fill: col, 'text-anchor': 'start' }); TX(g_, -470, 80, '= ' + b, { 'font-family': BALOO, 'font-weight': 800, 'font-size': 66, fill: INK, 'text-anchor': 'start' });
+      popIn(g_, WF('20', pre) - .2, .5); }); }, 'terjemahan bebas dari bahasa Thai');
+  insert(WF('22', 'Ada') - .05, E_('22') + .25, ii => { const o = { stroke: INK, 'stroke-width': 8, 'stroke-linejoin': 'round' };
+    R(ii, -600, -1000, 1200, 2000, '#2A2440'); for (let k = 0; k < 8; k++) TX(ii, -450 + k * 130, -700 + (k % 3) * 80, '♪', { 'font-size': 90, fill: ['#FFE14D', '#FF8AD8', '#9FE08A'][k % 3], opacity: .7 });
+    const ks = G(ii, { transform: 'translate(0,-150) rotate(-4)' }); R(ks, -460, -280, 920, 560, '#E85D4A', 30, o); R(ks, -400, -220, 800, 230, '#FFF6E6', 14, o);
+    TX(ks, 0, -140, 'KRUNG THEP MAHA NAKHON', { 'font-family': 'Lilita One', 'font-size': 58, fill: '#8E2A22' }); TX(ks, 0, -60, 'Asanee–Wasan', { 'font-family': BALOO, 'font-weight': 800, 'font-size': 50, fill: INK });
+    R(ks, -260, 60, 520, 150, '#3A2A1E', 70, o); [-140, 140].forEach(x => { CI(ks, x, 135, 55, '#FFFFFF', o); CI(ks, x, 135, 18, '#3A2A1E'); });
+    const yr = G(G(ii, { transform: 'translate(250,380) rotate(10)' })); R(yr, -170, -80, 340, 160, '#FFE14D', 24, o); TX(yr, 0, 36, '1989', { 'font-family': 'Lilita One', 'font-size': 110, fill: '#8E2A22' }); popIn(yr, WF('22', '1989') - .05, .4); }, 'lagu yang liriknya nama lengkap Bangkok');
+  // D. ongkos per huruf → Krung Thep → truk berangkat
+  { const t = S_('23'); tl.set(stamp, { o: 1 }, t); arm(C.SG, 0, { a: 30, len: 1.3 }, WF('23', 'Ongkos') - .05, .12); arm(C.SG, 0, REST, E_('23') + .1, .2);
+    pill(WF('23', 'huruf') - .05, E_('23') - WF('23', 'huruf') + .6, 'Ongkir: 168 × per huruf = ???', 330, 44); }
+  { const t = S_('24'); hop(C.TH, t, 46, .3); tl.set(thEnv, { o: 1, dx: 0, dy: 0, rot: 0, s: .8 }, WF('24', 'aja') - .1); arm(C.TH, 1, { a: 235, len: .75 }, WF('24', 'aja') - .15, .15, 'back.out(2)');
+    tl.to(thEnv, { dx: SEAT.SG + 90 - (SEAT.TH + RAD.TH * .6), dy: -255 + RAD.TH * .25, rot: -340, duration: .32, ease: 'power2.in' }, E_('24') + .05); tl.to(thEnv, { o: 0, duration: .05 }, E_('24') + .38); arm(C.TH, 1, REST, E_('24') + .4, .2);
+    tl.to(C.SG.arm[1], { a: 80, len: 1.0, duration: .1 }, E_('24') + .2); tl.to(C.SG.arm[1], { a: -10, duration: .08, ease: 'power3.in' }, E_('24') + .32); tl.to(C.SG.arm[1], { a: REST.a, len: REST.len, duration: .15 }, E_('24') + .5); }
+  { const t = S_('25'); arm(C.ID, 1, { a: 60, len: 1.2 }, t, .15); arm(C.ID, 1, REST, E_('25'), .2); ['PH', 'VN', 'MY'].forEach((id, k) => { expr(C[id], 'happy', t + .2 + k * .05, .1); hop(C[id], t + .3 + k * .08, 26, .26); }); }
+  { const t = c.honk; camTo(t - .1, .3, SHOT.WINDOW, 'power2.inOut'); tl.to(TRK, { sh: 6, duration: .1, yoyo: true, repeat: 3 }, t); pow(HOME.winX - 120, -1310, t, 'TIIN!', '#FFE14D', .7, WALL.g, 54, .8);
+    tl.to(TRK, { x: 900, duration: 1.0, ease: 'power2.in' }, c.leave); tl.to(TRK, { puff: 0, duration: .4 }, c.leave + .6); }
+  { const L = c.leave; camTo(L + .6, .01, { x: -120, z: 1.15, gs: 1580 }, 'none'); tl.to(SP, { a: 1, duration: .55, ease: 'power2.in' }, L + .6);
+    tl.to(C.TH, { x: SEAT.TH + 130, rot: 30, y: -30, duration: .14, ease: 'power3.out' }, L + .62); expr(C.TH, 'shock', L + .6, .06); arm(C.TH, 1, { a: 10, len: 1.3 }, L + .6, .1); arm(C.TH, 0, { a: 130, len: 1.1 }, L + .6, .1);
+    tl.to(C.TH, { x: SEAT.TH, rot: 0, y: 0, duration: .6, ease: 'elastic.out(1,.4)' }, L + 1.05); arm(C.TH, 2, REST, L + 1.1, .25);
+    ['ID', 'PH', 'VN', 'MY', 'SG'].forEach((id, k) => expr(C[id], 'shock', L + .65 + k * .04, .06)); pow(SEAT.TH + 300, -620, L + .66, 'SRETT!', '#FFE14D', 1.05); }
+  tl.to(HOME.door, { scaleX: 1, duration: .3, ease: 'power2.in' }, c.leave + 1.3);
+  // kartu fakta, kartu akhir
+  tl.to(MOOD, { dim: .45, duration: .4 }, c.card); camTo(c.card + .05, .01, SHOT.WIDE, 'none'); camTo(c.card + .1, 10, { x: -20, z: .7, gs: 1480 }, 'none');
+  tl.to('#fade', { opacity: 1, duration: .3, ease: 'power2.in' }, c.end_in - .3); tl.set('#endc', { opacity: 1 }, c.end_in); tl.to('#fade', { opacity: 0, duration: .35 }, c.end_in);
+  tl.set(['#scene', '#hud'], { visibility: 'hidden' }, c.end_in + .01);
+  tl.to({}, { duration: .01 }, DUR);
+  // gerak kamera yang masih berjalan saat gerak berikutnya mulai dipotong di titik itu (tanpa ini tween lama "menarik balik" kamera → frame lompat)
+  { const tw = tl.getChildren(false, true, false).filter(t => t.targets()[0] === CAM).sort((a, b) => a.startTime() - b.startTime()), ks = t => ['x', 'z', 'gs'].filter(k => k in t.vars);
+    tw.forEach((a, i) => { const ka = ks(a); if (!ka.length) return; for (const b of tw.slice(i + 1)) { if (b.startTime() >= a.endTime() - 1e-4) break;
+      if (b.startTime() > a.startTime() + 1e-4 && ks(b).some(k => ka.includes(k))) { a.duration(b.startTime() - a.startTime()); break; } } }); }
+
+  renderWorld = (t) => {
+    const shx = CAM.shake * (Math.sin(t * 71) * .6 + Math.sin(t * 127 + 1) * .4), shy = CAM.shake * (Math.sin(t * 83 + 2) * .6 + Math.sin(t * 149) * .4);
+    const Z = CAM.z * (1 + Math.sin(t * .31) * .006), CX = CAM.x + Math.sin(t * .47) * 5 + Math.sin(t * .83) * 3, camY = -(CAM.gs - 960) / Z;
+    LAYERS.forEach(L => { const zf = L.f === 1 ? Z : 1 + (Z - 1) * L.fz; L.g.setAttribute('transform', `translate(${540 - CX * L.f * zf + shx * L.f},${960 - camY * zf + shy * L.f}) scale(${zf})`); });
+    LIVE.forEach(fn => fn(t));
+    ORDER.forEach(o => renderChar(o, t));
+    dimRect.setAttribute('opacity', Math.min(.9, MOOD.dim * .62)); spotRect.setAttribute('opacity', MOOD.spot);
+    renderTeaser(t); };
+  buildHUD();
+}
+
+const SUBS = [];   // satu kata subtitle saja yang boleh tampil per frame
+/* ---------- HUD: judul, subtitle per kata, kartu fakta ---------- */
+function buildHUD() {
+  const h = HUD, top = G(h), tw = 900, c = CUE;
+  R(top, (W - tw) / 2 + 8, 92, tw, 104, '#000', 52, { opacity: .25 }); R(top, (W - tw) / 2, 84, tw, 104, '#C8463A', 52, { stroke: '#FFE14D', 'stroke-width': 8 });
+  TX(top, W / 2, 158, 'NAMA KOTA TERPANJANG', { 'font-family': 'Lilita One', 'font-size': 60, fill: '#FFFFFF', stroke: INK, 'stroke-width': 8, 'paint-order': 'stroke', 'letter-spacing': 2 });
+  top.style.opacity = 0;
+  tl.fromTo(top, { opacity: 0, y: -60 }, { opacity: 1, y: 0, duration: .35, ease: 'back.out(2)', immediateRender: false }, c.open + .15);
+  tl.to(top, { opacity: 0, y: -60, duration: .35, ease: 'power2.in' }, c.open + 3.6);
+  const THAI = new Set(FULL.toLowerCase().split(' ').concat(['krung', 'thep'])), norm = w => w.toLowerCase().replace(/[^a-zà-ỹ0-9]/g, '');
+  const SUBY = 1610, subG = G(h), IMPACT = new Set(['jakarta', 'manila', 'hà', 'nội', 'kuala', 'lumpur', 'bangkok', 'thailand', 'skripsi', 'muat', 'besar', 'mesin', 'selesai', 'ngarang', 'huruf', 'rekor', 'dunia', 'guinness', 'malaikat', 'lagunya', 'ongkos', 'deh', 'perhatian', 'cepat', 'next', 'selanjutnya']),
+    SHAKY = new Set(['selesai', 'huruf', 'deh', 'muat']);
+  LINES.forEach(l => l.words.forEach((w, i) => {
+    const s = l.start + w.s, next = i < l.words.length - 1 ? Math.min(l.start + l.words[i + 1].s, l.start + w.e + .45) : Math.min(l.end + .3, l.start + w.e + .45);
+    const n_ = norm(w.w), thai = THAI.has(n_), pos = G(subG, { transform: `translate(${W / 2},${SUBY})` }), g = G(pos), yel = thai || IMPACT.has(n_) || /^\.*\d/.test(w.w);
+    const fs = thai ? 124 : yel ? 132 : 112, tx = TX(g, 0, 0, w.w, { 'font-family': 'Lilita One', 'font-size': fs, fill: thai ? '#FFD0F4' : yel ? '#FFE14D' : '#FFFFFF', stroke: INK, 'stroke-width': 18, 'stroke-linejoin': 'round', 'paint-order': 'stroke', 'dominant-baseline': 'central', filter: 'url(#subsh)' });
+    const len = tx.getComputedTextLength(); if (len > 960) tx.setAttribute('font-size', fs * 960 / len);
+    g.style.opacity = 0;
+    if (yel) tl.fromTo(g, { scale: 1.9, opacity: 0, rotation: -6 }, { scale: 1, opacity: 1, rotation: 0, duration: .16, ease: 'back.out(2.6)', immediateRender: false }, s);
+    else tl.fromTo(g, { scale: .55, opacity: 0, y: 14 }, { scale: 1, opacity: 1, y: 0, duration: .13, ease: 'back.out(3)', immediateRender: false }, s);
+    if (SHAKY.has(n_)) tl.to(g, { keyframes: { x: [0, -14, 12, -10, 8, 0] }, duration: .35, ease: 'none' }, s + .14);
+    tl.set(g, { opacity: 0 }, next); SUBS.push({ g: pos, s, next }); }));
+  const L = LN_['26'], WT = pre => L.start + L.words[Math.max(0, L.words.findIndex(w => w.w.startsWith(pre)))].s;
+  // kartu fakta (narator)
+  const card = G(h, { transform: 'translate(540,880)' }), ci = G(card);
+  R(ci, -470, -330, 940, 660, '#3A1E18', 24, { stroke: '#FFE14D', 'stroke-width': 10 }); R(ci, -440, -300, 880, 600, 'none', 14, { stroke: '#FFE14D', 'stroke-width': 3, opacity: .6 }); R(ci, -470, -330, 940, 100, '#C8463A', 24, { stroke: '#FFE14D', 'stroke-width': 10 });
+  TX(ci, 0, -258, 'FAKTANYA', { 'font-family': 'Lilita One', 'font-size': 62, fill: '#FFFFFF', stroke: INK, 'stroke-width': 8, 'paint-order': 'stroke' });
+  const rows = [['168 huruf', 'nama tempat terpanjang di dunia (Guinness)', 'Guinness'], ['Krung Thep', '"Kota Para Malaikat", sebutan sehari-hari', 'Krung']].map(([a, d, pre], k) => {
+    const y = -110 + k * 230, r_ = G(ci); flatFlag(r_, 'TH', -370, y, 80, HUD_DEFS); TX(r_, -285, y - 8, a, { 'text-anchor': 'start', 'font-family': 'Lilita One', 'font-size': 64, fill: '#FFFFFF' });
+    const dd = TX(r_, -285, y + 50, d, { 'text-anchor': 'start', 'font-family': MULTI, 'font-weight': 700, 'font-size': 34, fill: '#FFE14D' }); if (dd.getComputedTextLength() > 700) dd.setAttribute('font-size', 34 * 700 / dd.getComputedTextLength());
+    if (!k) PA(ci, `M-420 ${y + 110} H420`, null, { stroke: '#6A3A2E', 'stroke-width': 5, 'stroke-dasharray': '16 12' }); r_.style.opacity = .2; return [r_, pre]; });
+  const nb = TX(ci, 0, 270, 'Nama resmi berbahasa Inggris sejak 2022: Krung Thep Maha Nakhon (Bangkok)', { 'font-family': MULTI, 'font-weight': 700, 'font-size': 26, fill: '#E8CFC0' }); if (nb.getComputedTextLength() > 860) nb.setAttribute('font-size', 26 * 860 / nb.getComputedTextLength());
+  ci.style.opacity = 0;
+  tl.fromTo(ci, { scale: .3, opacity: 0, rotation: -8, svgOrigin: '0 0' }, { scale: 1, opacity: 1, rotation: 0, duration: .45, ease: 'back.out(2.2)', immediateRender: false }, c.card);
+  rows.forEach(([r_, pre]) => { tl.fromTo(r_, { opacity: .2 }, { opacity: 1, duration: .25, immediateRender: false }, WT(pre) - .05); tl.fromTo(r_, { scale: 1, svgOrigin: '-370 0' }, { keyframes: { scale: [1, 1.05, 1] }, duration: .4, immediateRender: false }, WT(pre)); });
+  tl.to(ci, { opacity: 0, duration: .25 }, c.end_in - .3);
+  h.appendChild(FLASH); h.appendChild(RADIAL);
+  buildEnd(); buildTeaser();
+}
+let renderTeaser = () => {};
+function buildTeaser() {   // hook: kertas alamat super panjang meliuk dari Thailand sampai keluar layar, jam 16.59, semua melongo (frame terakhir = frame pertama)
+  const T = $('#teaser'), tdefs = N('defs', {}, T), g = G(T);
+  const bg = N('linearGradient', { id: 'tbgk', x1: 0, y1: 0, x2: 0, y2: 1 }, tdefs); [[0, '#FBEBD0'], [.6, '#F2D4A4'], [.61, '#C8463A'], [1, '#A8382E']].forEach(([of, c_]) => N('stop', { offset: of, 'stop-color': c_ }, bg));
+  R(g, 0, 0, W, H, 'url(#tbgk)'); const o = { stroke: INK, 'stroke-width': 9, 'stroke-linejoin': 'round' };
+  N('feGaussianBlur', { stdDeviation: 8 }, N('filter', { id: 'tglow', x: '-20%', y: '-40%', width: '140%', height: '180%' }, tdefs));
+  const tx = (y, t, fs, fill, glow) => { TX(g, 540, y, t, { 'font-family': 'Lilita One', 'font-size': fs, fill: 'none', stroke: glow, 'stroke-width': fs * .2, opacity: .45, filter: 'url(#tglow)' });
+    TX(g, 540, y, t, { 'font-family': 'Lilita One', 'font-size': fs, fill, stroke: '#0B0C1E', 'stroke-width': fs * .13, 'stroke-linejoin': 'round', 'paint-order': 'stroke' }); };
+  tx(230, 'NAMA KOTA INI', 132, '#FFFFFF', '#FFFFFF'); tx(380, 'GAK MUAT', 132, '#FFE14D', '#E8C468'); tx(530, 'DI AMPLOP!', 132, '#FF6A5A', '#FF6A5A');
+  // jam 16.59
+  const ck = G(g, { transform: 'translate(930,700)' }); CI(ck, 0, 0, 92, '#FFFFFF', o); CI(ck, 0, 0, 92, 'none', { stroke: '#C8463A', 'stroke-width': 12 }); PA(ck, `M0 0 L${Math.sin(59 / 60 * Math.PI * 2) * 70} ${-Math.cos(59 / 60 * Math.PI * 2) * 70}`, null, { stroke: '#C8463A', 'stroke-width': 7, 'stroke-linecap': 'round' });
+  PA(ck, `M0 0 L${Math.sin(4.98 / 12 * Math.PI * 2) * 46} ${-Math.cos(4.98 / 12 * Math.PI * 2) * 46}`, null, { stroke: INK, 'stroke-width': 10, 'stroke-linecap': 'round' }); CI(ck, 0, 0, 9, INK);
+  // kertas meliuk
+  const sd = 'M300 840 L780 840 Q900 840 900 960 L900 980 Q900 1080 780 1080 L200 1080 Q90 1080 90 1190 Q90 1300 200 1300 L1120 1300';
+  PA(g, sd, null, { stroke: INK, 'stroke-width': 74, 'stroke-linejoin': 'round' }); PA(g, sd, null, { stroke: '#FFFDF6', 'stroke-width': 60, 'stroke-linejoin': 'round' });
+  const pid = 'tsp'; PA(tdefs, sd, null, { id: pid }); const tt = N('text', { 'font-family': BALOO, 'font-weight': 800, 'font-size': 38, fill: '#1F3B78', dy: 13 }, g), tp = N('textPath', { href: `#${pid}`, startOffset: 20 }, tt); tp.textContent = FULL;
+  // Thailand menulis (pulpen) + yang lain melongo
+  const P = [['TH', 210, 860, 1.25, 1, 'smug'], ['ID', 230, 1590, 1.3, 1, 'shock'], ['PH', 500, 1650, 1.12, .3, 'shock'], ['VN', 760, 1610, 1.15, -.3, 'shock'], ['MY', 960, 1660, 1.05, -1, 'shock']].map(([id, x, y, s, d, e]) => {
+    const p = G(g), b = ballHead(p, id, 0, 0, s, d, tdefs); ACC[id](b, 82, 82);
+    if (e === 'shock') { [-1, 1].forEach(sg => EL(b, sg * 30, -14, 25, 29, '#FFFFFF', { stroke: INK, 'stroke-width': 5 })); [-1, 1].forEach(sg => CI(b, sg * 30 + d * 6, -14, 6, INK)); }
+    else { [-1, 1].forEach(sg => PA(b, `M${sg * 30 - 22} -22 L${sg * 30 + 22} -22`, null, { stroke: INK, 'stroke-width': 7, 'stroke-linecap': 'round' })); const pn = G(b, { transform: 'translate(95,-5) rotate(30)' }); R(pn, -6, -40, 12, 70, '#1F3B78', 5, { stroke: INK, 'stroke-width': 4 }); PA(pn, 'M-6 30 L0 46 L6 30Z', '#E8C468', { stroke: INK, 'stroke-width': 3 }); }
+    return [p, x, y, id]; });
+  // VO hook: Singapura "Amplopnya nggak muat!" (gelembung dari kanan, petugas di luar layar)
+  const HK = (DATA.hook || [])[0], HL = HK && LN_[HK.id], bub = G(g, { transform: 'translate(640,1450)' }), bi = G(bub); bi.style.opacity = 0;
+  PA(bi, 'M-300 -70 H260 Q300 -70 300 -30 V30 Q300 70 260 70 H200 L330 120 L150 70 H-300 Q-340 70 -340 30 V-30 Q-340 -70 -300 -70Z', '#FFFFFF', o);
+  TX(bi, -20, 18, 'AMPLOPNYA NGGAK MUAT!', { 'font-family': 'Lilita One', 'font-size': 48, fill: '#C8463A' });
+  renderTeaser = t => { const C_ = CUE, op = 0;   // hook pembuka & loop dimatikan (permintaan user)
+    T.style.opacity = op; T.style.visibility = op > 0 ? 'visible' : 'hidden'; if (!op) return;
+    const u = t >= C_.loop ? t - DUR : t;
+    const t0 = HL ? HK.start : 1e9, t1 = HL ? HK.start + HL.dur + .25 : 0, on = t < C_.open && t >= t0 && t < t1;
+    bi.style.opacity = on ? 1 : 0; bub.setAttribute('transform', `translate(640,1450) scale(${on ? Math.min(1, .6 + 4 * (t - t0)) : 1})`);
+    P.forEach(([p, x, y, id], k) => p.setAttribute('transform', `translate(${x + Math.sin(u * 2.4 + k) * 5},${y + (id === 'TH' ? Math.sin(u * 3) * 4 : -Math.abs(Math.sin(u * 3.2 + k * 1.3)) * 10)}) rotate(${Math.sin(u * 2.6 + k) * 3})`)); }; }
+function ballSVG(id) { const s = document.createElementNS(NS, 'svg'); s.setAttribute('viewBox', '-38 -38 76 76'); s.setAttribute('class', 'flag');
+  const cid = uid('rk'), bd = blobD(30, 0, 0, 30); PA(N('clipPath', { id: cid }, s), bd); const g = G(s, { 'clip-path': `url(#${cid})` }); flag(id, g, -36, -30, 72, 60); PA(s, bd, null, { stroke: INK, 'stroke-width': 4, 'stroke-linejoin': 'round' }); return s; }
+function buildEnd() {
+  const ec = $('#endc'); ec.innerHTML = '<h1>PANJANG NAMA<br><span>IBU KOTA ASEAN</span></h1><div class="bar"></div>';
+  const rows = [['ID', 'Jakarta', 7], ['PH', 'Manila', 6], ['VN', 'Hà Nội', 5], ['MY', 'Kuala Lumpur', 11], ['TH', 'Bangkok*', 168]];
+  const col = document.createElement('div'); col.className = 'col'; ec.appendChild(col);
+  rows.forEach(([id, w, n], i) => { const r = document.createElement('div'); r.className = 'row' + (id === 'TH' ? ' id' : ''); r.appendChild(ballSVG(id)); const tx = document.createElement('div'); tx.className = 'tx';
+    tx.innerHTML = `<div class="w">${w}</div><div class="track"><div class="fill"></div><span class="num">${n}</span></div>`; r.appendChild(tx); col.appendChild(r);
+    const fill = tx.querySelector('.fill'), num = tx.querySelector('.num'), wpx = id === 'TH' ? 1400 : n * 34; if (id === 'TH') { num.style.left = '360px'; num.style.color = '#FFFFFF'; num.style.fontSize = '54px'; num.style.top = '-10px'; num.textContent = '168!'; } else num.style.left = (wpx + 8) + 'px';
+    tl.fromTo(r, { opacity: 0, x: i % 2 ? 60 : -60 }, { opacity: 1, x: 0, duration: .32, ease: 'power3.out', immediateRender: false }, CUE.end_in + .3 + i * .1);
+    tl.fromTo(fill, { width: 0 }, { width: wpx, duration: id === 'TH' ? 1.2 : .4, ease: id === 'TH' ? 'power2.in' : 'power2.out', immediateRender: false }, CUE.end_in + .45 + i * .1);
+    tl.fromTo(num, { opacity: 0 }, { opacity: 1, duration: .2, immediateRender: false }, CUE.end_in + .7 + i * .1 + (id === 'TH' ? .9 : 0)); });
+  const f = document.createElement('div'); f.className = 'foot'; f.innerHTML = '*nama seremonial: Krung Thep Mahanakhon … Witsanukam Prasit (168 huruf, Guinness World Records)<br>Sumber: Guinness World Records · lagu Asanee–Wasan (1989) · Office of the Royal Society Thailand (2022)'; ec.appendChild(f);
+  tl.fromTo(ec.querySelector('h1'), { scale: .8, opacity: 0 }, { scale: 1, opacity: 1, duration: .4, ease: 'back.out(2)', immediateRender: false }, CUE.end_in + .1);
+  tl.fromTo(f, { opacity: 0 }, { opacity: 1, duration: .4, immediateRender: false }, CUE.end_in + 1.4); }
+
+/* ---------- WATERMARK: satu teks kecil, diam per adegan, pindah hanya saat adegan berganti ---------- */
+const WM = (() => { const c = CUE, U = 600, B = 1500, S = k => LN_[k].start, E = k => LN_[k].end;
+  const WFw = (k, pre, n = 0) => { const l = LN_[k], ix = l.words.map((w, i) => [w.w.toLowerCase().replace(/[^a-z0-9]/g, ''), i]).filter(([w]) => w.startsWith(pre)).map(([, i]) => i); return l.start + l.words[ix[Math.min(n, ix.length - 1)]].s; };
+  const L = [[0, 540, 205, 'd'], [c.open, 300, B, 'd']], OV = { '01': [300, B], '08': [780, 330], '10': [780, B], '11': [780, B] }; let s = 0;
+  LINES.filter(l => l.who !== 'NR').forEach(l => L.push([l.start - .2, ...(OV[l.id] || [l.who === 'SG' ? 780 : (s++ % 2 ? 300 : 780), U]), 'd']));
+  L.push([c.big - .1, 300, B, 'd'], [c.door - .05, 300, B, 'd'], [S('14') - .15, 300, B, 'd'], [WFw('15', 'selesai') + .1, 300, B, 'd'], [c.honk - .1, 780, B, 'd'], [c.card, 540, 1440, 'd'], [c.end_in, 540, 1660, 'd']);
+  L.sort((a, b) => a[0] - b[0]);
+  const CT = cutTimes(); [[c.record - .05, E('18') + .25], [WFw('20', 'kota') - .1, E('20') + .2], [WFw('22', 'ada') - .05, E('22') + .25],
+   ...['clk56', 'clk57', 'clk58', 'clk59', 'clk60'].map(k => [c[k], c[k] + .8]), [...CT.SG, 780, U], [...CT.ID, 780, B], [...CT.QUEUE, 780, B]].sort((p, q) => p[0] - q[0]).forEach(([a, b, x = 540, y = 205]) => {
+    const prev = L.filter(x => x[0] <= b + .2).sort((p, q) => q[0] - p[0])[0]; for (let i = L.length - 1; i >= 0; i--) if (L[i][0] > a - .05 && L[i][0] < b + .2) L.splice(i, 1);
+    L.push([a, x, y, 'd'], [b + .2, prev[1], prev[2], prev[3]]); });
+  L.sort((a, b) => a[0] - b[0]); return L.filter((x, i) => !(i + 1 < L.length && L[i + 1][0] === x[0])); })();
+let renderWM = () => {};
+if (!new URLSearchParams(location.search).has('nowm')) {   // ?nowm=1 untuk thumbnail
+  const svg = $('#wm'), tx = TX(svg, 0, 0, CFG.watermark, { 'font-family': BALOO, 'font-weight': 700, 'font-size': 30, 'dominant-baseline': 'central', 'stroke-width': 2, 'paint-order': 'stroke' });
+  const FO = .25, FI = .4, WMQC = new URLSearchParams(location.search).has('wmqc');   // ?wmqc=1: opacity penuh untuk cek posisi
+  renderWM = t => { let i = 0; while (i + 1 < WM.length && t >= WM[i + 1][0]) i++;
+    const [t0, x, y, bg] = WM[i], t1 = i + 1 < WM.length ? WM[i + 1][0] : Infinity;
+    const k = Math.min(i === 0 ? 1 : Math.min(1, (t - t0) / FI), Math.min(1, (t1 - t) / FO));   // fade masuk/keluar hanya di batas adegan
+    tx.setAttribute('x', x); tx.setAttribute('y', y);
+    tx.setAttribute('fill', bg === 'l' ? '#2a1209' : '#FFFFFF'); tx.setAttribute('stroke', bg === 'l' ? 'none' : '#000000');
+    tx.setAttribute('opacity', (WMQC ? 1 : bg === 'l' ? .3 : .13) * Math.max(0, k)); };
+}
+/* ---------- kontrol: autoplay + loop; ?debug=1 panel; ?clean=1 export ---------- */
+function renderSubs(t) { let on = null; SUBS.forEach(w => { if (t >= w.s - 1e-4 && t < w.next) on = w; }); SUBS.forEach(w => w.g.style.visibility = w === on ? 'visible' : 'hidden'); }
+tl.eventCallback('onUpdate', () => { TL_T = tl.time(); renderWorld(TL_T); renderSubs(TL_T); renderWM(TL_T); });
+const q = new URLSearchParams(location.search), vo = $('#vo'); let audioOn = false;
+function start() { tl.play(0); vo.currentTime = 0; vo.play().then(() => audioOn = true).catch(() => {}); }
+tl.eventCallback('onComplete', () => start());
+gsap.ticker.add(fit);
+gsap.ticker.add(() => { if (!audioOn || tl.paused()) return; if (Math.abs(vo.currentTime - tl.time()) > .12) vo.currentTime = tl.time(); });
+window.OPENER = { W, H, DURATION: DUR, tl, ready: false, seek(t) { tl.pause(t, false); TL_T = t; renderWorld(t); renderSubs(t); renderWM(t); }, play: start };
+addEventListener('keydown', e => { if (/^[rR]$/.test(e.key)) start(); if (e.code === 'Space') { e.preventDefault(); tl.paused() ? (tl.play(), vo.play()) : (tl.pause(), vo.pause()); } });
+if (q.has('debug')) { const dbg = $('#dbg'); dbg.style.display = 'flex'; const sc = $('#dScrub'), ck = $('#dClock'); let drag = false;
+  gsap.ticker.add(() => { if (!drag) sc.value = String(tl.time() / DUR * 1000); ck.textContent = tl.time().toFixed(2) + 's'; $('#dPlay').textContent = tl.paused() ? 'Play' : 'Pause'; });
+  sc.addEventListener('pointerdown', () => { drag = true; tl.pause(); vo.pause(); }); addEventListener('pointerup', () => drag = false);
+  sc.addEventListener('input', () => { tl.pause(); tl.time(sc.value / 1000 * DUR); }); $('#dPlay').onclick = () => tl.paused() ? (tl.play(), vo.currentTime = tl.time(), vo.play()) : (tl.pause(), vo.pause()); }
+document.fonts.ready.then(() => Promise.all([...['Lilita One', 'Baloo 2'].map(f => document.fonts.load(`700 40px "${f}"`)), ...[['Noto Sans', 'Hà Nội ♪']].map(([f, t]) => document.fonts.load(`700 40px "${f}"`, t))])).then(() => {
+  build(); tl.time(0); renderWorld(0); renderWM(0); window.OPENER.ready = true; if (q.has('clean')) return;
+  vo.play().then(() => { audioOn = true; vo.currentTime = 0; tl.play(0); }).catch(() => { tl.pause(0); const go = () => { removeEventListener('pointerdown', go); removeEventListener('keydown', go); start(); }; addEventListener('pointerdown', go); addEventListener('keydown', go); }); });
+</script>
+</body>
+</html>

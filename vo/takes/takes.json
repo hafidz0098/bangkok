@@ -1,0 +1,470 @@
+[
+ {
+  "take": "01_sg_perhatian_t1",
+  "label": "01_sg_perhatian",
+  "generation_id": "PPxZDSQdX6RpRP999tUA",
+  "session": "b6oEH9oUJWDe3SyV3L4M",
+  "who": "SG",
+  "prompt": "[brisk, strict, fast] Perhatian! Truk pos terakhir berangkat lima menit lagi. Tulis alamat, cepat!",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "01_sg_perhatian_t2",
+  "label": "01_sg_perhatian",
+  "generation_id": "3cf49B1JMBeOgS3W1A3j",
+  "session": "17JvekHVKOww8xqhtUOK",
+  "who": "SG",
+  "prompt": "[brisk, strict, fast] Perhatian! Truk pos terakhir berangkat lima menit lagi. Tulis alamat, cepat!",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "02_id_jakarta_t1",
+  "label": "02_id_jakarta",
+  "generation_id": "4kTmBj6MIHJlwuBit1NR",
+  "session": "8Oz0BExasOwTxqGNljkO",
+  "who": "ID",
+  "prompt": "[confident, casual] Gampang. Jakarta. Beres!",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "02_id_jakarta_t2",
+  "label": "02_id_jakarta",
+  "generation_id": "jJFt6LqCcyy6SxfIosLI",
+  "session": "4G4qpWmudRwfcabjjbQT",
+  "who": "ID",
+  "prompt": "[confident, casual] Gampang. Jakarta. Beres!",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "03_ph_manila_t1",
+  "label": "03_ph_manila",
+  "generation_id": "yWZ5Odib5AIBFO2xLXfr",
+  "session": "b2s2t2P6AyP3foRjGqa5",
+  "who": "PH",
+  "prompt": "[cheerful, quick] Manila. Done!",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "03_ph_manila_t2",
+  "label": "03_ph_manila",
+  "generation_id": "EFHn30TmS6Tt5hFZuhBX",
+  "session": "DH5LPTVAK7PjO1CvnHQ3",
+  "who": "PH",
+  "prompt": "[cheerful, quick] Manila. Done!",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "04_vn_hanoi_t1",
+  "label": "04_vn_hanoi",
+  "generation_id": "4oRMWsXJsUI67Jq6OvFL",
+  "session": "egYIK3bYGRopLI0qDDBp",
+  "who": "VN",
+  "prompt": "[casual, smug] Ha Noi. Dua suku kata aja.",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "04_vn_hanoi_t2",
+  "label": "04_vn_hanoi",
+  "generation_id": "1KIKP4Kf0oWrIBrBVuxl",
+  "session": "jxkE9smcJ25tp9fi0ao7",
+  "who": "VN",
+  "prompt": "[casual, smug] Ha Noi. Dua suku kata aja.",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "05_my_kl_t1",
+  "label": "05_my_kl",
+  "generation_id": "um8GMre57xgkST1w2uxp",
+  "session": "dDabWZW4ukaGMh1jxWA1",
+  "who": "MY",
+  "prompt": "[proud, teasing] Kuala Lumpur. Agak panjang, tapi muat lah.",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "05_my_kl_t2",
+  "label": "05_my_kl",
+  "generation_id": "kVmEbRL2EQoM1ulO7QcJ",
+  "session": "rgk3WFTPAvKjrD1EWv66",
+  "who": "MY",
+  "prompt": "[proud, teasing] Kuala Lumpur. Agak panjang, tapi muat lah.",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "06_sg_next_t1",
+  "label": "06_sg_next",
+  "generation_id": "fAgC3zBA0BKQRKg1p50Y",
+  "session": "9PDaze1b3Ym1G3NJ8y4W",
+  "who": "SG",
+  "prompt": "[impatient] Next! Thailand!",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "06_sg_next_t2",
+  "label": "06_sg_next",
+  "generation_id": "8H8GbkfgZcCxBmjgm05o",
+  "session": "VdBQ2wTcD9w45wKgfDS5",
+  "who": "SG",
+  "prompt": "[impatient] Next! Thailand!",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "07_th_krung_t1",
+  "label": "07_th_krung",
+  "generation_id": "LYaWoHK2Z8HFRxoFuSgQ",
+  "session": "qmDrbsTnCWGy0iOQ5LfW",
+  "who": "TH",
+  "prompt": "[calm, polite, slowly writing] Sebentar ya... Krung Tep Maha Nakon...",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "07_th_krung_t2",
+  "label": "07_th_krung",
+  "generation_id": "pe6a0YADnOCurvjME4oO",
+  "session": "QtJwG2fzwOdvQwrLdaSP",
+  "who": "TH",
+  "prompt": "[calm, polite, slowly writing] Sebentar ya... Krung Tep Maha Nakon...",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "08_sg_bangkok_t1",
+  "label": "08_sg_bangkok",
+  "generation_id": "qXOD76Hgiqoi481a3oiX",
+  "session": "IQvHSbnfRQeW6obSAnlR",
+  "who": "SG",
+  "prompt": "[cutting in, annoyed] Bangkok kan? Tulis Bangkok aja!",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "08_sg_bangkok_t2",
+  "label": "08_sg_bangkok",
+  "generation_id": "gnrqGfH0msr6H0CDhdN7",
+  "session": "UKDaNWtBsOhNP73kd71h",
+  "who": "SG",
+  "prompt": "[cutting in, annoyed] Bangkok kan? Tulis Bangkok aja!",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "09_th_panggilan_t1",
+  "label": "09_th_panggilan",
+  "generation_id": "YiuxKPNM8aPFI1S2bM5d",
+  "session": "VNDlR613OJZDBvhI8Q0N",
+  "who": "TH",
+  "prompt": "[gently correcting, unhurried] Bangkok itu nama panggilan. Nama lengkapnya... Amon Ratanakosin... Mahintara Ayutaya...",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "09_th_panggilan_t2",
+  "label": "09_th_panggilan",
+  "generation_id": "xaUV5v46WvtzsR49M52T",
+  "session": "SG9O2qEQosq1sRXeS1IO",
+  "who": "TH",
+  "prompt": "[gently correcting, unhurried] Bangkok itu nama panggilan. Nama lengkapnya... Amon Ratanakosin... Mahintara Ayutaya...",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "10_id_skripsi_t1",
+  "label": "10_id_skripsi",
+  "generation_id": "RiTh2GoL5qHUWdhtv79r",
+  "session": "Hqz0qbAfiiPSgpmTu5Dt",
+  "who": "ID",
+  "prompt": "[whispering, joking] Dia nulis alamat apa nulis skripsi?",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "10_id_skripsi_t2",
+  "label": "10_id_skripsi",
+  "generation_id": "65N8ozPy1Kl33SYnoDbR",
+  "session": "5gX4L8r3iEWvlNs921pE",
+  "who": "ID",
+  "prompt": "[whispering, joking] Dia nulis alamat apa nulis skripsi?",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "11_my_baris_t1",
+  "label": "11_my_baris",
+  "generation_id": "3UjzDMdmMKDm17UevY7N",
+  "session": "TCZilDRMKROegbfBEw1X",
+  "who": "MY",
+  "prompt": "[snickering] Udah dua baris, nomor rumahnya belum ada.",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "11_my_baris_t2",
+  "label": "11_my_baris",
+  "generation_id": "UvhOW95JINvNDSIl18gY",
+  "session": "fUaC7wHyoxcXRpzPSjlF",
+  "who": "MY",
+  "prompt": "[snickering] Udah dua baris, nomor rumahnya belum ada.",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "12_th_mahadilok_t1",
+  "label": "12_th_mahadilok",
+  "generation_id": "eQBCeffHXZUlB595uUL6",
+  "session": "KX5yOuEatEos97gsGHdA",
+  "who": "TH",
+  "prompt": "[rhythmic, focused] ...Mahadilok Pop, Noparat Ratchatani, Burirom...",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "12_th_mahadilok_t2",
+  "label": "12_th_mahadilok",
+  "generation_id": "Btpf48gjFPypeZI73NIG",
+  "session": "HlHHVMx4qkUl4VMErIzR",
+  "who": "TH",
+  "prompt": "[rhythmic, focused] ...Mahadilok Pop, Noparat Ratchatani, Burirom...",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "13_sg_amplop_t1",
+  "label": "13_sg_amplop",
+  "generation_id": "QAKa22N5xueOrYt0mzQa",
+  "session": "vSdZ0NhOsxKOiC8xeT2f",
+  "who": "SG",
+  "prompt": "[panicking] Amplopnya nggak muat! Ambil yang besar!",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "13_sg_amplop_t2",
+  "label": "13_sg_amplop",
+  "generation_id": "pnpCsQ6c7kyo7rKED9JX",
+  "session": "XrGCO1iCUr5aZR1lqsjZ",
+  "who": "SG",
+  "prompt": "[panicking] Amplopnya nggak muat! Ambil yang besar!",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "14_vn_truk_t1",
+  "label": "14_vn_truk",
+  "generation_id": "2zJ2oiDTHW7M1zaHbQZq",
+  "session": "he4fctuuW99pskyjol0T",
+  "who": "VN",
+  "prompt": "[annoyed, shouting] Woi, truknya udah manasin mesin!",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "14_vn_truk_t2",
+  "label": "14_vn_truk",
+  "generation_id": "0YBrfgU1fwLHTBe0coeb",
+  "session": "e3QwC7gQOfBypnaJMlQ5",
+  "who": "VN",
+  "prompt": "[annoyed, shouting] Woi, truknya udah manasin mesin!",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "15_th_selesai_t1",
+  "label": "15_th_selesai",
+  "generation_id": "3n6lgfpDpQB9ITvz55Bn",
+  "session": "nR9f3mzNRz08PBxBZgSX",
+  "who": "TH",
+  "prompt": "[unbothered, then satisfied] ...Udom Ratchaniwet Mahasatan, Amon Piman Awatan Satit, Sakatatiya Witsanukam Prasit. Selesai!",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "15_th_selesai_t2",
+  "label": "15_th_selesai",
+  "generation_id": "QzcCetmq8c3hK60J0y2S",
+  "session": "pmMM0WDiU5WsKK7hNdNI",
+  "who": "TH",
+  "prompt": "[unbothered, then satisfied] ...Udom Ratchaniwet Mahasatan, Amon Piman Awatan Satit, Sakatatiya Witsanukam Prasit. Selesai!",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "16_ph_ngarang_t1",
+  "label": "16_ph_ngarang",
+  "generation_id": "lj4ROG6OPSDz2b3CJ1de",
+  "session": "h1USwT0iAdnKVTV1gzNs",
+  "who": "PH",
+  "prompt": "[suspicious, laughing] Halah, pasti ngarang biar keren!",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "16_ph_ngarang_t2",
+  "label": "16_ph_ngarang",
+  "generation_id": "5Fw0ebtUOgT5fYYaZFMM",
+  "session": "4Gkrw87xhlgH41ZaOfR4",
+  "who": "PH",
+  "prompt": "[suspicious, laughing] Halah, pasti ngarang biar keren!",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "17_sg_hitung_t1",
+  "label": "17_sg_hitung",
+  "generation_id": "sITfTMMNuMxw6KY91Vnr",
+  "session": "GQ6Wss3TACoCMCsDAoAF",
+  "who": "SG",
+  "prompt": "[counting fast, then stunned] Satu, dua, tiga... seratus enam puluh delapan huruf?!",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "17_sg_hitung_t2",
+  "label": "17_sg_hitung",
+  "generation_id": "fK0V1tTmdQhXykbnSKqL",
+  "session": "iEDYFiIr3NsVADbBiKRz",
+  "who": "SG",
+  "prompt": "[counting fast, then stunned] Satu, dua, tiga... seratus enam puluh delapan huruf?!",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "18_th_rekor_t1",
+  "label": "18_th_rekor",
+  "generation_id": "cqxWBFdmEJqP6ccK5Sgf",
+  "session": "627MW56rOYkNlS0XpPLv",
+  "who": "TH",
+  "prompt": "[proud, smiling] Rekor dunia. Nama tempat terpanjang, kata Guinness.",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "18_th_rekor_t2",
+  "label": "18_th_rekor",
+  "generation_id": "pgY3uCQ3NloiKVG6jqCK",
+  "session": "Ys002K2IajvCAhutdZLn",
+  "who": "TH",
+  "prompt": "[proud, smiling] Rekor dunia. Nama tempat terpanjang, kata Guinness.",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "19_id_arti_t1",
+  "label": "19_id_arti",
+  "generation_id": "sizz96NDSITSVo0qKNoA",
+  "session": "TqcXM45BKXNzBK2LFb8g",
+  "who": "ID",
+  "prompt": "[amazed] Terus artinya apa?!",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "19_id_arti_t2",
+  "label": "19_id_arti",
+  "generation_id": "uGaGlP6d68mWlknT5RJm",
+  "session": "WM9I2Ef2G2nqONFDs2NA",
+  "who": "ID",
+  "prompt": "[amazed] Terus artinya apa?!",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "20_th_malaikat_t1",
+  "label": "20_th_malaikat",
+  "generation_id": "xJiLR2yhT9vrYAI1sxvu",
+  "session": "0EdfEQDlHK070LfkdRYW",
+  "who": "TH",
+  "prompt": "[warm, dreamy] Kota para malaikat, kota agung, kota sembilan permata... pokoknya kota yang indah banget.",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "20_th_malaikat_t2",
+  "label": "20_th_malaikat",
+  "generation_id": "16LOwMoV576xmZtLgiwH",
+  "session": "L6YivxyoUDg03VGSaIjF",
+  "who": "TH",
+  "prompt": "[warm, dreamy] Kota para malaikat, kota agung, kota sembilan permata... pokoknya kota yang indah banget.",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "21_id_hafal_t1",
+  "label": "21_id_hafal",
+  "generation_id": "qksNBAjLUXQVHyP1mX62",
+  "session": "pLQvX69p48NuOBJvkUWF",
+  "who": "ID",
+  "prompt": "[curious] Terus orang Thailand hafal semua?",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "21_id_hafal_t2",
+  "label": "21_id_hafal",
+  "generation_id": "ma1wJYo5cGgZygo2nTca",
+  "session": "lmdMb21YNXnXq5zl9BrV",
+  "who": "ID",
+  "prompt": "[curious] Terus orang Thailand hafal semua?",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "22_th_lagu_t1",
+  "label": "22_th_lagu",
+  "generation_id": "VosG2a91yHazCSIK7EK7",
+  "session": "p4GOeFUjbCHlGDfKD9MD",
+  "who": "TH",
+  "prompt": "[chuckling] Ada lagunya, lho. Tahun delapan sembilan.",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "22_th_lagu_t2",
+  "label": "22_th_lagu",
+  "generation_id": "1I1JwAzT1hY1iY0Uv8eW",
+  "session": "44W5gxeUpFNmeP1KqGpA",
+  "who": "TH",
+  "prompt": "[chuckling] Ada lagunya, lho. Tahun delapan sembilan.",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "23_sg_ongkir_t1",
+  "label": "23_sg_ongkir",
+  "generation_id": "uxoXrgqcWKcs3oQgCE22",
+  "session": "tgZQ2PSEEpUbYzdSNdHy",
+  "who": "SG",
+  "prompt": "[deadpan] Oke. Ongkos kirim dihitung per huruf.",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "23_sg_ongkir_t2",
+  "label": "23_sg_ongkir",
+  "generation_id": "oOWADBeCOxikzT73uLfl",
+  "session": "Z2kGgWOkeUreOcty86bI",
+  "who": "SG",
+  "prompt": "[deadpan] Oke. Ongkos kirim dihitung per huruf.",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "24_th_singkat_t1",
+  "label": "24_th_singkat",
+  "generation_id": "oizRS8PRnYcmOXUbwIjI",
+  "session": "EJr6bo9iLHVmGzqMz8qQ",
+  "who": "TH",
+  "prompt": "[shocked, then quickly giving up] ...Krung Tep aja deh.",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "24_th_singkat_t2",
+  "label": "24_th_singkat",
+  "generation_id": "OCg17OKz0uOeyj8Bot83",
+  "session": "lie2iu7qNLyZjwNVKur0",
+  "who": "TH",
+  "prompt": "[shocked, then quickly giving up] ...Krung Tep aja deh.",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "25_id_nah_t1",
+  "label": "25_id_nah",
+  "generation_id": "tXZiXMxz3KtQ68ZPsO4Z",
+  "session": "m4N0yrKmBNKagji8wB6k",
+  "who": "ID",
+  "prompt": "[laughing] Nah gitu! Orang sana juga manggilnya Krung Tep!",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "25_id_nah_t2",
+  "label": "25_id_nah",
+  "generation_id": "hn8KPYqVgJqnAADEeY87",
+  "session": "jxJSrcdt5GumEH8hSjjq",
+  "who": "ID",
+  "prompt": "[laughing] Nah gitu! Orang sana juga manggilnya Krung Tep!",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "26_nr_info_t1",
+  "label": "26_nr_info",
+  "generation_id": "Fn8SAUl6hNpw7qUfmpW7",
+  "session": "7gRWox36dF5noyDaYAZa",
+  "who": "NR",
+  "prompt": "[warm, informative] Nama seremonial Bangkok tercatat di Guinness sebagai nama tempat terpanjang di dunia, seratus enam puluh delapan huruf. Sehari-hari, warga Thailand menyebutnya Krung Tep, Kota Para Malaikat.",
+  "model_id": "eleven_v4"
+ },
+ {
+  "take": "26_nr_info_t2",
+  "label": "26_nr_info",
+  "generation_id": "FxWYKasdIJ2cGRBt0XY8",
+  "session": "XC0sI4nhAlvG55rOl1Zo",
+  "who": "NR",
+  "prompt": "[warm, informative] Nama seremonial Bangkok tercatat di Guinness sebagai nama tempat terpanjang di dunia, seratus enam puluh delapan huruf. Sehari-hari, warga Thailand menyebutnya Krung Tep, Kota Para Malaikat.",
+  "model_id": "eleven_v4"
+ }
+]

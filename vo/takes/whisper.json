@@ -1,0 +1,2054 @@
+{
+ "01_sg_perhatian_t1": {
+  "heard": "Perhatian, truk pos terakhir berangkat 5 menit lagi. Tulis alamat, cepat!",
+  "score": 0.91,
+  "words": [
+   {
+    "w": "Perhatian,",
+    "s": 0.0,
+    "e": 0.46
+   },
+   {
+    "w": "truk",
+    "s": 0.5,
+    "e": 1.04
+   },
+   {
+    "w": "pos",
+    "s": 1.04,
+    "e": 1.16
+   },
+   {
+    "w": "terakhir",
+    "s": 1.16,
+    "e": 1.6
+   },
+   {
+    "w": "berangkat",
+    "s": 1.6,
+    "e": 1.98
+   },
+   {
+    "w": "5",
+    "s": 1.98,
+    "e": 2.16
+   },
+   {
+    "w": "menit",
+    "s": 2.16,
+    "e": 2.48
+   },
+   {
+    "w": "lagi.",
+    "s": 2.48,
+    "e": 2.6
+   },
+   {
+    "w": "Tulis",
+    "s": 2.78,
+    "e": 3.22
+   },
+   {
+    "w": "alamat,",
+    "s": 3.22,
+    "e": 3.5
+   },
+   {
+    "w": "cepat!",
+    "s": 3.56,
+    "e": 3.96
+   }
+  ]
+ },
+ "01_sg_perhatian_t2": {
+  "heard": "Perhatian, truk pos terakhir berangkat 5 menit lagi. Tulis alamat, cepat!",
+  "score": 0.91,
+  "words": [
+   {
+    "w": "Perhatian,",
+    "s": 0.0,
+    "e": 0.46
+   },
+   {
+    "w": "truk",
+    "s": 0.5,
+    "e": 1.04
+   },
+   {
+    "w": "pos",
+    "s": 1.04,
+    "e": 1.18
+   },
+   {
+    "w": "terakhir",
+    "s": 1.18,
+    "e": 1.64
+   },
+   {
+    "w": "berangkat",
+    "s": 1.64,
+    "e": 2.02
+   },
+   {
+    "w": "5",
+    "s": 2.02,
+    "e": 2.22
+   },
+   {
+    "w": "menit",
+    "s": 2.22,
+    "e": 2.56
+   },
+   {
+    "w": "lagi.",
+    "s": 2.56,
+    "e": 2.68
+   },
+   {
+    "w": "Tulis",
+    "s": 2.84,
+    "e": 3.3
+   },
+   {
+    "w": "alamat,",
+    "s": 3.3,
+    "e": 3.62
+   },
+   {
+    "w": "cepat!",
+    "s": 3.68,
+    "e": 4.04
+   }
+  ]
+ },
+ "02_id_jakarta_t1": {
+  "heard": "Gampang! Jakarta, beres!",
+  "score": 1.0,
+  "words": [
+   {
+    "w": "Gampang!",
+    "s": 0.0,
+    "e": 0.7
+   },
+   {
+    "w": "Jakarta,",
+    "s": 0.7,
+    "e": 1.8
+   },
+   {
+    "w": "beres!",
+    "s": 1.82,
+    "e": 2.62
+   }
+  ]
+ },
+ "02_id_jakarta_t2": {
+  "heard": "Gampang! Jakarta, beres!",
+  "score": 1.0,
+  "words": [
+   {
+    "w": "Gampang!",
+    "s": 0.0,
+    "e": 0.72
+   },
+   {
+    "w": "Jakarta,",
+    "s": 0.72,
+    "e": 1.7
+   },
+   {
+    "w": "beres!",
+    "s": 1.72,
+    "e": 2.5
+   }
+  ]
+ },
+ "03_ph_manila_t1": {
+  "heard": "Manila, done!",
+  "score": 1.0,
+  "words": [
+   {
+    "w": "Manila,",
+    "s": 0.0,
+    "e": 0.4
+   },
+   {
+    "w": "done!",
+    "s": 0.5,
+    "e": 0.96
+   }
+  ]
+ },
+ "03_ph_manila_t2": {
+  "heard": "Manila, done!",
+  "score": 1.0,
+  "words": [
+   {
+    "w": "Manila,",
+    "s": 0.0,
+    "e": 0.4
+   },
+   {
+    "w": "done!",
+    "s": 0.5,
+    "e": 0.98
+   }
+  ]
+ },
+ "04_vn_hanoi_t1": {
+  "heard": "Hah, Noi. Dua suku kata aja.",
+  "score": 0.83,
+  "words": [
+   {
+    "w": "Hah,",
+    "s": 0.0,
+    "e": 0.22
+   },
+   {
+    "w": "Noi.",
+    "s": 0.22,
+    "e": 0.78
+   },
+   {
+    "w": "Dua",
+    "s": 0.96,
+    "e": 1.48
+   },
+   {
+    "w": "suku",
+    "s": 1.48,
+    "e": 1.72
+   },
+   {
+    "w": "kata",
+    "s": 1.72,
+    "e": 2.0
+   },
+   {
+    "w": "aja.",
+    "s": 2.0,
+    "e": 2.3
+   }
+  ]
+ },
+ "04_vn_hanoi_t2": {
+  "heard": "Hah, Noi. Dua suku kata aja.",
+  "score": 0.83,
+  "words": [
+   {
+    "w": "Hah,",
+    "s": 0.0,
+    "e": 0.18
+   },
+   {
+    "w": "Noi.",
+    "s": 0.22,
+    "e": 0.76
+   },
+   {
+    "w": "Dua",
+    "s": 1.1,
+    "e": 1.54
+   },
+   {
+    "w": "suku",
+    "s": 1.54,
+    "e": 1.76
+   },
+   {
+    "w": "kata",
+    "s": 1.76,
+    "e": 2.06
+   },
+   {
+    "w": "aja.",
+    "s": 2.06,
+    "e": 2.42
+   }
+  ]
+ },
+ "05_my_kl_t1": {
+  "heard": "Kuala Lumpur, agak panjang, tapi muat lah.",
+  "score": 1.0,
+  "words": [
+   {
+    "w": "Kuala",
+    "s": 0.0,
+    "e": 0.46
+   },
+   {
+    "w": "Lumpur,",
+    "s": 0.46,
+    "e": 1.34
+   },
+   {
+    "w": "agak",
+    "s": 1.4,
+    "e": 2.06
+   },
+   {
+    "w": "panjang,",
+    "s": 2.06,
+    "e": 2.68
+   },
+   {
+    "w": "tapi",
+    "s": 2.68,
+    "e": 3.22
+   },
+   {
+    "w": "muat",
+    "s": 3.22,
+    "e": 3.8
+   },
+   {
+    "w": "lah.",
+    "s": 3.8,
+    "e": 3.84
+   }
+  ]
+ },
+ "05_my_kl_t2": {
+  "heard": "Kuala Lumpur, agak panjang tapi muat lah.",
+  "score": 1.0,
+  "words": [
+   {
+    "w": "Kuala",
+    "s": 0.0,
+    "e": 0.48
+   },
+   {
+    "w": "Lumpur,",
+    "s": 0.48,
+    "e": 1.4
+   },
+   {
+    "w": "agak",
+    "s": 1.5,
+    "e": 2.16
+   },
+   {
+    "w": "panjang",
+    "s": 2.16,
+    "e": 2.78
+   },
+   {
+    "w": "tapi",
+    "s": 2.78,
+    "e": 3.28
+   },
+   {
+    "w": "muat",
+    "s": 3.28,
+    "e": 3.82
+   },
+   {
+    "w": "lah.",
+    "s": 3.82,
+    "e": 3.88
+   }
+  ]
+ },
+ "06_sg_next_t1": {
+  "heard": "Selanjutnya, Thailand.",
+  "score": 0.5,
+  "words": [
+   {
+    "w": "Selanjutnya,",
+    "s": 0.0,
+    "e": 0.62
+   },
+   {
+    "w": "Thailand.",
+    "s": 0.62,
+    "e": 1.14
+   }
+  ]
+ },
+ "06_sg_next_t2": {
+  "heard": "Selanjutnya, Thailand.",
+  "score": 0.5,
+  "words": [
+   {
+    "w": "Selanjutnya,",
+    "s": 0.0,
+    "e": 0.58
+   },
+   {
+    "w": "Thailand.",
+    "s": 0.58,
+    "e": 1.14
+   }
+  ]
+ },
+ "07_th_krung_t1": {
+  "heard": "Sebentar ya, krungtep mahanakon.",
+  "score": 0.4,
+  "words": [
+   {
+    "w": "Sebentar",
+    "s": 0.0,
+    "e": 0.7
+   },
+   {
+    "w": "ya,",
+    "s": 0.7,
+    "e": 0.9
+   },
+   {
+    "w": "krungtep",
+    "s": 1.08,
+    "e": 2.56
+   },
+   {
+    "w": "mahanakon.",
+    "s": 2.56,
+    "e": 3.78
+   }
+  ]
+ },
+ "07_th_krung_t2": {
+  "heard": "Sebentar ya, krung tep maha nakon.",
+  "score": 1.0,
+  "words": [
+   {
+    "w": "Sebentar",
+    "s": 0.0,
+    "e": 0.68
+   },
+   {
+    "w": "ya,",
+    "s": 0.68,
+    "e": 0.9
+   },
+   {
+    "w": "krung",
+    "s": 1.08,
+    "e": 2.14
+   },
+   {
+    "w": "tep",
+    "s": 2.14,
+    "e": 2.68
+   },
+   {
+    "w": "maha",
+    "s": 2.68,
+    "e": 2.96
+   },
+   {
+    "w": "nakon.",
+    "s": 2.96,
+    "e": 3.68
+   }
+  ]
+ },
+ "08_sg_bangkok_t1": {
+  "heard": "Bangkok kan? Tulis Bangkok aja.",
+  "score": 1.0,
+  "words": [
+   {
+    "w": "Bangkok",
+    "s": 0.0,
+    "e": 0.4
+   },
+   {
+    "w": "kan?",
+    "s": 0.4,
+    "e": 0.72
+   },
+   {
+    "w": "Tulis",
+    "s": 0.88,
+    "e": 1.4
+   },
+   {
+    "w": "Bangkok",
+    "s": 1.4,
+    "e": 1.6
+   },
+   {
+    "w": "aja.",
+    "s": 1.6,
+    "e": 1.92
+   }
+  ]
+ },
+ "08_sg_bangkok_t2": {
+  "heard": "Bangkok kan? Tulis bangkok aja.",
+  "score": 1.0,
+  "words": [
+   {
+    "w": "Bangkok",
+    "s": 0.0,
+    "e": 0.48
+   },
+   {
+    "w": "kan?",
+    "s": 0.48,
+    "e": 0.72
+   },
+   {
+    "w": "Tulis",
+    "s": 0.9,
+    "e": 1.38
+   },
+   {
+    "w": "bangkok",
+    "s": 1.38,
+    "e": 1.66
+   },
+   {
+    "w": "aja.",
+    "s": 1.66,
+    "e": 1.9
+   }
+  ]
+ },
+ "09_th_panggilan_t1": {
+  "heard": "Bangkok itu nama panggilan, nama lengkapnya Amon Ratanakosin Mahintara Ayutthaya.",
+  "score": 0.9,
+  "words": [
+   {
+    "w": "Bangkok",
+    "s": 0.0,
+    "e": 0.44
+   },
+   {
+    "w": "itu",
+    "s": 0.44,
+    "e": 0.86
+   },
+   {
+    "w": "nama",
+    "s": 0.86,
+    "e": 1.26
+   },
+   {
+    "w": "panggilan,",
+    "s": 1.26,
+    "e": 1.82
+   },
+   {
+    "w": "nama",
+    "s": 2.0,
+    "e": 2.66
+   },
+   {
+    "w": "lengkapnya",
+    "s": 2.66,
+    "e": 3.28
+   },
+   {
+    "w": "Amon",
+    "s": 3.28,
+    "e": 4.44
+   },
+   {
+    "w": "Ratanakosin",
+    "s": 4.44,
+    "e": 5.4
+   },
+   {
+    "w": "Mahintara",
+    "s": 5.4,
+    "e": 6.38
+   },
+   {
+    "w": "Ayutthaya.",
+    "s": 6.38,
+    "e": 7.06
+   }
+  ]
+ },
+ "09_th_panggilan_t2": {
+  "heard": "Bangkok itu nama panggilan, nama lengkapnya Amon Ratanakosin Mahintara Ayutthaya.",
+  "score": 0.9,
+  "words": [
+   {
+    "w": "Bangkok",
+    "s": 0.0,
+    "e": 0.36
+   },
+   {
+    "w": "itu",
+    "s": 0.36,
+    "e": 0.78
+   },
+   {
+    "w": "nama",
+    "s": 0.78,
+    "e": 1.2
+   },
+   {
+    "w": "panggilan,",
+    "s": 1.2,
+    "e": 1.72
+   },
+   {
+    "w": "nama",
+    "s": 1.9,
+    "e": 2.6
+   },
+   {
+    "w": "lengkapnya",
+    "s": 2.6,
+    "e": 3.22
+   },
+   {
+    "w": "Amon",
+    "s": 3.22,
+    "e": 4.38
+   },
+   {
+    "w": "Ratanakosin",
+    "s": 4.38,
+    "e": 5.34
+   },
+   {
+    "w": "Mahintara",
+    "s": 5.34,
+    "e": 6.4
+   },
+   {
+    "w": "Ayutthaya.",
+    "s": 6.4,
+    "e": 7.02
+   }
+  ]
+ },
+ "10_id_skripsi_t1": {
+  "heard": "Dia nulis alamat apa nulis skripsi?",
+  "score": 1.0,
+  "words": [
+   {
+    "w": "Dia",
+    "s": 0.0,
+    "e": 0.18
+   },
+   {
+    "w": "nulis",
+    "s": 0.18,
+    "e": 0.54
+   },
+   {
+    "w": "alamat",
+    "s": 0.54,
+    "e": 1.04
+   },
+   {
+    "w": "apa",
+    "s": 1.04,
+    "e": 1.2
+   },
+   {
+    "w": "nulis",
+    "s": 1.2,
+    "e": 1.52
+   },
+   {
+    "w": "skripsi?",
+    "s": 1.52,
+    "e": 2.12
+   }
+  ]
+ },
+ "10_id_skripsi_t2": {
+  "heard": "Dia nulis alamat apa nulis skripsi?",
+  "score": 1.0,
+  "words": [
+   {
+    "w": "Dia",
+    "s": 0.0,
+    "e": 0.14
+   },
+   {
+    "w": "nulis",
+    "s": 0.14,
+    "e": 0.54
+   },
+   {
+    "w": "alamat",
+    "s": 0.54,
+    "e": 1.1
+   },
+   {
+    "w": "apa",
+    "s": 1.1,
+    "e": 1.28
+   },
+   {
+    "w": "nulis",
+    "s": 1.28,
+    "e": 1.62
+   },
+   {
+    "w": "skripsi?",
+    "s": 1.62,
+    "e": 2.24
+   }
+  ]
+ },
+ "11_my_baris_t1": {
+  "heard": "Udah dua baris Nomor rumahnya belum ada",
+  "score": 1.0,
+  "words": [
+   {
+    "w": "Udah",
+    "s": 0.0,
+    "e": 1.3
+   },
+   {
+    "w": "dua",
+    "s": 1.3,
+    "e": 1.54
+   },
+   {
+    "w": "baris",
+    "s": 1.54,
+    "e": 2.26
+   },
+   {
+    "w": "Nomor",
+    "s": 2.26,
+    "e": 2.9
+   },
+   {
+    "w": "rumahnya",
+    "s": 2.9,
+    "e": 3.28
+   },
+   {
+    "w": "belum",
+    "s": 3.28,
+    "e": 3.42
+   },
+   {
+    "w": "ada",
+    "s": 3.42,
+    "e": 3.72
+   }
+  ]
+ },
+ "11_my_baris_t2": {
+  "heard": "Udah dua baris Nomor rumahnya belum ada",
+  "score": 1.0,
+  "words": [
+   {
+    "w": "Udah",
+    "s": 0.0,
+    "e": 1.24
+   },
+   {
+    "w": "dua",
+    "s": 1.24,
+    "e": 1.46
+   },
+   {
+    "w": "baris",
+    "s": 1.46,
+    "e": 2.2
+   },
+   {
+    "w": "Nomor",
+    "s": 2.2,
+    "e": 2.88
+   },
+   {
+    "w": "rumahnya",
+    "s": 2.88,
+    "e": 3.3
+   },
+   {
+    "w": "belum",
+    "s": 3.3,
+    "e": 3.48
+   },
+   {
+    "w": "ada",
+    "s": 3.48,
+    "e": 3.78
+   }
+  ]
+ },
+ "12_th_mahadilok_t1": {
+  "heard": "Maha Bilogpop, Noparat Ratchatani, Buri Rom",
+  "score": 0.36,
+  "words": [
+   {
+    "w": "Maha",
+    "s": 0.0,
+    "e": 0.32
+   },
+   {
+    "w": "Bilogpop,",
+    "s": 0.32,
+    "e": 0.9
+   },
+   {
+    "w": "Noparat",
+    "s": 1.02,
+    "e": 1.74
+   },
+   {
+    "w": "Ratchatani,",
+    "s": 1.74,
+    "e": 2.42
+   },
+   {
+    "w": "Buri",
+    "s": 2.56,
+    "e": 3.18
+   },
+   {
+    "w": "Rom",
+    "s": 3.18,
+    "e": 3.3
+   }
+  ]
+ },
+ "12_th_mahadilok_t2": {
+  "heard": "Mahadilok Pop, Noparak Ratchatani, Burirom",
+  "score": 0.8,
+  "words": [
+   {
+    "w": "Mahadilok",
+    "s": 0.0,
+    "e": 0.72
+   },
+   {
+    "w": "Pop,",
+    "s": 0.72,
+    "e": 0.92
+   },
+   {
+    "w": "Noparak",
+    "s": 1.08,
+    "e": 1.82
+   },
+   {
+    "w": "Ratchatani,",
+    "s": 1.82,
+    "e": 2.58
+   },
+   {
+    "w": "Burirom",
+    "s": 2.72,
+    "e": 3.48
+   }
+  ]
+ },
+ "13_sg_amplop_t1": {
+  "heard": "Amplopnya nggak muat! Ambil yang besar!",
+  "score": 1.0,
+  "words": [
+   {
+    "w": "Amplopnya",
+    "s": 0.0,
+    "e": 0.46
+   },
+   {
+    "w": "nggak",
+    "s": 0.46,
+    "e": 0.6
+   },
+   {
+    "w": "muat!",
+    "s": 0.6,
+    "e": 1.16
+   },
+   {
+    "w": "Ambil",
+    "s": 1.2,
+    "e": 1.72
+   },
+   {
+    "w": "yang",
+    "s": 1.72,
+    "e": 1.82
+   },
+   {
+    "w": "besar!",
+    "s": 1.82,
+    "e": 2.1
+   }
+  ]
+ },
+ "13_sg_amplop_t2": {
+  "heard": "Amplopnya gak muat! Ambil yang besar!",
+  "score": 0.83,
+  "words": [
+   {
+    "w": "Amplopnya",
+    "s": 0.0,
+    "e": 0.4
+   },
+   {
+    "w": "gak",
+    "s": 0.4,
+    "e": 0.52
+   },
+   {
+    "w": "muat!",
+    "s": 0.52,
+    "e": 1.12
+   },
+   {
+    "w": "Ambil",
+    "s": 1.22,
+    "e": 1.64
+   },
+   {
+    "w": "yang",
+    "s": 1.64,
+    "e": 1.72
+   },
+   {
+    "w": "besar!",
+    "s": 1.72,
+    "e": 2.02
+   }
+  ]
+ },
+ "14_vn_truk_t1": {
+  "heard": "Woy, truknya udah manasin mesin.",
+  "score": 0.8,
+  "words": [
+   {
+    "w": "Woy,",
+    "s": 0.0,
+    "e": 0.3
+   },
+   {
+    "w": "truknya",
+    "s": 0.34,
+    "e": 0.9
+   },
+   {
+    "w": "udah",
+    "s": 0.9,
+    "e": 1.04
+   },
+   {
+    "w": "manasin",
+    "s": 1.04,
+    "e": 1.4
+   },
+   {
+    "w": "mesin.",
+    "s": 1.4,
+    "e": 1.88
+   }
+  ]
+ },
+ "14_vn_truk_t2": {
+  "heard": "Woy, truknya udah manasin mesin.",
+  "score": 0.8,
+  "words": [
+   {
+    "w": "Woy,",
+    "s": 0.0,
+    "e": 0.26
+   },
+   {
+    "w": "truknya",
+    "s": 0.3,
+    "e": 0.82
+   },
+   {
+    "w": "udah",
+    "s": 0.82,
+    "e": 0.96
+   },
+   {
+    "w": "manasin",
+    "s": 0.96,
+    "e": 1.34
+   },
+   {
+    "w": "mesin.",
+    "s": 1.34,
+    "e": 1.78
+   }
+  ]
+ },
+ "15_th_selesai_t1": {
+  "heard": "Udomraceniwet mahasatan, amon piman awatan satit, sakatatiyawitsanukam prasid. Selesai!",
+  "score": 0.6,
+  "words": [
+   {
+    "w": "Udomraceniwet",
+    "s": 0.0,
+    "e": 1.0
+   },
+   {
+    "w": "mahasatan,",
+    "s": 1.0,
+    "e": 1.62
+   },
+   {
+    "w": "amon",
+    "s": 1.82,
+    "e": 2.52
+   },
+   {
+    "w": "piman",
+    "s": 2.52,
+    "e": 2.84
+   },
+   {
+    "w": "awatan",
+    "s": 2.84,
+    "e": 3.26
+   },
+   {
+    "w": "satit,",
+    "s": 3.26,
+    "e": 3.82
+   },
+   {
+    "w": "sakatatiyawitsanukam",
+    "s": 3.88,
+    "e": 5.72
+   },
+   {
+    "w": "prasid.",
+    "s": 5.72,
+    "e": 6.12
+   },
+   {
+    "w": "Selesai!",
+    "s": 6.28,
+    "e": 7.12
+   }
+  ]
+ },
+ "15_th_selesai_t2": {
+  "heard": "Udom racaniwet mahasatan, amun piman awatan satit, sakatati ya witsanukam prasid. Selesai!",
+  "score": 0.61,
+  "words": [
+   {
+    "w": "Udom",
+    "s": 0.0,
+    "e": 0.28
+   },
+   {
+    "w": "racaniwet",
+    "s": 0.28,
+    "e": 1.04
+   },
+   {
+    "w": "mahasatan,",
+    "s": 1.04,
+    "e": 1.56
+   },
+   {
+    "w": "amun",
+    "s": 1.74,
+    "e": 2.46
+   },
+   {
+    "w": "piman",
+    "s": 2.46,
+    "e": 2.76
+   },
+   {
+    "w": "awatan",
+    "s": 2.76,
+    "e": 3.18
+   },
+   {
+    "w": "satit,",
+    "s": 3.18,
+    "e": 3.72
+   },
+   {
+    "w": "sakatati",
+    "s": 3.78,
+    "e": 4.54
+   },
+   {
+    "w": "ya",
+    "s": 4.54,
+    "e": 4.78
+   },
+   {
+    "w": "witsanukam",
+    "s": 4.78,
+    "e": 5.52
+   },
+   {
+    "w": "prasid.",
+    "s": 5.52,
+    "e": 5.96
+   },
+   {
+    "w": "Selesai!",
+    "s": 6.06,
+    "e": 6.92
+   }
+  ]
+ },
+ "16_ph_ngarang_t1": {
+  "heard": "Pasti ngarang biar keren",
+  "score": 0.89,
+  "words": [
+   {
+    "w": "Pasti",
+    "s": 0.0,
+    "e": 1.7
+   },
+   {
+    "w": "ngarang",
+    "s": 1.7,
+    "e": 2.32
+   },
+   {
+    "w": "biar",
+    "s": 2.32,
+    "e": 2.58
+   },
+   {
+    "w": "keren",
+    "s": 2.58,
+    "e": 2.96
+   }
+  ]
+ },
+ "16_ph_ngarang_t2": {
+  "heard": "Pasti ngarang biar keren",
+  "score": 0.89,
+  "words": [
+   {
+    "w": "Pasti",
+    "s": 0.0,
+    "e": 1.86
+   },
+   {
+    "w": "ngarang",
+    "s": 1.86,
+    "e": 2.46
+   },
+   {
+    "w": "biar",
+    "s": 2.46,
+    "e": 2.72
+   },
+   {
+    "w": "keren",
+    "s": 2.72,
+    "e": 3.12
+   }
+  ]
+ },
+ "17_sg_hitung_t1": {
+  "heard": "1, 2, 3, 168 huruf?",
+  "score": 0.15,
+  "words": [
+   {
+    "w": "1,",
+    "s": 0.0,
+    "e": 0.38
+   },
+   {
+    "w": "2,",
+    "s": 0.5,
+    "e": 0.82
+   },
+   {
+    "w": "3,",
+    "s": 1.04,
+    "e": 1.36
+   },
+   {
+    "w": "168",
+    "s": 1.46,
+    "e": 2.88
+   },
+   {
+    "w": "huruf?",
+    "s": 2.88,
+    "e": 3.72
+   }
+  ]
+ },
+ "17_sg_hitung_t2": {
+  "heard": "1, 2, 3, 168 huruf?",
+  "score": 0.15,
+  "words": [
+   {
+    "w": "1,",
+    "s": 0.0,
+    "e": 0.38
+   },
+   {
+    "w": "2,",
+    "s": 0.52,
+    "e": 0.82
+   },
+   {
+    "w": "3,",
+    "s": 1.06,
+    "e": 1.38
+   },
+   {
+    "w": "168",
+    "s": 1.5,
+    "e": 2.72
+   },
+   {
+    "w": "huruf?",
+    "s": 2.72,
+    "e": 3.5
+   }
+  ]
+ },
+ "18_th_rekor_t1": {
+  "heard": "Rekor dunia, nama tempat terpanjang, kata Guinness.",
+  "score": 1.0,
+  "words": [
+   {
+    "w": "Rekor",
+    "s": 0.0,
+    "e": 0.7
+   },
+   {
+    "w": "dunia,",
+    "s": 0.7,
+    "e": 1.4
+   },
+   {
+    "w": "nama",
+    "s": 1.4,
+    "e": 2.3
+   },
+   {
+    "w": "tempat",
+    "s": 2.3,
+    "e": 2.56
+   },
+   {
+    "w": "terpanjang,",
+    "s": 2.56,
+    "e": 3.34
+   },
+   {
+    "w": "kata",
+    "s": 3.38,
+    "e": 3.84
+   },
+   {
+    "w": "Guinness.",
+    "s": 3.84,
+    "e": 4.26
+   }
+  ]
+ },
+ "18_th_rekor_t2": {
+  "heard": "Rekor dunia, nama tempat terpanjang, kata Guinness.",
+  "score": 1.0,
+  "words": [
+   {
+    "w": "Rekor",
+    "s": 0.0,
+    "e": 0.7
+   },
+   {
+    "w": "dunia,",
+    "s": 0.7,
+    "e": 1.36
+   },
+   {
+    "w": "nama",
+    "s": 1.42,
+    "e": 2.24
+   },
+   {
+    "w": "tempat",
+    "s": 2.24,
+    "e": 2.52
+   },
+   {
+    "w": "terpanjang,",
+    "s": 2.52,
+    "e": 3.34
+   },
+   {
+    "w": "kata",
+    "s": 3.36,
+    "e": 3.82
+   },
+   {
+    "w": "Guinness.",
+    "s": 3.82,
+    "e": 4.28
+   }
+  ]
+ },
+ "19_id_arti_t1": {
+  "heard": "Terus artinya apa?",
+  "score": 1.0,
+  "words": [
+   {
+    "w": "Terus",
+    "s": 0.0,
+    "e": 0.4
+   },
+   {
+    "w": "artinya",
+    "s": 0.4,
+    "e": 0.98
+   },
+   {
+    "w": "apa?",
+    "s": 0.98,
+    "e": 1.3
+   }
+  ]
+ },
+ "19_id_arti_t2": {
+  "heard": "Terus artinya apa?",
+  "score": 1.0,
+  "words": [
+   {
+    "w": "Terus",
+    "s": 0.0,
+    "e": 0.38
+   },
+   {
+    "w": "artinya",
+    "s": 0.38,
+    "e": 0.92
+   },
+   {
+    "w": "apa?",
+    "s": 0.92,
+    "e": 1.24
+   }
+  ]
+ },
+ "20_th_malaikat_t1": {
+  "heard": "Kota para malaikat, kota agung, kota sembilan permata, pokoknya kota yang indah banget.",
+  "score": 1.0,
+  "words": [
+   {
+    "w": "Kota",
+    "s": 0.0,
+    "e": 0.3
+   },
+   {
+    "w": "para",
+    "s": 0.3,
+    "e": 0.48
+   },
+   {
+    "w": "malaikat,",
+    "s": 0.48,
+    "e": 1.1
+   },
+   {
+    "w": "kota",
+    "s": 1.2,
+    "e": 1.88
+   },
+   {
+    "w": "agung,",
+    "s": 1.88,
+    "e": 2.5
+   },
+   {
+    "w": "kota",
+    "s": 2.54,
+    "e": 3.04
+   },
+   {
+    "w": "sembilan",
+    "s": 3.04,
+    "e": 3.42
+   },
+   {
+    "w": "permata,",
+    "s": 3.42,
+    "e": 4.06
+   },
+   {
+    "w": "pokoknya",
+    "s": 4.14,
+    "e": 5.28
+   },
+   {
+    "w": "kota",
+    "s": 5.28,
+    "e": 5.86
+   },
+   {
+    "w": "yang",
+    "s": 5.86,
+    "e": 6.02
+   },
+   {
+    "w": "indah",
+    "s": 6.02,
+    "e": 6.82
+   },
+   {
+    "w": "banget.",
+    "s": 6.82,
+    "e": 7.04
+   }
+  ]
+ },
+ "20_th_malaikat_t2": {
+  "heard": "Kota para malaikat, kota agung, kota sembilan permata, pokoknya kota yang indah banget.",
+  "score": 1.0,
+  "words": [
+   {
+    "w": "Kota",
+    "s": 0.0,
+    "e": 0.3
+   },
+   {
+    "w": "para",
+    "s": 0.3,
+    "e": 0.48
+   },
+   {
+    "w": "malaikat,",
+    "s": 0.48,
+    "e": 1.1
+   },
+   {
+    "w": "kota",
+    "s": 1.18,
+    "e": 1.8
+   },
+   {
+    "w": "agung,",
+    "s": 1.8,
+    "e": 2.46
+   },
+   {
+    "w": "kota",
+    "s": 2.5,
+    "e": 3.04
+   },
+   {
+    "w": "sembilan",
+    "s": 3.04,
+    "e": 3.42
+   },
+   {
+    "w": "permata,",
+    "s": 3.42,
+    "e": 4.0
+   },
+   {
+    "w": "pokoknya",
+    "s": 4.1,
+    "e": 5.12
+   },
+   {
+    "w": "kota",
+    "s": 5.12,
+    "e": 5.64
+   },
+   {
+    "w": "yang",
+    "s": 5.64,
+    "e": 5.8
+   },
+   {
+    "w": "indah",
+    "s": 5.8,
+    "e": 6.6
+   },
+   {
+    "w": "banget.",
+    "s": 6.6,
+    "e": 6.8
+   }
+  ]
+ },
+ "21_id_hafal_t1": {
+  "heard": "Terus orang Thailand hafal semua.",
+  "score": 1.0,
+  "words": [
+   {
+    "w": "Terus",
+    "s": 0.0,
+    "e": 0.4
+   },
+   {
+    "w": "orang",
+    "s": 0.4,
+    "e": 0.74
+   },
+   {
+    "w": "Thailand",
+    "s": 0.74,
+    "e": 1.14
+   },
+   {
+    "w": "hafal",
+    "s": 1.14,
+    "e": 1.56
+   },
+   {
+    "w": "semua.",
+    "s": 1.56,
+    "e": 1.78
+   }
+  ]
+ },
+ "21_id_hafal_t2": {
+  "heard": "Terus orang Taiwan hafal semua.",
+  "score": 0.8,
+  "words": [
+   {
+    "w": "Terus",
+    "s": 0.0,
+    "e": 0.36
+   },
+   {
+    "w": "orang",
+    "s": 0.36,
+    "e": 0.7
+   },
+   {
+    "w": "Taiwan",
+    "s": 0.7,
+    "e": 1.1
+   },
+   {
+    "w": "hafal",
+    "s": 1.1,
+    "e": 1.66
+   },
+   {
+    "w": "semua.",
+    "s": 1.66,
+    "e": 1.86
+   }
+  ]
+ },
+ "22_th_lagu_t1": {
+  "heard": "Ada lagunya lho, tahun 1989",
+  "score": 0.73,
+  "words": [
+   {
+    "w": "Ada",
+    "s": 0.0,
+    "e": 0.8
+   },
+   {
+    "w": "lagunya",
+    "s": 0.8,
+    "e": 1.32
+   },
+   {
+    "w": "lho,",
+    "s": 1.32,
+    "e": 1.64
+   },
+   {
+    "w": "tahun",
+    "s": 1.66,
+    "e": 2.26
+   },
+   {
+    "w": "1989",
+    "s": 2.26,
+    "e": 2.82
+   }
+  ]
+ },
+ "22_th_lagu_t2": {
+  "heard": "Ada lagunya lho, tahun 1989",
+  "score": 0.73,
+  "words": [
+   {
+    "w": "Ada",
+    "s": 0.0,
+    "e": 0.82
+   },
+   {
+    "w": "lagunya",
+    "s": 0.82,
+    "e": 1.42
+   },
+   {
+    "w": "lho,",
+    "s": 1.42,
+    "e": 1.68
+   },
+   {
+    "w": "tahun",
+    "s": 1.72,
+    "e": 2.34
+   },
+   {
+    "w": "1989",
+    "s": 2.34,
+    "e": 2.8
+   }
+  ]
+ },
+ "23_sg_ongkir_t1": {
+  "heard": "Oke, ongkos kirim dihitung per huruf.",
+  "score": 1.0,
+  "words": [
+   {
+    "w": "Oke,",
+    "s": 0.0,
+    "e": 0.3
+   },
+   {
+    "w": "ongkos",
+    "s": 0.44,
+    "e": 1.36
+   },
+   {
+    "w": "kirim",
+    "s": 1.36,
+    "e": 1.86
+   },
+   {
+    "w": "dihitung",
+    "s": 1.86,
+    "e": 2.38
+   },
+   {
+    "w": "per",
+    "s": 2.38,
+    "e": 2.5
+   },
+   {
+    "w": "huruf.",
+    "s": 2.5,
+    "e": 3.0
+   }
+  ]
+ },
+ "23_sg_ongkir_t2": {
+  "heard": "Oke, ongkos kirim dihitung per huruf.",
+  "score": 1.0,
+  "words": [
+   {
+    "w": "Oke,",
+    "s": 0.0,
+    "e": 0.32
+   },
+   {
+    "w": "ongkos",
+    "s": 0.48,
+    "e": 1.36
+   },
+   {
+    "w": "kirim",
+    "s": 1.36,
+    "e": 1.84
+   },
+   {
+    "w": "dihitung",
+    "s": 1.84,
+    "e": 2.26
+   },
+   {
+    "w": "per",
+    "s": 2.26,
+    "e": 2.38
+   },
+   {
+    "w": "huruf.",
+    "s": 2.38,
+    "e": 2.86
+   }
+  ]
+ },
+ "24_th_singkat_t1": {
+  "heard": "Krumtep aja deh Krumtep aja deh",
+  "score": 0.4,
+  "words": [
+   {
+    "w": "Krumtep",
+    "s": 0.0,
+    "e": 0.76
+   },
+   {
+    "w": "aja",
+    "s": 0.76,
+    "e": 0.92
+   },
+   {
+    "w": "deh",
+    "s": 0.92,
+    "e": 1.14
+   },
+   {
+    "w": "Krumtep",
+    "s": 1.14,
+    "e": 2.02
+   },
+   {
+    "w": "aja",
+    "s": 2.02,
+    "e": 2.16
+   },
+   {
+    "w": "deh",
+    "s": 2.16,
+    "e": 2.4
+   }
+  ]
+ },
+ "24_th_singkat_t2": {
+  "heard": "Krongtep aja deh",
+  "score": 0.57,
+  "words": [
+   {
+    "w": "Krongtep",
+    "s": 0.74,
+    "e": 1.22
+   },
+   {
+    "w": "aja",
+    "s": 1.22,
+    "e": 1.34
+   },
+   {
+    "w": "deh",
+    "s": 1.34,
+    "e": 1.58
+   }
+  ]
+ },
+ "25_id_nah_t1": {
+  "heard": "Nah gitu, orang sana juga manggilnya krungtep",
+  "score": 0.8,
+  "words": [
+   {
+    "w": "Nah",
+    "s": 0.0,
+    "e": 0.94
+   },
+   {
+    "w": "gitu,",
+    "s": 0.94,
+    "e": 1.52
+   },
+   {
+    "w": "orang",
+    "s": 1.92,
+    "e": 2.66
+   },
+   {
+    "w": "sana",
+    "s": 2.66,
+    "e": 2.92
+   },
+   {
+    "w": "juga",
+    "s": 2.92,
+    "e": 3.14
+   },
+   {
+    "w": "manggilnya",
+    "s": 3.14,
+    "e": 3.68
+   },
+   {
+    "w": "krungtep",
+    "s": 3.68,
+    "e": 4.3
+   }
+  ]
+ },
+ "25_id_nah_t2": {
+  "heard": "Nah gitu Orang sana juga manggilnya krung tep",
+  "score": 1.0,
+  "words": [
+   {
+    "w": "Nah",
+    "s": 0.0,
+    "e": 0.98
+   },
+   {
+    "w": "gitu",
+    "s": 0.98,
+    "e": 1.56
+   },
+   {
+    "w": "Orang",
+    "s": 1.56,
+    "e": 2.76
+   },
+   {
+    "w": "sana",
+    "s": 2.76,
+    "e": 2.9
+   },
+   {
+    "w": "juga",
+    "s": 2.9,
+    "e": 3.14
+   },
+   {
+    "w": "manggilnya",
+    "s": 3.14,
+    "e": 3.68
+   },
+   {
+    "w": "krung",
+    "s": 3.68,
+    "e": 4.16
+   },
+   {
+    "w": "tep",
+    "s": 4.16,
+    "e": 4.52
+   }
+  ]
+ },
+ "26_nr_info_t1": {
+  "heard": "Nama seremonial Bangkok tercatat di Guinness sebagai nama tempat terpanjang di dunia, 168 huruf. Sehari -hari, warga Thailand menyebutnya Krungthep, kota para malaikat.",
+  "score": 0.84,
+  "words": [
+   {
+    "w": "Nama",
+    "s": 0.0,
+    "e": 0.28
+   },
+   {
+    "w": "seremonial",
+    "s": 0.28,
+    "e": 0.82
+   },
+   {
+    "w": "Bangkok",
+    "s": 0.82,
+    "e": 1.1
+   },
+   {
+    "w": "tercatat",
+    "s": 1.1,
+    "e": 1.94
+   },
+   {
+    "w": "di",
+    "s": 1.94,
+    "e": 2.02
+   },
+   {
+    "w": "Guinness",
+    "s": 2.02,
+    "e": 2.48
+   },
+   {
+    "w": "sebagai",
+    "s": 2.48,
+    "e": 2.8
+   },
+   {
+    "w": "nama",
+    "s": 2.8,
+    "e": 3.36
+   },
+   {
+    "w": "tempat",
+    "s": 3.36,
+    "e": 3.7
+   },
+   {
+    "w": "terpanjang",
+    "s": 3.7,
+    "e": 4.46
+   },
+   {
+    "w": "di",
+    "s": 4.46,
+    "e": 4.6
+   },
+   {
+    "w": "dunia,",
+    "s": 4.6,
+    "e": 5.0
+   },
+   {
+    "w": "168",
+    "s": 5.08,
+    "e": 6.46
+   },
+   {
+    "w": "huruf.",
+    "s": 6.46,
+    "e": 7.2
+   },
+   {
+    "w": "Sehari",
+    "s": 7.4,
+    "e": 8.14
+   },
+   {
+    "w": "-hari,",
+    "s": 8.14,
+    "e": 8.48
+   },
+   {
+    "w": "warga",
+    "s": 8.5,
+    "e": 9.02
+   },
+   {
+    "w": "Thailand",
+    "s": 9.02,
+    "e": 9.24
+   },
+   {
+    "w": "menyebutnya",
+    "s": 9.24,
+    "e": 9.98
+   },
+   {
+    "w": "Krungthep,",
+    "s": 9.98,
+    "e": 10.7
+   },
+   {
+    "w": "kota",
+    "s": 10.84,
+    "e": 11.58
+   },
+   {
+    "w": "para",
+    "s": 11.58,
+    "e": 11.92
+   },
+   {
+    "w": "malaikat.",
+    "s": 11.92,
+    "e": 12.48
+   }
+  ]
+ },
+ "26_nr_info_t2": {
+  "heard": "Nama seremonial Bangkok tercatat di Guinness sebagai nama tempat terpanjang di dunia, 168 huruf. Sehari -hari, warga Thailand menyebutnya Krungthep, kota para malaikat.",
+  "score": 0.84,
+  "words": [
+   {
+    "w": "Nama",
+    "s": 0.0,
+    "e": 0.46
+   },
+   {
+    "w": "seremonial",
+    "s": 0.46,
+    "e": 1.0
+   },
+   {
+    "w": "Bangkok",
+    "s": 1.0,
+    "e": 1.28
+   },
+   {
+    "w": "tercatat",
+    "s": 1.28,
+    "e": 2.26
+   },
+   {
+    "w": "di",
+    "s": 2.26,
+    "e": 2.36
+   },
+   {
+    "w": "Guinness",
+    "s": 2.36,
+    "e": 2.8
+   },
+   {
+    "w": "sebagai",
+    "s": 2.8,
+    "e": 3.08
+   },
+   {
+    "w": "nama",
+    "s": 3.08,
+    "e": 3.62
+   },
+   {
+    "w": "tempat",
+    "s": 3.62,
+    "e": 3.92
+   },
+   {
+    "w": "terpanjang",
+    "s": 3.92,
+    "e": 4.62
+   },
+   {
+    "w": "di",
+    "s": 4.62,
+    "e": 4.76
+   },
+   {
+    "w": "dunia,",
+    "s": 4.76,
+    "e": 5.18
+   },
+   {
+    "w": "168",
+    "s": 5.22,
+    "e": 6.78
+   },
+   {
+    "w": "huruf.",
+    "s": 6.78,
+    "e": 7.64
+   },
+   {
+    "w": "Sehari",
+    "s": 8.06,
+    "e": 8.5
+   },
+   {
+    "w": "-hari,",
+    "s": 8.5,
+    "e": 8.86
+   },
+   {
+    "w": "warga",
+    "s": 8.86,
+    "e": 9.42
+   },
+   {
+    "w": "Thailand",
+    "s": 9.42,
+    "e": 9.64
+   },
+   {
+    "w": "menyebutnya",
+    "s": 9.64,
+    "e": 10.42
+   },
+   {
+    "w": "Krungthep,",
+    "s": 10.42,
+    "e": 11.14
+   },
+   {
+    "w": "kota",
+    "s": 11.26,
+    "e": 12.02
+   },
+   {
+    "w": "para",
+    "s": 12.02,
+    "e": 12.38
+   },
+   {
+    "w": "malaikat.",
+    "s": 12.38,
+    "e": 12.92
+   }
+  ]
+ }
+}

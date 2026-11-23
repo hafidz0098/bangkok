@@ -1,0 +1,52 @@
+01 | Perhatian! Truk pos terakhir berangkat lima menit lagi. Tulis alamat, cepat! 
+    Perhatian!@0.02 Truk@0.46 pos@0.80 terakhir@0.91 berangkat@1.24 lima@1.56 menit@1.82 lagi.@2.00 Tulis@2.26 alamat,@2.56 cepat!@2.86
+02 | Gampang. Jakarta. Beres! 
+    Gampang.@0.01 Jakarta.@0.61 Beres!@1.62
+03 | Manila. Done! 
+    Manila.@0.03 Done!@0.43
+04 | Hah, Nội. Dua suku kata aja. 
+    Hà@0.03 Nội.@0.20 Dua@0.82 suku@1.14 kata@1.36 aja.@1.60
+05 | Kuala Lumpur. Agak panjang, tapi muat lah. 
+    Kuala@0.04 Lumpur.@0.38 Agak@1.22 panjang,@1.68 tapi@2.23 muat@2.70 lah.@3.22
+06 | Selanjutnya! Thailand! 
+    Selanjutnya!@0.03 Thailand!@0.54
+07 | Sebentar ya... Krung Thep Mahanakhon... 
+    Sebentar@0.00 ya...@0.42 Krung@0.78 Thep@1.28 Mahanakhon...@1.60
+08 | Bangkok kan? Tulis Bangkok aja! 
+    Bangkok@0.03 kan?@0.38 Tulis@0.78 Bangkok@1.14 aja!@1.32
+09 | Bangkok itu nama panggilan. Nama lengkapnya... Amon Rattanakosin... Mahinthara Ayuthaya... 
+    Bangkok@0.01 itu@0.24 nama@0.63 panggilan.@0.94 Nama@1.46 lengkapnya...@1.80 Amon@2.56 Rattanakosin...@3.13 Mahinthara@4.03 Ayuthaya...@4.75
+10 | Dia nulis alamat apa nulis skripsi? 
+    Dia@0.04 nulis@0.12 alamat@0.42 apa@0.86 nulis@1.09 skripsi?@1.32
+11 | Hehehe, udah dua baris, nomor rumahnya belum ada. 
+    Udah@0.46 dua@1.10 baris,@1.33 nomor@2.04 rumahnya@2.44 belum@2.77 ada.@2.92
+12 | Mahadilok Phop, Noppharat Ratchathani, Burirom... 
+    ...Mahadilok@0.02 Phop,@0.60 Noppharat@0.91 Ratchathani,@1.36 Burirom...@2.10
+13 | Amplopnya nggak muat! Ambil yang besar! 
+    Amplopnya@0.04 nggak@0.34 muat!@0.48 Ambil@0.94 yang@1.24 besar!@1.33
+14 | Woy, truknya udah manasin mesin! 
+    Woi,@0.04 truknya@0.30 udah@0.74 manasin@0.91 mesin!@1.16
+15 | Udomratchaniwet Mahasathan, Amon Piman Awatan Sathit, Sakkathattiya Witsanukam Prasit. Selesai! 
+    ...Udomratchaniwet@0.01 Mahasathan,@0.90 Amon@1.50 Piman@1.83 Awatan@2.10 Sathit,@2.50 Sakkathattiya@3.10 Witsanukam@3.71 Prasit.@4.36 Selesai!@4.88
+16 | Alah, pasti ngarang biar keren! 
+    Halah,@0.01 pasti@0.60 ngarang@1.20 biar@1.94 keren!@2.18
+17 | Satu, dua, tiga... 168 huruf?! 
+    Satu,@0.03 dua,@0.48 tiga...@0.94 168@1.36 huruf?!@2.48
+18 | Rekor dunia. Nama tempat terpanjang, kata Guinness. 
+    Rekor@0.01 dunia.@0.46 Nama@1.04 tempat@1.64 terpanjang,@1.88 kata@2.58 Guinness.@2.90
+19 | Terus artinya apa?! 
+    Terus@0.04 artinya@0.34 apa?!@0.86
+20 | Kota para malaikat, kota agung, kota sembilan permata... pokoknya kota yang indah banget. 
+    Kota@0.01 para@0.24 malaikat,@0.40 kota@0.96 agung,@1.24 kota@1.78 sembilan@1.94 permata...@2.18 pokoknya@2.88 kota@3.50 yang@3.90 indah@4.06 banget.@4.75
+21 | Terus orang Thailand hafal semua? 
+    Terus@0.04 orang@0.32 Thailand@0.64 hafal@0.97 semua?@1.38
+22 | Ada lagunya, lho. Tahun 1989. 
+    Ada@0.03 lagunya,@0.39 lho.@1.00 Tahun@1.20 1989.@1.62
+23 | Oke, ongkos kirim dihitung per huruf. 
+    Oke.@0.04 Ongkos@0.30 kirim@0.78 dihitung@1.22 per@1.68 huruf.@1.80
+24 | Krung Thep aja deh. 
+    ...Krung@0.02 Thep@0.46 aja@0.61 deh.@0.79
+25 | Nah gitu! Orang sana juga manggilnya Krung Thep! 
+    Nah@0.02 gitu!@0.76 Orang@1.60 sana@2.14 juga@2.30 manggilnya@2.46 Krung@2.96 Thep!@3.38
+26 | Nama seremonial Bangkok tercatat di Guinness sebagai nama tempat terpanjang di dunia, 168 huruf. Sehari -hari, warga Thailand menyebutnya Krung Thep, Kota Para Malaikat. 
+    Nama@0.04 seremonial@0.24 Bangkok@0.72 tercatat@0.96 di@1.72 Guinness@1.80 sebagai@2.22 nama@2.50 tempat@3.00 terpanjang@3.30 di@3.96 dunia,@4.10 168@4.43 huruf.@5.62 Sehari-hari,@6.39 warga@6.98 Thailand@7.44 menyebutnya@7.64 Krung@8.29 Thep,@8.74 Kota@9.12 Para@9.40 Malaikat.@9.69
